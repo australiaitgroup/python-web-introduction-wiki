@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: hsla(230, 44%, 64%, 1);
+    padding: 20px;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.container > :not(ul) {
+    display: flex;
+    justify-content: center;
+}
+
+.user_form {
+    margin-bottom: 1rem;
+}
+
+label:last-of-type {
+    margin-left: 10px;
+}
+
+input {
+    outline: none;
+    margin-left: 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.btn_group {
+    margin-top: 1rem;
+}
+
+.btn_group_btn {
+    display: inline-block;
+    width: 100px;
+    text-transform: capitalize;
+    background-color: hsla(120, 100%, 25%, 1);
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 1);
+    padding: 0.5rem;
+    margin: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_group_btn:hover {
+    font-weight: bolder;
+    color: hsla(0, 0%, 0%, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+ul li {
+    list-style: none;
+    counter-increment: item;
+    margin-bottom: 1rem;
+}
+
+ul li:before {
+    content: counter(item);
+    background-color: hsla(350, 100%, 88%, 1);
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: bold;
+    padding: 0 5px;
+    border-radius: 3px;
+    margin-right: 1rem;
+}

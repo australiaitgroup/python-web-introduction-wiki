@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Dank Mono;
+    font-size: 1.5rem;
+}
+
+html,
+#message-list,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-width: 80vw;
+}
+
+#name-input {
+    width: 100%;
+    max-width: 400px;
+}
+
+#message-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 3rem;
+}
+
+#message-form :not(button[type="submit"]) {
+    height: inherit;
+}
+
+#message-list li {
+    margin: 1rem 0;
+}
+
+.button_disabled {
+    cursor: default;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(170, 66%, 39%);
+}
+
+.delete-button:hover {
+    background-color: hsl(0, 57%, 72%);
+}
+
+.update-button:hover {
+    background-color: hsl(240, 73%, 76%);
+}
+
+.delete-button,
+.update-button {
+    margin: 10px;
+}

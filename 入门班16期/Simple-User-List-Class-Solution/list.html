@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>User List</title>
+        <link rel="stylesheet" href="./list.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h3>User List</h3>
+            <form class="user_form">
+                <label for="username">Name</label>
+                <input type="text" id="username" value="" autocomplete="off" />
+                <label for="age">Age</label>
+                <input type="number" id="age" value="" autocomplete="off" />
+            </form>
+            <div class="btn_group">
+                <button onclick="getList()" id="get_list">get list</button>
+                <button onclick="postUser()" id="add_user">add user</button>
+                <button onclick="deleteList()" id="clear_list">clear list</button>
+            </div>
+            <ul id="user_list"></ul>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./list.js"></script>
+    </body>
+</html>

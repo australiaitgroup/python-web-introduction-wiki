@@ -1,0 +1,10 @@
+__pycache__
+node_modules
+package-lock.json
+dist
+dist-ssr
+*.local
+.vscode
+!.vscode/extensions.json
+.idea
+.DS_Store

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>留言板</title>
+        <script src="//unpkg.com/axios/dist/axios.min.js" defer></script>
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <h1>留言板</h1>
+        <form id="message-form">
+            <input type="text" id="name-input" placeholder="姓名" autocomplete="off" />
+            <textarea id="message-input" placeholder="留言" autocomplete="off"></textarea>
+            <button type="submit">提交</button>
+        </form>
+        <ul id="message-list"></ul>
+    </body>
+</html>
