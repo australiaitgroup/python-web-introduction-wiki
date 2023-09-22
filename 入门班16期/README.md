@@ -1,4 +1,4 @@
-# JR16-notes
+# JR-notes
 
 ## Module One：HTML & CSS
 - [HTML & CSS Part 1](./HTML&CSS/HTML&CSS_1.md)
