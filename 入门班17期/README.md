@@ -3,3 +3,4 @@
 
 ## Module 1: HTML&CSS
 - [HTML&CSS Part1](./HTML&CSS/HTML&CSS_Part1.md)
+- [HTML&CSS Tutorial](./HTML&CSS/HTML&CSS_Tutorial.md)
