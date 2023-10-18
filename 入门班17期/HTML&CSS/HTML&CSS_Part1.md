@@ -38,6 +38,7 @@
   ***！+ Tab***
 
   ### 网页基本格式
+  ```html
   <!DOCTYPE html>  /*!声明html版本，必须放第一行，不是一个html标签，不属于html中的一部分
   <html lang="en"> 
   <head>
@@ -49,6 +50,7 @@
     
   </body>
   </html>
+  ```
 
   ### Tag
   - 大多数tag是要有闭合标签(`<div></div>`)
