@@ -16,7 +16,7 @@
 
   # Note
 
-  ## HTML & CSS Part 1(18/10/2023)
+  ## HTML & CSS Part 1(`18/10/2023`)
   
   ### 解决问题实用网站
   - stack overflow
