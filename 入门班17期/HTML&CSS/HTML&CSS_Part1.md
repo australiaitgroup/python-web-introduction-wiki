@@ -159,7 +159,29 @@
 #### form（表单）
 - 所有的input只能放在form里面才能提交
 - crtl+/ 创建一个<--!-->
-  
 
+#### input（输入）
+- input是个单标签
+- 单选的type为radio，且必须有相同的name才能实现单选
+```html
+gender:
+      male<input type="radio" name="gender" value="male">
+      female<input type="radio" name="gender" value="female">
+      other<input type="radio" name="gender" value="other">
+    </form>
+```
+- 多选的type为checkbox，最好也用相同的name
+```html
+hobby:
+      eating<input type="checkbox" name="hobby">
+      fishing<input type="checkbox" name="hobby">
+      traveling<input type="checkbox" name="hobby">
+```
+- 点击submit，可以把form包括里面的inputs都提交给后端服务器
+```html
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <input type="button" value="login"><br/>
+```
 
   
