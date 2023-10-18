@@ -55,7 +55,7 @@
   - vscode icons
 
   ### Live Server 使用方法
-  当前编辑的文件是index.html, 点击右下角'go live', 出现网页.<br>
+  当前编辑的文件是index.html, 点右键'open with live server', 出现网页.<br>
   ```路径问题: vscode文件根目录决定live server url```<br>
   1. 如果index.html就在根目录下 -> `http://127.0.0.1:5500/index.html`
   2. 如果index.html在二级目录下 -> `http://127.0.0.1:5500/folder_name/index.html`
