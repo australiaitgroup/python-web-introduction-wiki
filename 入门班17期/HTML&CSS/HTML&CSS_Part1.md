@@ -95,9 +95,9 @@
   - _blank,新窗口打开
   *可以在a标签中包一个img，意为用该图片作为超链接载体*
   
-  '''html
-    <a href="https://www.google.com" target="_blank">
+  ```html
+  <a href="https://www.agemys.org/?ref=301/" target="_blank">
       <img src="cat.jpg" alt="cat">
-    </a> 
-  '''
+  </a>
+  ```
   
