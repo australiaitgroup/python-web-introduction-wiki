@@ -91,8 +91,9 @@
   - 网页元素连接，比如文本，图像，表格，音频，视频等都可以添加超链接
   - _self default value,当前窗口打开
   - _blank,新窗口打开
+  *可以在a标签中包一个img，意为用该图片作为超链接载体*
   ''' <a href="https://www.google.com" target="_blank">
       <img src="cat.jpg" alt="cat">
-    </a> 可以在a标签中包一个img，意为用该图片作为超链接载体
+    </a> 
   '''
   
