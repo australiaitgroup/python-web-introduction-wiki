@@ -100,4 +100,43 @@
       <img src="cat.jpg" alt="cat">
   </a>
   ```
+
+### 创建一个table
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+  </head>
+  <body>
+    <table
+      align="center"
+      border="1"
+      width="500"
+      height="250"
+      cellspacing="0"
+      cellpadding="0" /*修改一些格式，不用硬记
+    >
+      <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>gender</th>
+      </tr>
+      <tr>
+        <td>Ben Hi</td>
+        <td>20</td>
+        <td>male</td>
+      </tr>
+      <tr>
+        <td>Chris Li</td>
+        <td>30</td>
+        <td>Female</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```  
   
