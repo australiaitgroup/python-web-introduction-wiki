@@ -184,4 +184,19 @@ hobby:
       <input type="button" value="login"><br/>
 ```
 
+#### label
+- 当点击label标签，浏览器就会自动聚焦到对应的input上，来增加用户体验
+- for 和id要匹配
+
+#### select
+- selected默认选中状态
+```html
+ <label for="Country">Country</label>
+      <select name="" id="Country">
+        <option value="Australia">Australia</option>
+        <option value="China">China</option>
+        <option value="USA"selected>USA</option>
+      </select>
+```
+
   
