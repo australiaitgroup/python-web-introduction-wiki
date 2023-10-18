@@ -18,14 +18,14 @@
   - JavaScript（主管交互）（编程语言）
 
   ### 一些实用的插件
-  live server
-  prttier
-  auto close tag
-  auto rename tag
-  code spell checker
-  color highlight
-  image preview
-  vscode icons
+  - live server
+  - prttier
+  - auto close tag
+  - auto rename tag
+  - code spell checker
+  - color highlight
+  - image preview
+  - vscode icons
 
   ### Live Server 使用方法
   当前编辑的文件是index.html, 点击右下角'go live', 出现网页.<br>
@@ -75,14 +75,24 @@
   #### div, span标签
   - div，span都没有语义
   - div是用来布局的，独占一行，可以看成是个超大的盒子
-  - div是用来布局的，独占一行，可以看成是个超大的盒子
+  - span也是用来布局的，一行可放多个
 
   #### image标签
   - img是单标签，src是必须属性，表示图片的路径
   - img提供width和height属性可以修改，在实际开发中，要么修改高度，要么修改宽度，<br>只需要修改其中的一个，另外一个让它等比例缩放，就不会压扁失真
-  - 
 
+  #### 下一级路径
+  - src中输入'/'以导入更下一级路径
 
+  #### 绝对路径
+  - src中直接输入图片网址即可
 
-
+  #### a标签(创建超链接)
+  - 网页元素连接，比如文本，图像，表格，音频，视频等都可以添加超链接
+  - _self default value,当前窗口打开
+  - _blank,新窗口打开
+  ''' <a href="https://www.google.com" target="_blank">
+      <img src="cat.jpg" alt="cat">
+    </a> 可以在a标签中包一个img，意为用该图片作为超链接载体
+  '''
   
