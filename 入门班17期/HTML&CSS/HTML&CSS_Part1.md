@@ -5,17 +5,17 @@
 
   # Note
 
-  ##HTML & CSS Part 1(18/10/2023)
+  ## HTML & CSS Part 1(18/10/2023)
   
   ### 解决问题实用网站
-  stack overflow
-  w3c school\ mdn(语法)
-  chatGPT
+  - stack overflow
+  - w3c school\ mdn(语法)
+  - chatGPT
 
   ### 网页开发三大件
-  HTML(主管结构)（标记语言）
-  CSS（主管格式）（标记语言）
-  JavaScript（主管交互）（编程语言）
+  - HTML(主管结构)（标记语言）
+  - CSS（主管格式）（标记语言）
+  - JavaScript（主管交互）（编程语言）
 
   ### 一些实用的插件
   live server
@@ -77,8 +77,10 @@
   - div是用来布局的，独占一行，可以看成是个超大的盒子
   - div是用来布局的，独占一行，可以看成是个超大的盒子
 
-  
-  
+  #### image标签
+  - img是单标签，src是必须属性，表示图片的路径
+  - img提供width和height属性可以修改，在实际开发中，要么修改高度，要么修改宽度，<br>只需要修改其中的一个，另外一个让它等比例缩放，就不会压扁失真
+  - 
 
 
 
