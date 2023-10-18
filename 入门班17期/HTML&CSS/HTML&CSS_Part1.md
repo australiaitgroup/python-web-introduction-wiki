@@ -59,7 +59,7 @@
 
   #### h标签是标题标签的一种
   ```<h1>,<h2>... <h6> 从大到小, 会加粗```
-  - ***h标签是block element***
+  ```h标签是block element```
 
   #### p标签
   - p 会根据浏览器窗口的宽度自动换行， 段落之间有空隙
@@ -102,6 +102,8 @@
   ```
 
 ### 创建一个table
+- th会加粗和居中
+- 股票一般用表格做，用来展示数据
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -113,12 +115,12 @@
   </head>
   <body>
     <table
-      align="center"
+      align="center"  /*修改一些格式，不用硬记
       border="1"
       width="500"
       height="250"
-      cellspacing="0"
-      cellpadding="0" /*修改一些格式，不用硬记
+      cellspacing="0" /*cellspacing:单元格之间的缝隙
+      cellpadding="0" /*cellpadding:内容和单元格之间的padding
     >
       <tr>
         <th>name</th>
@@ -138,5 +140,26 @@
     </table>
   </body>
 </html>
-```  
+```
+
+#### ul（无序列表）
+- ul里面只能放li，这是一个规范（避免不同浏览器显示不同）
+- li里面还能放置别的标签
+- li为block性质，独占一行
+
+#### ol（有序列表）
+- 同样，建议ol里面放li
+- li里面还能放置别的标签
+- ol里的li前面会有序号
+
+#### dl（自定义列表）
+- dl里只能有dt（标题）和dd（数据），这是规范
+- dt,dd里面可以放任何标签
+
+#### form（表单）
+- 所有的input只能放在form里面才能提交
+- crtl+/ 创建一个<--!-->
+  
+
+
   
