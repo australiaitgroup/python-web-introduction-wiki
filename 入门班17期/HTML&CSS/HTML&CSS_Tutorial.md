@@ -14,8 +14,8 @@
         - [其他常用](#其他常用)
         - [拓展](#拓展)
             - [块级元素和行内元素](#块级元素和行内元素)
-                - [块级元素：h1-h6,div,section,nav,ol,ul,form](#块级元素：h1-h6,div,section,nav,ol,ul,form)
-                - [行内元素：span,strong,img（inline-block）,input,textarea,select](#行内元素：span,strong,img（inline-block）,input,textarea,select)
+                - [块级元素](#块级元素)
+                - [行内元素](#行内元素)
                 - [dom中HTMDivElement继承关系](#dom中HTMDivElement继承关系)
         - [练习](#练习)
 
