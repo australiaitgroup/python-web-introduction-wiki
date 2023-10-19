@@ -147,7 +147,7 @@ elements:
   ```
 -  统称media标签，一般里面套source，可修改样式
   ```
-   <audio>,<vedio>
+  <audio>,<vedio>
   ```
 - 分隔标签
   ```
