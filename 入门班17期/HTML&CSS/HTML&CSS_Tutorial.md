@@ -1,6 +1,27 @@
+-[Note](#Note)
+    -[html tutorial(1)(19/10/2023)](#html-tutorial-19102023)
+        -[练习网站](#练习网站)
+        -[html-tags-elements-attributes的语法规范](#html-tags-elements-attributes的语法规范)
+        -[文档结构](#文档结构)
+        -[一些小tips](#一些小tips)
+        -[a标签-超链接](#a标签-超链接)
+        -[section标签](#section标签)
+        -[相对路径-绝对路径](#相对路径-绝对路径)
+        -[文本标签](#文本标签)
+        -[链接和图像](#链接和图像)
+        -[表格和列表](#表格和列表)
+        -[表单](#表单)
+        -[其他常用](#其他常用)
+        -[拓展](#拓展)
+            -[块级元素和行内元素](#块级元素和行内元素)
+                -[块级元素：h1-h6,div,section,nav,ol,ul,form](#块级元素：h1-h6,div,section,nav,ol,ul,form)
+                -[行内元素：span,strong,img（inline-block）,input,textarea,select](#行内元素：span,strong,img（inline-block）,input,textarea,select)
+                -[dom中HTMDivElement继承关系](#dom中HTMDivElement继承关系)
+        -[练习](#练习)
+
 # Note
 
-## html tutorial (1)(19/10/2023)
+## html tutorial (`19/10/2023`)
 
 ### 练习网站
 ``` https://www.practiceboard.com/ ```
