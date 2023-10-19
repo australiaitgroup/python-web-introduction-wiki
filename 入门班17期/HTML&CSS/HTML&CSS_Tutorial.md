@@ -54,7 +54,7 @@ elements:
   <link rel="icon" type="image" href="https://jubic.notion.site/images/favicon.ico">
 </head>
 ```
-- 导航栏nav
+- 导航栏nav<br>
 ```没有具体的意思，主要告诉你这是一个导航栏```
 
 ### a标签-超链接
@@ -134,7 +134,12 @@ elements:
 ```
 
 ### 其他常用
--
+- <span>
+- <nav/>，<footer/> ：固定
+- <iframe/>: 添加视频、音频，内嵌，和页面本身完全不交互，不能修改样式
+- <audio>,<vedio>: 统称media标签，一般里面套source，可修改样式
+- <hr> : 分隔标签
+- <>
 
 ### 拓展
 #### 块级元素和行内元素
@@ -143,8 +148,24 @@ elements:
 - 块级元素可以包含块级元素和行内元素
 - 高度和宽度是可控的
 - 宽度没有设置是，默认是100%
-##### 行内元素：span,strong,img,input,textarea,select
+##### 行内元素：span,strong,img（inline-block）,input,textarea,select
 - 和其他元素在一行，不会换行
-- 高度和宽度都是不可控的，高度和宽度
+- 高度和宽度都是不可控的，高度和宽度就是内容宽高
+- inline-block可以设置高度和宽度
+- 行内元素可以包含行内元素，但不可以包含块级元素
+##### dom中HTMDivElement继承关系
+- HTMDivElement -> HTMElement -> Node -> EventTarget
+- HTMDivElement继承自HTMElement，所有HTMDivElement是HTMElement的子类，HTMDivElement有HTMElement所有的feature
+```
+人：EventTarget<br>
+女人、男人：Node<br>
+女生：Element
+```
+- HTMDivElement div
+- EventTarget eventListener[EventTarget]
+
+### 练习
+- https://www.khanacademy.org/computing/computer-programming/html-css/html-css-further-learning/e/quiz--validate-this-html
+- https://www.w3resource.com/html-css-exercise/basic/
 
 
