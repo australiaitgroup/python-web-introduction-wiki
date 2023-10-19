@@ -199,8 +199,8 @@ elements:
 女人、男人：Node
 女生：Element
 ```
-- HTMDivElement div
-- EventTarget eventListener[EventTarget]
+- HTMDivElement : div
+- EventTarget : eventListener[EventTarget]
 
 ### 练习
 - https://www.khanacademy.org/computing/computer-programming/html-css/html-css-further-learning/e/quiz--validate-this-html
