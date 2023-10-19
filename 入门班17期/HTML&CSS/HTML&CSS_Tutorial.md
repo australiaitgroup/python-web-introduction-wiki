@@ -179,12 +179,14 @@ elements:
 
 ### 拓展
 #### 块级元素和行内元素
-##### 块级元素：h1-h6,div,section,nav,ol,ul,form
+##### 块级元素
+***h1-h6,div,section,nav,ol,ul,form***
 - 总是从新的一行开始
 - 块级元素可以包含块级元素和行内元素
 - 高度和宽度是可控的
 - 宽度没有设置是，默认是100%
-##### 行内元素：span,strong,img（inline-block）,input,textarea,select
+##### 行内元素
+***span,strong,img（inline-block）,input,textarea,select***
 - 和其他元素在一行，不会换行
 - 高度和宽度都是不可控的，高度和宽度就是内容宽高
 - inline-block可以设置高度和宽度
