@@ -157,8 +157,8 @@ elements:
 - HTMDivElement -> HTMElement -> Node -> EventTarget
 - HTMDivElement继承自HTMElement，所有HTMDivElement是HTMElement的子类，HTMDivElement有HTMElement所有的feature
 ```
-人：EventTarget<br>
-女人、男人：Node<br>
+人：EventTarget
+女人、男人：Node
 女生：Element
 ```
 - HTMDivElement div
