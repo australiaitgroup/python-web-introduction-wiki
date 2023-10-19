@@ -145,7 +145,7 @@ elements:
   ```
   <iframe/>
   ```
--  统称media标签，一般里面套source，可修改样式
+- 统称media标签，一般里面套source，可修改样式
   ```
   <audio>,<vedio>
   ```
