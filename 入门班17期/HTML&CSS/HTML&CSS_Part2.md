@@ -340,81 +340,81 @@ p{
 
 ### 复合选择器之子元素选择器
 - 只对子元素第一层的元素应用样式，孙级的不管
-  ```html
-  <head>
-    <style>
-      /*.nav a （child) -> color red */
-     .nav > a {
-      color: red;
-     }
-    </style>
-  </head>
+```html
+<head>
+  <style>
+    /*.nav a （child) -> color red */
+   .nav > a {
+    color: red;
+   }
+  </style>
+</head>
 
-  <body>
-    <div class="nav">
-      <a href="">I'm the child</a>
-      <p>
-        <a href="">I'm the grandchildren</a>
-      </p>
-    </div>
-  </body>
-  ```
+<body>
+  <div class="nav">
+    <a href="">I'm the child</a>
+    <p>
+      <a href="">I'm the grandchildren</a>
+    </p>
+  </div>
+</body>
+```
 
 
 ### 复合选择器之并集选择器
-  ```html
-  <head>
-    <style>
-      /* 把cat,dog,还有小猪一家改为粉色 */
-     div,
-     .pig li {
-      color: pink;
-     }
-    </style>
-  </head>
+```html
+<head>
+  <style>
+    /* 把cat,dog,还有小猪一家改为粉色 */
+   div,
+   .pig li {
+    color: pink;
+   }
+  </style>
+</head>
 
-  <body>
-   <div class="pink">cat</div>
-   <p class="pink">dog</p>
-   <span>george</span>
-   <ul class="pig">
-    <li>peppa pig</li>
-    <li>mum</li>
-    <li>dad</li>
-   </ul>
-  </body>
-  ```
+<body>
+ <div class="pink">cat</div>
+ <p class="pink">dog</p>
+ <span>george</span>
+ <ul class="pig">
+  <li>peppa pig</li>
+  <li>mum</li>
+  <li>dad</li>
+ </ul>
+</body>
+```
 
 
 ### 复合选择器之链接伪类选择器
-  ```html
-  <head>
-    <style>
-      /* 未访问过的链接 a:link */
-      a:link {
-        color: brown;
-        text-decoration: none;
-      }
-      /* 访问过的链接 a:visited */
-      a:visited {
-        color: orange;
-      }
-      /* 鼠标经过的链接 a:hover */
-      a:hover {
-        color: skyblue;
-      }
-      /* 鼠标按下还没有弹起的链接 a:active */
-      a:active {
-        color: green;
-      }
-    </style>
-  </head>
+```html
+<head>
+  <style>
+    /* 未访问过的链接 a:link */
+    a:link {
+      color: brown;
+      text-decoration: none;
+    }
+    /* 访问过的链接 a:visited */
+    a:visited {
+      color: orange;
+    }
+    /* 鼠标经过的链接 a:hover */
+    a:hover {
+      color: skyblue;
+    }
+    /* 鼠标按下还没有弹起的链接 a:active */
+    a:active {
+      color: green;
+    }
+  </style>
+</head>
 
-  <body>
-    <a href="#">peppa pig</a>
-    <a href="http://www.xxxxxxxx.com">website</a>
-  </body>
-  ```
+<body>
+  <a href="#">peppa pig</a>
+  <a href="http://www.xxxxxxxx.com">website</a>
+</body>
+```
 
   
 ### focus伪类选择器
@@ -440,96 +440,97 @@ p{
 
 ### 显示模式之行内块元素(特殊情况)
 - 块级元素block
-  ```html
-  一行只能放一个<br>
-  可以设置宽高<br>
-  默认宽度容器的100%<br>
-  可以包含任何标签
-  ```
-- 行内元素inline
-  ```html
-  一行可以放多个<br>
-  不可以直接设置宽高<br>
-  默认宽度是本身的内容宽度<br>
-  可容纳文本或其他行内元素
-  ```
-- 行内块元素inline-block
-  ```html
-  一行可以放多个<br>
-  可以设置宽高<br>
-  默认宽度是本身的内容宽度
 ```html
- <head>
-    <style>
-      /* inline元素特点:设宽高无效，对margin和padding仅设置左右方向有效，上下无效
-         a里面不能再放链接，a里面可以放块级元素
-         inline-block元素特点  :宽高，行高，margin，padding都可以控制
-         img input td
-        */
-        span, input {
-          width: 200px;
-          height: 200px;
-        }
-    </style>
-  </head>
+一行只能放一个<br>
+可以设置宽高<br>
+默认宽度容器的100%<br>
+可以包含任何标签
+```
+- 行内元素inline
+```html
+一行可以放多个<br>
+不可以直接设置宽高<br>
+默认宽度是本身的内容宽度<br>
+可容纳文本或其他行内元素
+```
+- 行内块元素inline-block
+```html
+一行可以放多个<br>
+可以设置宽高<br>
+默认宽度是本身的内容宽度
+```
+```html
+<head>
+  <style>
+    /* inline元素特点:设宽高无效，对margin和padding仅设置左右方向有效，上下无效
+       a里面不能再放链接，a里面可以放块级元素
+       inline-block元素特点  :宽高，行高，margin，padding都可以控制
+       img input td
+      */
+      span, input {
+        width: 200px;
+        height: 200px;
+      }
+  </style>
+</head>
 
-  <body>
-    <span>hello world hello world hello world</span>           /*inline元素*/
-    <strong>hello world hello world hello world</strong>       /*inline元素*/
-    <table>                                                    /*block元素*/
-      <tr>                                                    
-        <td>cell a</td>                                        
-        <td>cell b</td>
-      </tr> 
-      <tr>                                                     /*block元素*/
-        <td>cell a</td>                                        /*inline-block元素*/
-        <td>cell b</td>
-      </tr>
-    </table>
-    <input type="text">                                        /*inline-block元素*/
-    <input type="text">
-    <span>hello</span>
-  </body>
+<body>
+  <span>hello world hello world hello world</span>           /*inline元素*/
+  <strong>hello world hello world hello world</strong>       /*inline元素*/
+  <table>                                                    /*block元素*/
+    <tr>                                                    
+      <td>cell a</td>                                        
+      <td>cell b</td>
+    </tr> 
+    <tr>                                                     /*block元素*/
+      <td>cell a</td>                                        /*inline-block元素*/
+      <td>cell b</td>
+    </tr>
+  </table>
+  <input type="text">                                        /*inline-block元素*/
+  <input type="text">
+  <span>hello</span>
+</body>
 ```
 
 
 ### 元素显示模式转换
 ```html
 <head>
-    <style>
-      /* 给 a 设宽150px,高50px，独占一行 */
-      a {
-        display: block;
-        background-color: red;
-        width: 150px;
-        height: 50px;
-      }
-      /* 把 div 块级元素转换为行内元素，此时设置宽高无效*/
-      div {
-        display: inline;
-        background-color: purple;
-        width: 300px;
-        height: 100px;
-      }
-      /* 给span 设宽150px,高50px，一行多个 */
-      span {
-        display: inline-block;
-        width: 150px;
-        height: 50px;
-        background-color: blue;
-      }
-     
-    </style>
-  </head>
+  <style>
+    /* 给 a 设宽150px,高50px，独占一行 */
+    a {
+      display: block;
+      background-color: red;
+      width: 150px;
+      height: 50px;
+    }
+    /* 把 div 块级元素转换为行内元素，此时设置宽高无效*/
+    div {
+      display: inline;
+      background-color: purple;
+      width: 300px;
+      height: 100px;
+    }
+    /* 给span 设宽150px,高50px，一行多个 */
+    span {
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      background-color: blue;
+    }
+   
+  </style>
+</head>
 
-  <body>
-    <a href="#">hello world</a>
-    <a href="#">hello world</a>
-    <div>hello world</div>
-    <div>hello world</div>
-    <span>hello world</span>
-    <span>hello world</span>
-  </body>
+<body>
+  <a href="#">hello world</a>
+  <a href="#">hello world</a>
+  <div>hello world</div>
+  <div>hello world</div>
+  <span>hello world</span>
+  <span>hello world</span>
+</body>
 ```
   
   
