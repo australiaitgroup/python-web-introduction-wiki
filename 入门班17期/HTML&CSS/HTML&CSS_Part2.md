@@ -474,21 +474,21 @@ p{
   </head>
 
   <body>
-    <span>hello world hello world hello world</span>/*inline元素*/
-    <strong>hello world hello world hello world</strong>/*inline元素*/
-    <table>  /*block元素*/
-      <tr> /*block元素*/
-        <td>cell a</td>/*inline-block元素*/
+    <span>hello world hello world hello world</span>           /*inline元素*/
+    <strong>hello world hello world hello world</strong>       /*inline元素*/
+    <table>                                                    /*block元素*/
+      <tr>                                                    
+        <td>cell a</td>                                        
         <td>cell b</td>
-      </tr>
-      <tr>
-        <td>cell a</td>
+      </tr> 
+      <tr>                                                     /*block元素*/
+        <td>cell a</td>                                        /*inline-block元素*/
         <td>cell b</td>
       </tr>
     </table>
-    <input type="text">/*inline-block元素*/
-    <input type="text">/*inline-block元素*/
-    <span>hello</span>/*inline元素*/
+    <input type="text">                                        /*inline-block元素*/
+    <input type="text">
+    <span>hello</span>
   </body>
 ```
 
