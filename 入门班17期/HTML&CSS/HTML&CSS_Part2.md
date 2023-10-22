@@ -449,10 +449,6 @@ p{
   ### 元素显示模式转换
 ```html
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>元素显示模式转换</title>
     <style>
       /* 给 a 设宽150px,高50px，独占一行 */
       a {
