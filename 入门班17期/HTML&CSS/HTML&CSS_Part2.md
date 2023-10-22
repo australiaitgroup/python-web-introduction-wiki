@@ -215,5 +215,188 @@ p{
   /*一般整体行高26px，font字体20px，那上下边框高度就各是3px*/
   ```
 
+### HTML中引入CSS样式
+#### 行内样式
+- 只控制一个标签，优先级非常高
+```html
+<style>
+    p {
+      color: red;
+    }
+    #red {
+      color:red
+    }
+  </style>
+  <body>
+    <p>We're focused on bettering the lives of pets and pet parents alike!</p>
+    <p>We're focused on bettering the lives of pets and pet parents alike!</p>
+    <p style="color: pink; font-size: 20px;" class="red" id="red">We're focused on bettering the lives of pets and pet parents alike!</p>
+  </body>
+/*最后结果会还是pink因为inline-style有着最高的优先级*/
+```
+#### 内部样式表
+- 只控制一个页面
+- 优点：方便在同页面中修改样式
+- 缺点：不利于在多页面间共享复用代码及维护，对内容与样式的分离也不够彻底
+- viewport：指网页默认宽度
+- content="width=device-width ：指网页宽度是屏幕同样宽度
+- initial-scale=1.0：指初始缩放比例为1.0
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+/*初始网页结构里一般都有这一句，以表示初始网页结构状态*/
+```
+
+#### 外部样式表
+- 通过导入外部样式，给div添加样式
+```html
+<link rel="stylesheet" href="style.css" type="text/css"/>
+/*         文件路径       使用外部样式         文件类型*/
+```
+
+### 复合选择器之后代选择器
+- 可缩小范围，给予特定的标签想要的样式
+```html
+<head>
+    <style>
+      /* ol->li pink,ol->a red, .nav->a yellow */
+      ol li {
+        color: pink;
+      }                  /*只修改ol里的li*/
+      ol li a {
+        color: red;
+      }                  /*只修改ol中的a标签*/
+      .nav li a {
+        color: yellow;
+      }                  /*只修改class：'nav'中的带a标签的li*/
+    </style>
+  </head>
+
+  <body>
+    <ol>
+      <li>I'm ol</li>
+      <li>I'm ol</li>
+      <li>I'm ol</li>
+      <li><a href="#">I'm a</a></li>
+    </ol>
+    <ul>
+      <li>I'm ul</li>
+      <li>I'm ul</li>
+      <li>I'm ul</li>
+      <li><a href="#">I'm a</a></li>
+    </ul>
+    <ul class="nav">
+      <li>I'm ul</li>
+      <li>I'm ul</li>
+      <li>I'm ul</li>
+      <li><a href="#">I'm a</a></li>
+      <li><a href="#">I'm a</a></li>
+      <li><a href="#">I'm a</a></li>
+      <li><a href="#">I'm a</a></li>
+    </ul>
+  </body>
+```
+
+### 复合选择器之子元素选择器
+- 只对子元素第一层的元素应用样式，孙级的不管
+  ```html
+  <head>
+    <style>
+      /*.nav a （child) -> color red */
+     .nav > a {
+      color: red;
+     }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <a href="">I'm the child</a>
+      <p>
+        <a href="">I'm the grandchildren</a>
+      </p>
+    </div>
+  </body>
+  ```
+
+  ### 复合选择器之并集选择器
+  ```html
+  <head>
+    <style>
+      /* 把cat,dog,还有小猪一家改为粉色 */
+     div,
+     .pig li {
+      color: pink;
+     }
+    </style>
+  </head>
+
+  <body>
+   <div class="pink">cat</div>
+   <p class="pink">dog</p>
+   <span>george</span>
+   <ul class="pig">
+    <li>peppa pig</li>
+    <li>mum</li>
+    <li>dad</li>
+   </ul>
+  </body>
+  ```
+
+  ### 复合选择器之链接伪类选择器
+  ```html
+  <head>
+    <style>
+      /* 未访问过的链接 a:link */
+      a:link {
+        color: brown;
+        text-decoration: none;
+      }
+      /* 访问过的链接 a:visited */
+      a:visited {
+        color: orange;
+      }
+      /* 鼠标经过的链接 a:hover */
+      a:hover {
+        color: skyblue;
+      }
+      /* 鼠标按下还没有弹起的链接 a:active */
+      a:active {
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#">peppa pig</a>
+    <a href="http://www.xxxxxxxx.com">website</a>
+  </body>
+  ```
+### focus伪类选择器
+```html
+<head>
+    <style>
+      /* // Select the input that has received focus,set background color:lightblue,color:red */
+      input:focus {
+        background-color: lightblue;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+  </body>
+/*最终效果是输入框里点击，背景框颜色会变成天蓝色*/
+
+
+### CSS常用属性
+- 块级元素block-一行只能放一个-可以设置宽高-默认宽度容器的100%-可以包含任何标签
+- 行内元素inline-一行可以放多个-不可以直接设置宽高-默认宽度是本身的内容宽度-可容纳文本或其他行内元素
+- 行内块元素inline-block-一行可以放多个-可以设置宽高-默认宽度是本身的内容宽度
+  
+
+
 
   
