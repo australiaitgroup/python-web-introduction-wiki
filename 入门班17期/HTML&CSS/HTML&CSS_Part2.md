@@ -113,3 +113,27 @@ p{
    <div class="box red">red hello world</div>
 </body>
 ```
+
+
+### ID选择器
+- 样式#定义, 结构id调用, 只能调用一次, 别人切勿使用
+- id优先级>class,id难以重用和拓展
+```html
+<head>
+<style>
+    #green {
+      color: green;
+    }
+    .green {
+      color: lightgreen;
+    }
+    .red {
+      color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="green" class="red">coffee</div>
+    <div class="green">tea</div>
+  </body>
+```
