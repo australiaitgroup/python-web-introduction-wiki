@@ -389,12 +389,107 @@ p{
     <input type="text">
   </body>
 /*最终效果是输入框里点击，背景框颜色会变成天蓝色*/
+```
 
 
-### CSS常用属性
-- 块级元素block-一行只能放一个-可以设置宽高-默认宽度容器的100%-可以包含任何标签
-- 行内元素inline-一行可以放多个-不可以直接设置宽高-默认宽度是本身的内容宽度-可容纳文本或其他行内元素
-- 行内块元素inline-block-一行可以放多个-可以设置宽高-默认宽度是本身的内容宽度
+### 显示模式之行内块元素(特殊情况)
+- 块级元素block
+  ```html
+  一行只能放一个<br>
+  可以设置宽高<br>
+  默认宽度容器的100%<br>
+  可以包含任何标签
+  ```
+- 行内元素inline
+  ```html
+  一行可以放多个<br>
+  不可以直接设置宽高<br>
+  默认宽度是本身的内容宽度<br>
+  可容纳文本或其他行内元素
+  ```
+- 行内块元素inline-block
+  ```html
+  一行可以放多个<br>
+  可以设置宽高<br>
+  默认宽度是本身的内容宽度
+```html
+ <head>
+    <style>
+      /* inline元素特点:设宽高无效，对margin和padding仅设置左右方向有效，上下无效
+         a里面不能再放链接，a里面可以放块级元素
+         inline-block元素特点  :宽高，行高，margin，padding都可以控制
+         img input td
+        */
+        span, input {
+          width: 200px;
+          height: 200px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <span>hello world hello world hello world</span>/*inline元素*/
+    <strong>hello world hello world hello world</strong>/*inline元素*/
+    <table>  /*block元素*/
+      <tr> /*block元素*/
+        <td>cell a</td>/*inline-block元素*/
+        <td>cell b</td>
+      </tr>
+      <tr>
+        <td>cell a</td>
+        <td>cell b</td>
+      </tr>
+    </table>
+    <input type="text">/*inline-block元素*/
+    <input type="text">/*inline-block元素*/
+    <span>hello</span>/*inline元素*/
+  </body>
+```
+
+  ### 元素显示模式转换
+```html
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>元素显示模式转换</title>
+    <style>
+      /* 给 a 设宽150px,高50px，独占一行 */
+      a {
+        display: block;
+        background-color: red;
+        width: 150px;
+        height: 50px;
+      }
+      /* 把 div 块级元素转换为行内元素，此时设置宽高无效*/
+      div {
+        display: inline;
+        background-color: purple;
+        width: 300px;
+        height: 100px;
+      }
+      /* 给span 设宽150px,高50px，一行多个 */
+      span {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        background-color: blue;
+      }
+     
+    </style>
+  </head>
+
+  <body>
+    <a href="#">hello world</a>
+    <a href="#">hello world</a>
+    <div>hello world</div>
+    <div>hello world</div>
+    <span>hello world</span>
+    <span>hello world</span>
+  </body>
+```
+  
+  
   
 
 
