@@ -141,7 +141,7 @@ p{
 ```
 
 ### 基础选择器之通配符选择器
-- 通配符：'*'能影响所有因素，但优先级很低，很容易被其他格式覆盖
+- 通配符：'*' 能影响所有因素，但优先级很低，很容易被其他格式覆盖
   ```html
   <head>
   <style>
@@ -164,3 +164,53 @@ p{
       <li>hello world</li>
     </ul>
   </body>
+
+  ### CSS字体属性之复合属性
+  - font-style：字体样式
+  - font-weight：字体粗细
+  - font-size：字体大小
+  - font-family：字体
+  - 各种字体样式可以写成复合样式（合并在一行写，中间空格隔开）
+  - font-size和font-family是必须的，不然就会采用默认的样式
+  ```html
+  <head>
+    <style>
+      /* 想要div文字变倾斜 加粗 字号设置为16px 并且 字体Arial */
+      /* font-size, font-family are required */
+     #text {
+      /* font-style: italic;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif; */
+      font: bold 16px italic Arial 
+     }
+    </style>
+  </head>
+  <body>
+    <div id="text">join our community of pet lovers</div>
+  </body>
+  ```
+
+  ### CSS文本外观之行间距
+  - 文字水平居中对齐,加下划线，文字颜色
+  ```html
+  .header {
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(255, 0, 255);
+      }
+  ```
+  - 取消默认的下划线
+  ```html
+  a {
+        text-decoration: none;
+      }
+  ```
+  - line height 包括上间距，下间距和文字本身高度
+  ```html
+  p {
+        line-height: 26px;
+      }
+  /*一般整体行高26px，font字体20px，那上下边框高度就各是3px*/
+  ```
+  
