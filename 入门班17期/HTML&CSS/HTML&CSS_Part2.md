@@ -420,20 +420,20 @@ p{
 ### focus伪类选择器
 ```html
 <head>
-    <style>
-      /* // Select the input that has received focus,set background color:lightblue,color:red */
-      input:focus {
-        background-color: lightblue;
-        color: red;
-      }
-    </style>
-  </head>
+  <style>
+    /* // Select the input that has received focus,set background color:lightblue,color:red */
+    input:focus {
+      background-color: lightblue;
+      color: red;
+    }
+  </style>
+</head>
 
-  <body>
-    <input type="text">
-    <input type="text">
-    <input type="text">
-  </body>
+<body>
+  <input type="text">
+  <input type="text">
+  <input type="text">
+</body>
 /*最终效果是输入框里点击，背景框颜色会变成天蓝色*/
 ```
 
