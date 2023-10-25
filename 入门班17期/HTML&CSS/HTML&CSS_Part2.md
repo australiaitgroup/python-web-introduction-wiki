@@ -1,5 +1,5 @@
 - [Note](#Note)
-  - [HTML&CSS Part2(`22/10/2023`)](#html-css-part2-22102023)
+  - [HTML&CSS Part2(`22/10/2023`)](#html--css-part-2-22102023)
     - [CSS导入方法](#CSS导入方法)
     - [一些快捷打法](#一些快捷打法)
     - [CSS3基本选择器](#CSS3基本选择器)
@@ -30,7 +30,7 @@
 # Note
 
 
-## HTML&CSS Part2（`22/10/2023`）
+## HTML & CSS Part 2（`22/10/2023`）
 
 
 ### CSS的概念
