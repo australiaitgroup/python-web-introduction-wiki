@@ -24,17 +24,17 @@
 
 #### 优先级
 - 两个冲突的属性，一般在以下面的为准
-  ```html
-  <style>
-      /* pink离div近 覆盖红色，font不冲突不会覆盖*/
-     div {
-      color: red;
-      font-size: 12px;
-     }
-     div {
-      color: pink;
-     }
-    </style> /*此时会应用下方pink的颜色属性*/
+```html
+<style>
+    /* pink离div近 覆盖红色，font不冲突不会覆盖*/
+   div {
+    color: red;
+    font-size: 12px;
+   }
+   div {
+    color: pink;
+   }
+  </style> /*此时会应用下方pink的颜色属性*/
 - 优先级排序
 ```html
     <!-- style > id > class > tag -->
