@@ -26,7 +26,7 @@
     - [inline-element-center行内元素/行内块元素水平居中对齐](#inline-element-center行内元素/行内块元素水平居中对齐)
     - [box-shadow](#box-shadow)
     - [伪类before](#伪类before)
-    - [练习网站（50个JavaScript项目）](#练习网站（50个JavaScript项目）)
+    - [练习网站-50个JavaScript项目](#练习网站-50个JavaScript项目)
     
 
 
@@ -417,5 +417,5 @@
 </style>
 ```
 
-### 练习网站（50个JavaScript项目）
+### 练习网站-50个JavaScript项目
 https://github.com/bradtraversy/50projects50days
