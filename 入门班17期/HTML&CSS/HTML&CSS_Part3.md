@@ -5,7 +5,29 @@
       - [CSS的属性单位](#CSS的属性单位)
       - [优先级](#优先级)
     - [background类应用](#background类应用)
-      - []
+      - [background-color背景颜色](#background-color背景颜色)
+      - [background-image背景图片](#background-image背景图片)
+      - [background-repeat背景图片平铺](#background-repeat背景图片平铺)
+      - [background-position背景位置-方位名词](#background-position背景位置-方位名词)
+      - [background-position-case背景位置方位名词应用一](#background-position-case背景位置方位名词应用一)
+      - [background-position背景位置-精确单位](background-position背景位置-精确单位)
+      - [background-position背景位置-混合单位](#background-position背景位置-混合单位)
+      - [background-attachment超大背景图片](#background-attachment超大背景图片)
+      - [background-shorthand背景属性复合写法](#background-shorthand背景属性复合写法)
+    - [box-model-border](#box-model-border)
+      - [box-model盒子模型之边框](#box-model盒子模型之边框)
+      - [box-model-shorthand盒子模型之复合写法](#box-model-shorthand盒子模型之复合写法)
+      - [边框对盒子大小的影响](#边框对盒子大小的影响)
+      - [盒子模型之内边距1](#盒子模型之内边距1)
+      - [盒子模型之内边距2](#盒子模型之内边距2)
+      - [盒子模型之外边距margin](#盒子模型之外边距margin)
+      - [块级盒子水平居中对齐](#块级盒子水平居中对齐)
+    - [单行文字垂直居中](#单行文字垂直居中)
+    - [inline-element-center行内元素/行内块元素水平居中对齐](#inline-element-center行内元素/行内块元素水平居中对齐)
+    - [box-shadow](#box-shadow)
+    - [伪类before](#伪类before)
+    - [练习网站（50个JavaScript项目）](#练习网站（50个JavaScript项目）)
+    
 
 
 
@@ -78,20 +100,19 @@
 
 #### background-repeat背景图片平铺
 ```html
- <style>
-   /* 页面元素既可以添加背景颜色也可以添加背景图片 只不过背景图片会压住背景颜色 */
-    div {
-        width: 300px;
-        height: 300px;
-        background-color: yellow;
-        background-image: url(images/logo.png);
-        /* background-repeat: no-repeat; */
-        /* 沿着x轴平铺 */
-        /* background-repeat: repeat-x; */
-        /* 沿着y轴平铺 */
-        background-repeat: repeat-y;
-    }
-   
+<style>
+ /* 页面元素既可以添加背景颜色也可以添加背景图片 只不过背景图片会压住背景颜色 */
+  div {
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+      background-image: url(images/logo.png);
+      /* background-repeat: no-repeat; */
+      /* 沿着x轴平铺 */
+      /* background-repeat: repeat-x; */
+      /* 沿着y轴平铺 */
+      background-repeat: repeat-y;
+  }
 </style>
 ```
 
@@ -146,7 +167,7 @@
 </style>
 ```
 
-#### 背景位置-混合单位
+#### background-position背景位置-混合单位
 ```html
 <style>
   /* 注意x y顺序，如果指定一个，那一定是x */
@@ -214,7 +235,7 @@
 </style>
 ```
 
-#### box-model-shorthand
+#### box-model-shorthand盒子模型之复合写法
 ```html
 <style>
  .box {
@@ -395,3 +416,6 @@
   }
 </style>
 ```
+
+### 练习网站（50个JavaScript项目）
+https://github.com/bradtraversy/50projects50days
