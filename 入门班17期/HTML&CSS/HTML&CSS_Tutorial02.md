@@ -1,5 +1,5 @@
 - [Note](#Note)
-  - [HTML \& CSS tutorial (`26/10/2023`)](#html--css-tutorial-26102023)
+  - [HTML \& CSS tutorial02 (`26/10/2023`)](#html--css-tutorial02-26102023)
     - [css基本选择器](#css基本选择器)
     - [Text属性](#Text属性)
     - [引入CSS的三种方式](#引入CSS的三种方式)
