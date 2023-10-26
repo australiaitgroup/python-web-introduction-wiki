@@ -59,20 +59,20 @@ p,span {}                    //多标签同时应用
 div > p {}                   // 选择div（父）标签下所有p标签（child）
 div + p {}                   // div后第一个p
 div ~ p {}                   // div之后所有p
-:hover {}
-:active {}
-:focus {}
-:disable {}
+:hover {}                    // 将鼠标指针悬停在匹配该选择器的元素上时
+:active {}                   // 被用户激活时的状态:通常是在用户按下并持有鼠标按钮时触发的，直到释放为止
+:focus {}                    // 用于匹配当前获得键盘输入焦点的元素
+:disabled {}                 // 用于匹配表单元素在其处于禁用状态时的样式
 ```
 
 
 ### Text属性
-- font-famlily
-- font-size
-- color
-- text-align
-- line-height
-- text-decoration
+- font-famlily               //字体样式
+- font-size                  //字体大小
+- color                      //字体颜色
+- text-align                 //对齐方式
+- line-height                //行高
+- text-decoration            //文本内容修饰（下划线、上划线、删除线等）
 
 ### 引入CSS的三种方式
 - inline-style
@@ -124,11 +124,11 @@ div ~ p {}                   // div之后所有p
 
 
 ### 常用背景属性
-- background
-- background-color
-- background-img: url('path')
-- background-position
-- background-repeat
+- background                               // 背景
+- background-color                         // 背景颜色
+- background-img: url('path')              // 背景图片
+- background-position                      // 设置背景图像在一个元素中的位置
+- background-repeat                        // 控制背景图像在容器内的重复方式
 
 
 ### 样式冲突的优先级
