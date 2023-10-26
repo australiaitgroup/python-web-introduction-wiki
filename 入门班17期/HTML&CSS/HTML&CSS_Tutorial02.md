@@ -67,7 +67,7 @@ div ~ p {}                   // div之后所有p
 
 
 ### Text属性
-- font-famlily               //字体样式
+- font-famlily               `//字体样式`
 - font-size                  //字体大小
 - color                      //字体颜色
 - text-align                 //对齐方式
