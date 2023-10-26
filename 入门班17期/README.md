@@ -7,3 +7,4 @@
 - [Lecture03: HTML & CSS Part2](./HTML&CSS/HTML&CSS_Part2.md)
 - [Lecture04: HTML & CSS Part3](./HTML&CSS/HTML&CSS_Part3.md)
 - [Tutorial01: HTML & CSS Tutorial01](./HTML&CSS/HTML&CSS_Tutorial01.md)
+- [Tutorial02: HTML & CSS Tutorial02](./HTML&CSS/HTML&CSS_Tutorial02.md)
