@@ -1,4 +1,3 @@
-编程入门班17期笔记
 # 17th-notes
 
 ## Module 1: Web基础知识
