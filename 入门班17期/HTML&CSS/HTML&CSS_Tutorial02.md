@@ -129,26 +129,26 @@ div ~ p {}                   // div之后所有p
 - parent div：width已知, child div
 ```html
 <style>
-        .class1  {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            background-color: antiquewhite;
-            /* padding-top: 50px; */                //方法1：运用padding组合
-        }
-        .class2 {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            /* top: 50px; */                        //方法2：运用绝对定位的absolute的属性调整box位置
-            /* left: 50px; */
-            bottom: 50px;
-            right: 50px;
-            background-color: brown;
-            /* margin: auto; */
+    .class1  {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: antiquewhite;
+        /* padding-top: 50px; */                //方法1：运用padding组合
+    }
+    .class2 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        /* top: 50px; */                        //方法2：运用绝对定位的absolute的属性调整box位置
+        /* left: 50px; */
+        bottom: 50px;
+        right: 50px;
+        background-color: brown;
+        /* margin: auto; */
 
-        }
-    </style>
+    }
+</style>
 ```
 
 
@@ -167,7 +167,9 @@ div ~ p {}                   // div之后所有p
   使用 CSS 来设置导航栏样式，并确保文字垂直居中。
 ```
 - display: flex相关类型
+```html
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+```
 - 练习代码
 ```html
 <!DOCTYPE html>
