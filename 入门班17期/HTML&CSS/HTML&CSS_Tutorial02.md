@@ -67,13 +67,12 @@ div ~ p {}                   // div之后所有p
 
 
 ### Text属性
-- font-famlily
-`//字体样式`
-- font-size                  //字体大小
-- color                      //字体颜色
-- text-align                 //对齐方式
-- line-height                //行高
-- text-decoration            //文本内容修饰（下划线、上划线、删除线等）
+- font-famlily: 字体样式
+- font-size: 字体大小
+- color: 字体颜色
+- text-align:对齐方式
+- line-height: 行高
+- text-decoration: 文本内容修饰（下划线、上划线、删除线等）
 
 ### 引入CSS的三种方式
 - inline-style
@@ -125,11 +124,11 @@ div ~ p {}                   // div之后所有p
 
 
 ### 常用背景属性
-- background                               // 背景
-- background-color                         // 背景颜色
-- background-img: url('path')              // 背景图片
-- background-position                      // 设置背景图像在一个元素中的位置
-- background-repeat                        // 控制背景图像在容器内的重复方式
+- background: 背景
+- background-color: 背景颜色
+- background-img: url('path') : 背景图片
+- background-position: 设置背景图像在一个元素中的位置
+- background-repeat: 控制背景图像在容器内的重复方式
 
 
 ### 样式冲突的优先级
