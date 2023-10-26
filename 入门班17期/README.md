@@ -6,3 +6,5 @@
 - [Workshop01: Git and GitHub for Beginners Tutorial](./Git/Git_and_GitHub_for_Beginners_Tutoria.md)
 - [Tutorial01: HTML & CSS Tutorial01](./HTML&CSS/HTML&CSS_Tutorial01.md)
 - [Lecture02: HTML & CSS Part1](./HTML&CSS/HTML&CSS_Part1.md)
+- [Lecture03: HTML & CSS Part2](./HTML&CSS/HTML&CSS_Part2.md)
+- [Lecture04: HTML & CSS Part3](./HTML&CSS/HTML&CSS_Part3.md)
