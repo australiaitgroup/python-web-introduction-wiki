@@ -1,8 +1,22 @@
+- [Note](#Note)
+  - [HTML\&CSS Tutorial02(`26/10/2023`)](#html-css-tutorial02-26102023)
+    - [css基本选择器](#css基本选择器)
+    - [Text属性](#Text属性)
+    - [引入CSS的三种方式](#引入CSS的三种方式)
+    - [单位](#单位)
+    - [元素模式](#元素模式)
+    - [常用背景属性](#常用背景属性)
+    - [样式冲突的优先级](#样式冲突的优先级)
+    - [文字样式会继承父标签属性](#文字样式会继承父标签属性)
+    - [块级元素居中](#块级元素居中)
+    - [练习](#练习)
+
+
 # Note
 
-## HTML&CSS Tutorial02
+## HTML&CSS Tutorial02(`26/10/2023`)
 
-### css 基本选择器
+### css基本选择器
 - ID选择器: 只适用于指定的element
 - Class类选择器：可以复用，可以给所有有同样样式需求的element加属性
 - Tag标签类选择器：会对全局产生影响，谨慎使用，一般设定一些全局样式或者搭配别的选择器使用
@@ -166,10 +180,7 @@ div ~ p {}                   // div之后所有p
   导航栏应具有固定高度和底边框，导航链接之间应均匀分布。
   使用 CSS 来设置导航栏样式，并确保文字垂直居中。
 ```
-- display: flex相关类型
-```html
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-```
+- display例子： https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - 练习代码
 ```html
 <!DOCTYPE html>
