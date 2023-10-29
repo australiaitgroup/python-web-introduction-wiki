@@ -84,10 +84,11 @@ JavaScript语法           页面文档对象模型        浏览器对象模型
 - Boolean: 布尔值类型，如true、false，等价于1和0
 - String: 字符串类型
 ```html
-可以是引号中的任意文本，分双引号""和单引号''
-alert(strMsg.length);// length表字符串长度
-字符串 + 任何类型 = 拼接之后的新字符串// +即字符串拼接方法
-
+//可以是引号中的任意文本，分双引号""和单引号''
+//alert(strMsg.length)
+// length表字符串长度
+//字符串 + 任何类型 = 拼接之后的新字符串， +即字符串拼接方法
+//因为HTML标签里面的属性使用的是双引号，JS这里我们推荐使用单引号
 ```
 - Undefined: 声明了变量但是没给值
 - Null: 声明了变量为空值
@@ -96,10 +97,28 @@ alert(strMsg.length);// length表字符串长度
 #### 定义
 - 把一种类型数据转换另一种数据类型，通常是三种
 ```html
-转换为字符串类型
-转换成数字型
-转换成布尔型
+**转换为字符串类型：**
+方式              说明                       案例
+toString()       转成字符串                  var num= 1; alert(num.toString());
+加号拼接字符串    和字符串拼接的结果都是字符串  var num= 1; alert(String(num+"我是字符串");
+String()强制转换  转成字符串                  var num= 1; alert(String(num));
+//toString() 和String()使用方式不一样
+//三种转换方式，更常用的是第三种加号拼接字符串转换方式，也称之为饮食转换
+
+**转换成数字型：**
+方式                   说明                         案例
+parseInt(string)函数   将string类型转成整数数值型    parseInt('78')
+parseFloat(string)函数 将string类型转成浮点数数值型  parseFloat('78.21')
+Number()强制转换函数    将string类型转换为数值型      Number('12')
+js隐式转换(- * /)       利用算数运算饮食转换为数值型  '12'-0
+//注意parseInt和parseFloat单词的大小写
+//隐式转换是我们再进行算数运算的时候，JS自动转换了数据类型
+
+**转换成布尔型**
+方式              说明                       案例
+Boolean()函数     其他类型转换成布尔值        Boolean('true');
 ```
+
 #### 转换为字符串
 - 方式   说明    案例
 ```html
