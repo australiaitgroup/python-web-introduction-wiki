@@ -109,16 +109,17 @@ JavaScript语法           页面文档对象模型        浏览器对象模型
 ### 数据类型转换
 #### 定义
 - 把一种类型数据转换另一种数据类型，通常是三种
+**转换为字符串类型**
 ```html
-**转换为字符串类型：**
 方式                  说明                         案例
 toString()            转成字符串                   var num= 1; alert(num.toString());
 加号拼接字符串         和字符串拼接的结果都是字符串   var num= 1; alert(String(num+"我是字符串");
 String()强制转换       转成字符串                   var num= 1; alert(String(num));
 //toString() 和String()使用方式不一样
 //三种转换方式，更常用的是第三种加号拼接字符串转换方式，也称之为饮食转换
-
+```
 **转换成数字型：**
+```html
 方式                      说明                            案例
 parseInt(string)函数      将string类型转成整数数值型       parseInt('78')
 parseFloat(string)函数    将string类型转成浮点数数值型     parseFloat('78.21')
@@ -126,8 +127,9 @@ Number()强制转换函数       将string类型转换为数值型         Numbe
 js隐式转换(- * /)          利用算数运算饮食转换为数值型     '12'-0
 //注意parseInt和parseFloat单词的大小写
 //隐式转换是我们再进行算数运算的时候，JS自动转换了数据类型
-
+```
 **转换成布尔型**
+```html
 方式                 说明                         案例
 Boolean()函数        其他类型转换成布尔值          Boolean('true');
 ```
