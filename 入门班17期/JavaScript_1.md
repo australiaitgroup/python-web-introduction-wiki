@@ -1,5 +1,5 @@
 - [Note](#Note)
-  - [JavaScript_Part1 (`29/10/2023`)] (#javascript_part1-29102023)
+  - [JavaScript_Part1 (`29/10/2023`)](#javascript_part1-29102023)
     - [编程语言](#编程语言)
     - [JavaScript简介](#JavaScript简介)
       - [是什么](#是什么)
