@@ -162,7 +162,7 @@ Boolean()函数        其他类型转换成布尔值          Boolean('true');
 
 ### 实战练习
 #### 导入方式
-- 1. 行内式的js 直接写到元素的内部
+- 1行内式的js 直接写到元素的内部
 ```html
 <input type="button" value="enter" onclick="alert('hello world')">
 //可以将单行或少量JS代码写在HTML标签的事件属性中（以on开头的属性），如：onclick
@@ -171,7 +171,7 @@ Boolean()函数        其他类型转换成布尔值          Boolean('true');
 //引号易错，引号多层嵌套匹配时，容易混淆
 //宜特殊情况下使用
 ```
-- 2.内嵌式的js
+- 2内嵌式的js
 ```html
  <script>
   prompt('Please enter your name')
@@ -179,7 +179,7 @@ Boolean()函数        其他类型转换成布尔值          Boolean('true');
 //可以将多行JS代码写到<script>标签中
 //内嵌JS是学习时常用的方式
 ```
-- 3. 外部js script 双标签
+- 3外部js script 双标签
 ```html
  <script src="/index.js"></script>
 //利于HTML页面代码结构优化，把大段的JS代码独立到HTML页面之外，方便文件级别复用
@@ -188,9 +188,9 @@ Boolean()函数        其他类型转换成布尔值          Boolean('true');
 ```
 
 #### 注释
-- 1. 单行注释  ctrl + /
-- 2. 多行注释  默认的快捷键：shift +  alt  + a
-- 2.1 多行注释  vscode 中修改多行注释的快捷键：ctrl + shift + /
+- 单行注释  ctrl + /
+- 多行注释  默认的快捷键：shift +  alt  + a
+- 多行注释  vscode 中修改多行注释的快捷键：ctrl + shift + /
 
 #### 常用输出语句
 - prompt这是一个输入框
