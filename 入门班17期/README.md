@@ -8,3 +8,8 @@
 - [Lecture04: HTML & CSS Part3](./HTML&CSS/HTML&CSS_Part3.md)
 - [Tutorial01: HTML & CSS Tutorial01](./HTML&CSS/HTML&CSS_Tutorial01.md)
 - [Tutorial02: HTML & CSS Tutorial02](./HTML&CSS/HTML&CSS_Tutorial02.md)
+
+
+## Module 2: 网页应用搭建
+
+- [Lecture04: JavaScript Part1](./JavaScript/JavaScript_1.md)
