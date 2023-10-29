@@ -392,27 +392,27 @@ console.log('testing')
 ```html
 <script>
  let flag = true;
- console.log(flag)// true
- console.log(flag+1)// 1+1
+ console.log(flag)           // true
+ console.log(flag+1)         // 1+1
  let flag1 = false;
- console.log(flag1+1)// 0+1
+ console.log(flag1+1)        // 0+1
 </script>
 ```
 - 查看基础数据类型
 ```html
 <script>
   let num = 10;
-  console.log(typeof num)  //number
+  console.log(typeof num)                     //number
   let str = 'hello'
-  console.log(typeof str)  //string
+  console.log(typeof str)                     //string
   let flag = true;
-  console.log(typeof flag)  //boolean
+  console.log(typeof flag)                    //boolean
   let value = undefined;
-  console.log(typeof value)   //undefined
+  console.log(typeof value)                   //undefined
   let value2 = null;
-  console.log(typeof value2)    //object
+  console.log(typeof value2)                  //object
   let age = prompt('Please enter your age')
-  console.log('age',age,typeof age)   //string
+  console.log('age',age,typeof age)           //string
 </script>
 ```
 #### 数据类型转换
@@ -434,14 +434,14 @@ console.log('testing')
 ```html
 <script>
   //parseInt() 返回整数
-  console.log(parseInt('3.14'))//3
-  console.log(parseInt('120px'))//120
-  console.log(parseInt('rem120px'))//NaN
+  console.log(parseInt('3.14'))               //3
+  console.log(parseInt('120px'))              //120
+  console.log(parseInt('rem120px'))           //NaN
   
   //parseFloat() 返回小数
-  console.log(parseFloat('3.14'))//3.14
-  console.log(parseFloat('120px'))//120
-  console.log(parseFloat('rem120px'))//NaN
+  console.log(parseFloat('3.14'))             //3.14
+  console.log(parseFloat('120px'))            //120
+  console.log(parseFloat('rem120px'))         //NaN
   
   //Number()
   let str = '123'
@@ -449,11 +449,11 @@ console.log('testing')
   console.log(num, typeof num)
   
   //隐式转换 - * /(+会变成string)
-  console.log('12'- 1)//11
-  console.log('123'-'120')//3
+  console.log('12'- 1)                         //11
+  console.log('123'-'120')                     //3
   let value = '123'*1;
-  console.log(typeof value)//number
-  console.log(typeof ('123'/1))//number
+  console.log(typeof value)                    //number
+  console.log(typeof ('123'/1))                //number
 </script>
 ```
 
@@ -472,13 +472,13 @@ console.log('testing')
 #### 转换成布尔值类型
 ```html
 <script>
-  console.log(Boolean(''))//false
-  console.log(Boolean(0))//false
-  console.log(Boolean(NaN))//false
-  console.log(Boolean('123'))//true
-  console.log(Boolean('hello'))//true
-  console.log(Boolean(null))//false
-  console.log(Boolean(undefined))//false
+  console.log(Boolean(''))                //false
+  console.log(Boolean(0))                 //false
+  console.log(Boolean(NaN))               //false
+  console.log(Boolean('123'))             //true
+  console.log(Boolean('hello'))           //true
+  console.log(Boolean(null))              //false
+  console.log(Boolean(undefined))         //false
 
   let arr = []//length 0
   if(arr.length>0){
@@ -494,38 +494,38 @@ console.log('testing')
 - 算数运算符
 ```html
 <script>
-  console.log(1 + 1);//2
-  console.log(1 - 1);//0
-  console.log(1 * 1);//1
-  console.log(1 / 1);//1
+  console.log(1 + 1);          //2
+  console.log(1 - 1);          //0
+  console.log(1 * 1);          //1
+  console.log(1 / 1);          //1
   // % 取余 取模
-  console.log(4 % 2);//0
-  console.log(5 % 3);//2
-  console.log(3 % 5);//2
+  console.log(4 % 2);          //0
+  console.log(5 % 3);          //2
+  console.log(3 % 5);          //2
   
   //浮点数 算数运算里会有问题
-  console.log(0.1+0.2)//0.30000000000000004
-  console.log(0.07*100)//7.000000000000001
+  console.log(0.1+0.2)         //0.30000000000000004
+  console.log(0.07*100)        //7.000000000000001
   let num = 0.1+0.2;
   console.log(num == 0.3)
   let sum = num.toFixed(1)
-  console.log(sum)//0.3
+  console.log(sum)             //0.3
 </script>
 ```
 - 比较运算符
 ```html
 <script>
   //1. 我们程序里面的等于符号 是 ==  默认转换数据类型 会把字符串型的数据转换为数字型 只要求值相等就可以
-  console.log(3 >= 5); //F
-  console.log(2 <= 45); //T
-  console.log(3 == 5); //F
+  console.log(3 >= 5);             //F
+  console.log(2 <= 45);            //T
+  console.log(3 == 5);             //F
   console.log("hello" == "world"); //F
-  console.log(18 == 18); //T
-  console.log(18 == "18"); //T（隐式转换）
-  console.log(18 != 18); //F
+  console.log(18 == 18);           //T
+  console.log(18 == "18");         //T（隐式转换）
+  console.log(18 != 18);           //F
   // 2. 我们程序里面有全等 一模一样  要求 两侧的值 还有 数据类型完全一致才可以 true
-  console.log(18 === 18)//T
-  console.log(18 === '18')//F
+  console.log(18 === 18)           //T
+  console.log(18 === '18')         //F
 </script>
 ```
 - 逻辑运算符
