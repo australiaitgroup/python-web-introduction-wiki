@@ -542,4 +542,33 @@ console.log('testing')
   console.log(!false)              //T
 </script>
 ```
-
+- 前缀增量-prefix_increment
+```html
+<script>
+  // 1. 想要一个变量自己加1   num = num + 1 比较麻烦
+let num = 1;
+// num = num + 1;
+// num = num + 1;
+++num;
+++num;
+console.log('num',num)
+let age = 10;
+++age;//11
+let p = 20;
+  //先加1， 再返回值
+console.log(++p + 10)//31
+</script>
+```
+- 后缀增量-postfix_increment
+```html
+<script>
+  // 1. 前置自增和后置自增如果单独使用 效果是一样的
+  // 2. 后置自增 口诀：先返回原值 后自加1
+let num = 10;
+num++;
+console.log(num)//11
+let age = 30;
+//先返回值，后加1
+console.log(age++ + 10)//40
+</script>
+```
