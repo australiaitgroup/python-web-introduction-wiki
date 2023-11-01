@@ -36,8 +36,8 @@
       - [数据类型转换](#数据类型转换)
       - [小练习2](#小练习2)
       - [一些运算符](#一些运算符)
-      - [前缀增量-prefix increment](#前缀增量-prefix_increment)
-      - [后缀增量-postfix increment](#后缀增量-postfix_increment)
+      - [前缀增量-prefix increment](#前缀增量-prefix increment)
+      - [后缀增量-postfix increment](#后缀增量-postfix increment)
 
 # Note
 
