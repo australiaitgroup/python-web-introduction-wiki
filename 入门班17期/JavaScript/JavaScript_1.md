@@ -36,8 +36,8 @@
       - [数据类型转换](#数据类型转换)
       - [小练习2](#小练习2)
       - [一些运算符](#一些运算符)
-      - [前缀增量-prefix_increment](#前缀增量-prefix_increment)
-      - [后缀增量-postfix_increment](#后缀增量-postfix_increment)
+      - [前缀增量-prefix increment](#前缀增量-prefix-increment)
+      - [后缀增量-postfix increment](#后缀增量-postfix-increment)
 
 # Note
 
@@ -544,7 +544,7 @@ console.log('testing')
   console.log(!false)              //T
 </script>
 ```
-- 前缀增量-prefix_increment
+- 前缀增量-prefix increment
 ```html
 <script>
   // 1. 想要一个变量自己加1   num = num + 1 比较麻烦
@@ -561,7 +561,7 @@ let p = 20;
 console.log(++p + 10)//31
 </script>
 ```
-- 后缀增量-postfix_increment
+- 后缀增量-postfix increment
 ```html
 <script>
   // 1. 前置自增和后置自增如果单独使用 效果是一样的
