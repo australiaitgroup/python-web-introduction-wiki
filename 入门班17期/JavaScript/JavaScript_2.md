@@ -1,4 +1,6 @@
 
+
+
 # Note
 
 ## JavaScript_Part2 (`01/11/2023`)
@@ -14,8 +16,15 @@ for(var i = 1; i <= 100; i++) {
       console.log('这个人今年' + i + '岁了')；
 }
 ```
-- while循环
-- do...while循环
+##### while循环
+##### do...while循环
+
+### Object对象
+#### 什么是对象
+- 在JS中，对象是一组无序的相关属性和方法的集合，所有的事物都是对象，例如字符串、数值、数组、函数等。
+#### 为什么需要对象
+#### 利用字面量创建对象
+#### 遍历对象属性
 
 ### 实战练习
 #### if-else
@@ -240,7 +249,7 @@ switch(fruit) {
 </script>
 ```
 
-#### continue语句
+#### continue关键字
 - 基本语法
 ```html
 <script>
@@ -260,6 +269,229 @@ switch(fruit) {
     sum +=i;
   }
   alert(sum)
+</script>
+```
+
+#### break关键字
+- 基本语法
+```html
+<script>
+//break 退出整个循环
+for(let i=1; i<=5; i++){
+  if(i===3){
+    break;
+  }
+  console.log(i)
+}
+</script>
+```
+
+#### array数组
+- array1
+```html
+<script>
+   //用new创建数组 ['Ben',12] ['apple','orange','banana']
+   let arr = new Array();//创建一个空数组[]
+   console.log('arr',arr);
+   let arr1 = [];
+   let arr2 = [1,3,5,7]
+   console.log(arr2.length)//数组长度4 index of last item == arr.length -1
+   console.log(arr2[2])//5 index从0开始
+   console.log(arr[arr2.length-1])// last item value
+   console.log(arr[10])//没有这个元素时返回undefined
+</script>
+```
+- array2
+```html
+<script>
+   //修改length长度
+   let arr = ['apple','banana','orange'];
+   console.log('length',arr.length)
+   arr[3] = 'kiwi';//add item
+   console.log(arr)
+   arr[1] = 'grape';
+   console.log(arr)
+</script>
+```
+- array寻找最大项
+```html
+ <script>
+   // 求数组[2,6,1,77,52,25,7]中的最大值
+   // 声明一个保存最大元素的变量 max。
+   // 默认最大值可以取数组中的第一个元素。
+   // 遍历这个数组，把里面每个数组元素和 max 相比较。
+   // 如果这个数组元素大于max 就把这个数组元素存到 max 里面，否则继续下一轮比较。
+   // 最后输出这个 max
+   let arr = [2, 6, 1, 77, 52, 25, 7];
+   let max = arr[0];//2
+   for(let i =1; i< arr.length; i++){
+     if(arr[i] > max){
+       max = arr[i]
+     }
+   }
+   console.log(max)
+</script>
+```
+- array遍历
+```html
+<script>
+  // 1. 求数组 [2,6,1,7, 4] 里面所有元素的和以及平均值。
+  // (1)声明一个求和变量 sum。
+  // (2)遍历这个数组，把里面每个数组元素加到 sum 里面。
+  // (3)用求和变量 sum 除以数组的长度就可以得到数组的平均值。
+  let arr = [2,6,1,7,4];
+  let sum =0;
+  let average = 0;
+  for(let i =0; i<arr.length; i++){
+    sum += arr[i]//sum = sum +arr[i]
+  }
+  average = sum / arr.length;
+  console.log(sum, average)
+</script>
+```
+- array筛选
+```html
+<script>
+  // 将数组 [2, 0, 6, 1, 77, 0, 52, 0, 25, 7] 中大于等于 10 的元素选出来，放入新数组。
+  // 1、声明一个新的数组用于存放新数据newArr。
+  // 2、遍历原来的旧数组， 找出大于等于 10 的元素。
+  // 3、依次追加给新数组 newArr。
+  // 方法1
+  let arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+  let newArr = [];
+  let j =0;
+  for(let i=0; i<arr.length; i++){
+    if(arr[i] >= 10){
+      newArr[j] = arr[i]
+      j++
+    }
+  }
+  console.log(newArr)
+</script>
+```
+- array删除指定元素
+```html
+<script>
+  //删除指定元素0
+  // 将数组[2, 0, 6, 1, 77, 0, 52, 0, 25, 7]中的 0 去掉后，形成一个不包含 0 的新数组。
+  // 1、需要一个新数组用于存放筛选之后的数据。
+  // 2、遍历原来的数组， 把不是 0 的数据添加到新数组里面(此时要注意采用数组名 + 索引的格式接收数据)。
+  // 3、新数组里面的个数， 用 length 不断累加。
+  let arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+  let newArr = [];
+  let j = 0;
+  for(let i=0; i<arr.length; i++){
+    if(arr[i] !==0){
+      newArr[j] = arr[i];
+      j++
+    }
+  }
+  console.log(newArr)
+</script>
+```
+- array一些添加和删除元素的方法(都会改变原数组)
+```html
+<script>
+  // 添加删除数组元素方法
+  // 1. push() 在我们数组的末尾 添加一个或者多个数组元素   push  推
+  let arr = [1, 2, 3];
+  // arr[3] = 'hello'
+  let result = arr.push('hello', 'world');
+  console.log('result',result)
+  console.log(arr)
+  //注意事项：
+  // (1) push 是可以给数组追加新的元素
+  // (2) push() 参数直接写 数组元素就可以了
+  // (3) push完毕之后，返回的结果是 新数组的长度
+  // (4) 原数组也会发生变化
+  // 2. unshift 在我们数组的开头 添加一个或者多个数组元素
+
+  // (1) unshift是可以给数组前面追加新的元素
+  // (2) unshift() 参数直接写 数组元素就可以了
+  // (3) unshift完毕之后，(重点1)返回的结果是 新数组的长度
+  // (4) （重点2）原数组也会发生变化
+  let arr2 = [1, 2, 3, 4, 5, "apple"];
+  let result2 = arr2.unshift('banana','kiwi');
+  console.log('result2',result2)
+  console.log('arr2',arr2)
+  // 3. pop() 它可以删除数组的最后一个元素
+  // (1) pop是可以删除数组的最后一个元素 记住一次只能删除一个元素
+  // (2) pop() 没有参数
+  // (3) pop完毕之后，返回的结果是 删除的那个元素
+  // (4) 原数组也会发生变化
+  let arr3 = [1, 2, 3, 4, 5];
+  const result3 = arr3.pop();
+  console.log('result3',result3);//5
+  console.log('arr3',arr3)//[1,2,3,4]
+  // 4. shift() 它可以删除数组的第一个元素
+
+  // (1) shift是可以删除数组的第一个元素 记住一次只能删除一个元素
+  // (2) shift() 没有参数
+  // (3) shift完毕之后，返回的结果是 删除的那个元素
+  // (4) 原数组也会发生变化
+  let arr4 = [1, 2, 3];
+  console.log(arr4.shift());
+  console.log(arr4)
+</script>
+```
+- 返回数组元素索引号方法
+```html
+<script>
+  // 返回数组元素索引号方法  indexOf(数组元素)  作用就是返回该数组元素的索引号 从前面开始查找
+  // 它只返回第一个满足条件的索引号
+  // 它如果在该数组里面找不到元素，则返回的是 -1
+  var arr = ['red', 'green', 'blue', 'pink', 'blue'];
+  // let arr = ["red", "green", "blue"];
+  // let index = arr.indexOf('purple');//-1
+  let index = arr.indexOf('blue')//2
+  console.log('index',index)
+  // 返回数组元素索引号方法  lastIndexOf(数组元素)  作用就是返回该数组元素的索引号 从后面开始查找
+  let arr2 = ["red", "green", "blue", "pink", "blue"];
+  let index2 = arr2.lastIndexOf('blue');
+  console.log(index2)
+</script>
+```
+- 数组转换为字符串
+```html
+<script>
+  // 数组转换为字符串
+  // 1. toString() 将我们的数组转换为字符串
+  let arr = [1, 2, 3];
+  console.log(typeof arr.toString());//'1,2,3'
+  // 2. join(分隔符)
+  let arr1 = ["green", "blue", "red"];
+  console.log(arr1.join())//'green,blue,red'
+  console.log(arr1.join('-'))//'green-blue-red'
+  console.log(arr1.join(' '))//'green blue red'
+</script>
+```
+
+#### object对象
+- 利用对象字面量创建对象
+```html
+<script>
+  // 1.利用对象字面量创建对象 {}
+  let obj = {}
+  let profile = {
+    username:'Ben',
+    age:20,
+    gender:'male',
+  }
+  console.log('profile',profile)
+  console.log('username',profile.username)
+  console.log('age',profile['age'])
+</script>
+```
+- 利用 new Object 创建对象
+```html
+<script>
+  // 利用 new Object 创建对象
+  let obj = new Object()//创建了一个空的对象
+  obj.name = 'Chris';
+  obj.age = 10;
+  obj.gender = 'female';
+  console.log(obj)
+  console.log(obj.name,obj['age'])
 </script>
 ```
 
