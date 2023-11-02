@@ -1,5 +1,17 @@
+- [Note](#Note)
+  - [JavaScript_tutorial （`02/11/2023`）](javascript_tutorial-02112023)
+    - [复习](#复习)
+      - [三种输出方式](#三种输出方式)
+      - [数据类型](#数据类型)
+      - [运算符](#运算符)
+    - [练习](#练习)
+      - [在他们的网站上放置了以下的HTML代码会输出什么](#在他们的网站上放置了以下的HTML代码会输出什么)
+      - [写一段CSS使`h1`elements红色加粗](#写一段CSS使`h1`elements红色加粗)
 
 
+
+
+  
 # Note
 
 ## JavaScript_tutorial （`02/11/2023`）
@@ -98,11 +110,11 @@ const b = a && undefined   （与有一边不是true，就会报不一样的那�
 
 
 ### 练习
-#### 在他们的网站上放置了以下的HTML代码，然后访问了这个网站，他们会看到什么？
+#### 在他们的网站上放置了以下的HTML代码会输出什么
 ```html
 <p dfsd="1"></p>   //这里会看到一个空的P DOM
 ```
-#### 写一段 CSS  使`h1` elements 红色加粗
+#### 写一段CSS使`h1`elements红色加粗
 ```html
 h1 {
   color: red;
