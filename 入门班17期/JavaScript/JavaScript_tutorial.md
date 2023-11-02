@@ -6,7 +6,7 @@
       - [运算符](#运算符)
     - [练习](#练习)
       - [在他们的网站上放置了以下的HTML代码会输出什么](#在他们的网站上放置了以下的HTML代码会输出什么)
-      - [写一段CSS使`h1`elements红色加粗](#写一段CSS使`h1`elements红色加粗)
+      - [写一段CSS使 h1 elements红色加粗](#写一段CSS使-h1-elements红色加粗)
 
 
 
@@ -114,7 +114,7 @@ const b = a && undefined   （与有一边不是true，就会报不一样的那�
 ```html
 <p dfsd="1"></p>   //这里会看到一个空的P DOM
 ```
-#### 写一段CSS使`h1`elements红色加粗
+#### 写一段CSS使 h1 elements红色加粗
 ```html
 h1 {
   color: red;
