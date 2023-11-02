@@ -10,6 +10,9 @@
       - [为什么要使用CSS类而不是直接使用标签选择器](#为什么要使用CSS类而不是直接使用标签选择器)
       - [当我们像这样两次定义相同的CSS规则时会发生什么](#当我们像这样两次定义相同的CSS规则时会发生什么)
       - [DevTools上的sources network和console标签的目的是什么](#DevTools上的sources-network和console标签的目的是什么)
+      - [哪里可以获取有关CSS的定位和网站布局的更多信息](#哪里可以获取有关CSS的定位和网站布局的更多信息)
+      - [JavaScript执行逻辑](#JavaScript执行逻辑)
+      - [为什么我们要避免使用 var 或者简单地用 x=1 声明一个变量](#为什么我们要避免使用-var-或者简单地用-x=1-声明一个变量)
 
 
 
@@ -145,7 +148,7 @@ h1{
 - source: 会以一些其他形式显示打包的代码，可在上面画断点，做标注，方便debug
 - network:
 
-#### 哪里可以获取有关CSS、定位和网站布局的更多信息？
+#### 哪里可以获取有关CSS的定位和网站布局的更多信息
 - key resource
 ```html
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript
