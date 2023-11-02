@@ -7,6 +7,9 @@
     - [练习](#练习)
       - [在他们的网站上放置了以下的HTML代码会输出什么](#在他们的网站上放置了以下的HTML代码会输出什么)
       - [写一段CSS使 h1 elements红色加粗](#写一段CSS使-h1-elements红色加粗)
+      - [为什么要使用CSS类而不是直接使用标签选择器](#为什么要使用CSS类而不是直接使用标签选择器)
+      - [当我们像这样两次定义相同的CSS规则时会发生什么](#当我们像这样两次定义相同的CSS规则时会发生什么)
+      - [DevTools上的sources network和console标签的目的是什么](#DevTools上的sources-network和console标签的目的是什么)
 
 
 
@@ -121,7 +124,7 @@ h1 {
   font-weight: bold;
 }
 ```
-#### 为什么要使用CSS类而不是直接使用标签选择器？
+#### 为什么要使用CSS类而不是直接使用标签选择器
 ```html
   使用标签选择器：容易影响到其他页面的标签
   a. class name（定位更精确，可以复用）
@@ -137,7 +140,7 @@ h1{
 }
 此时会应用更下方的这一个tag，因为会混用所以不建议使用
 ```
-#### DevTools上的sources、network和console标签的目的是什么？
+#### DevTools上的sources network和console标签的目的是什么
 - console:
 - source: 会以一些其他形式显示打包的代码，可在上面画断点，做标注，方便debug
 - network:
