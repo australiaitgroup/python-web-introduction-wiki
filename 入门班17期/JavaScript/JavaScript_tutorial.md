@@ -14,6 +14,7 @@
       - [JavaScript执行逻辑](#JavaScript执行逻辑)
       - [为什么我们要避免使用 var 或者简单地声明一个变量](#为什么我们要避免使用-var-或者简单地声明一个变量)
       - [什么是箭头函数 也被称为匿名函数或lambda 它的语法是怎样的](#什么是箭头函数-也被称为匿名函数或lambda-它的语法是怎样的)
+      - [x in items 和 x of items之间有什么区别](#x-in-items-和-x-of-items之间有什么区别)
 
 
 
@@ -198,7 +199,7 @@ function functionA() {
 const functionA=() => {  }
 ```
 
-#### for(x in items) 和 for(x of items) 之间有什么区别？
+#### x in items 和 x of items之间有什么区别
 ```html
 for(let i=1; i<100; i++)      //a=[1,2,3,4,5]
 for(x in items)               //in 代表array的index，index:位置从0开始
