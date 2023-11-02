@@ -13,3 +13,4 @@
 ## Module 2: 网页应用搭建
 
 - [Lecture05: JavaScript Part1](./JavaScript/JavaScript_1.md)
+- [Tutorial02: JavaScrip](./JavaScript/JavaScript_tutorial.md)
