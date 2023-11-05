@@ -73,7 +73,26 @@ for (var i = 1; i <= 5; i++) {
 #### 为什么需要对象
 #### 利用字面量创建对象
 #### 遍历对象属性
-
+- solution 1
+```js
+let obj = {
+    name: "Chirs",
+    age: 40,
+    hobby: "codeing",
+    gender: "female",
+};
+for (let key in obj) console.log(obj[key]);
+```
+- solution 2
+```js
+let obj = {
+    name: "Chirs",
+    age: 40,
+    hobby: "codeing",
+    gender: "female",
+};
+for (let value of Object.values(obj)) console.log(value);
+```
 
 ### 实战练习
 #### if-else
