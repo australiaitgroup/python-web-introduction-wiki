@@ -1,5 +1,5 @@
 - [Note](#Note)
-  - [JavaScript_tutorial(`02/11/2023`)](javascript_tutorial-02112023)
+  - [JavaScript\_tutorial(`02/11/2023`)](javascript_tutorial-02112023)
     - [复习](#复习)
       - [三种输出方式](#三种输出方式)
       - [数据类型](#数据类型)
@@ -27,7 +27,7 @@
   
 # Note
 
-## JavaScript_tutorial （`02/11/2023`）
+## JavaScript_tutorial (`02/11/2023`)
 
 ### 复习
 #### 三种输出方式
