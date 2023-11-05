@@ -155,7 +155,6 @@ document.all[''];                                    //获取页面中的所有�
   }
 </script>
 ```
-
 #### function概念
 ```html
 <!-- function declaration vs function expression -->
@@ -174,7 +173,6 @@ document.all[''];                                    //获取页面中的所有�
   isFormValidated();
 </script>
 ```
-
 #### function小练习
 ```html
 <script>
@@ -239,11 +237,34 @@ document.all[''];                                    //获取页面中的所有�
   cook('chicken')
 </script>
 ```
-
 #### 函数求和练习
 ```html
+<script>
+  // 1. 利用函数求任意两个数的和
+  function sum(num1,num2){
+    console.log(num1 + num2)
+  }
+  sum(8,9)
+  sum(100,200)
+  // 2. 利用函数求任意两个数之间的和
+  const getSums = function (start, end) {
+    if (start <= end) {
+      let sum = 0;
+      for (let i = start; i <= end; i++) {
+        sum += i
+      }
+      console.log(sum);
+    } else {
+  //这里会做判断，如果start的数字大于end，就会输出else中的语句
+      console.log("Start should not be greater than end.");
+    }
+  }
+  getSums(8,2)                                  
+  // 3. 注意点
+  // (1) 多个参数之间用逗号隔开
+  // (2) 形参可以看做是不用声明的变量
+</script>
 ```
-
 #### 函数参数匹配问题
 ```html
 <script>
