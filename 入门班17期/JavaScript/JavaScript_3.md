@@ -572,7 +572,7 @@ Finding HTML elements by CSS selectors -->
 <script>
   // 2023-05-03  Wednesday
   let date = new Date();
-  console.log(date)//Sun Nov 05 2023 16:01:29 GMT+1000 (澳大利亚东部标准时间)
+  console.log(date)                          //Sun Nov 05 2023 16:01:29 GMT+1000 (澳大利亚东部标准时间)
   function addZero (num){
     return num <10 ? '0' + num : num;
   }
@@ -585,11 +585,11 @@ Finding HTML elements by CSS selectors -->
       "Friday",
       "Saturday",
   ];
-  let year = date.getFullYear();//2023
-  let month = addZero(date.getMonth() + 1);//10+1=11
-  let dates = addZero(date.getDate());//5
-  let day = date.getDay();//0
+  let year = date.getFullYear();            //2023
+  let month = addZero(date.getMonth() + 1); //10+1=11
+  let dates = addZero(date.getDate());      //5
+  let day = date.getDay();                  //0
   let result = `${year}-${month}-${dates} ${arr[day]}`
-  console.log(result);
+  console.log(result);                      //2023-05-03  Wednesday
 </script>
 ```
