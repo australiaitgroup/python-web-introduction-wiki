@@ -11,8 +11,29 @@
         - [DOM操作](#DOM操作)
         - [常用方法](#常用方法)
       - [实战练习](#实战练习)
-        - [for_in](#for_in)     
+        - [for_in](#for_in)
+        - [function概念](#function概念)
+        - [function小练习](#function小练习)
+        - [带参数的函数](#带参数的函数)
+        - [函数求和练习](#函数求和练习)
+        - [函数参数匹配问题](#函数参数匹配问题)
+        - [return语句简介](#return语句简介)
+        - [return语句练习](#return语句练习)
+        - [函数返回值注意事项](#函数返回值注意事项)
+        - [DOM方法1](#DOM方法1)
+        - [DOM方法2](#DOM方法2)
+        - [DOM_queryselector](#DOM_queryselector)     
+        - [DOM_appendChild](#DOM_appendChild)
+        - [DOM_style](#DOM_style)
+        - [DOM_eventlistener](#DOM_eventlistener)
+        - [Math方法1](#Math方法1)
+        - [Math方法2](#Math方法2)
+        - [string方法1](#string方法1)
+        - [string方法2](#string方法2)
+        - [日期显示小练习](#日期显示小练习)
 
+
+       
 # Note
 
 
