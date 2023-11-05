@@ -14,5 +14,5 @@
 
 - [Lecture05: JavaScript Part1](./JavaScript/JavaScript_1.md)
 - [Lecture06: JavaScript Part2](./JavaScript/JavaScript_2.md)
-- [Tutorial02: JavaScrip](./JavaScript/JavaScript_tutorial.md)
 - [Lecture07: JavaScript Part3](./JavaScript/JavaScript_3.md)
+- [Tutorial02: JavaScrip](./JavaScript/JavaScript_tutorial.md)
