@@ -2,4 +2,7 @@
 # Note
 
 ## Node_1 (`8/11/2023`)
-<p align='center'><img src='../image/nodejs.png' width='30%' height='30%' /></p>
+
+### 什么是Node
+> Node.js is a JS runtime built on Chrome's V8 JS machine.
+> Node.js 是一个基于 Chrome V8 引擎的JavaScript 运行环境
