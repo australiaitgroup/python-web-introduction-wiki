@@ -6,6 +6,7 @@
       - [Node.js能做什么](#Nodejs能做什么)
       - [Node.js怎么学](#Nodejs怎么学)
       - [Node.js环境的安装](#Nodejs环境的安装)
+      - [一些终端指令](#一些终端指令)
     - [模块化](#模块化)
       - [模块化的优点](#模块化的优点)
       - [Node.js中模块的分类](#Nodejs中模块的分类)
@@ -56,6 +57,33 @@
 - 查看已安装的Node.js版本号
 <br/>打开终端，输入‘node -v’
 
+<hr>
+
+#### 一些终端指令
+- Mac
+```plaintext
+cd -> 进入指定文件夹路径
+pwd -> 显示当前路径
+ls -> 显示当前目录下的内容
+mkdir -> 创建文件夹
+touch -> 创建文件
+mvdir -> 移动文件夹/重命名
+rm -> 删除文件
+rmdir/rd -> 删除空文件夹
+clear -> 清除屏幕内容
+date -> 显示系统当前日期
+ping -> 查询ip地址
+ctrl+c -> 终止命令
+exit -> 退出terminal
+```
+
+- Windows
+```plaintext
+echo "123" > new.txt 创建非空文件
+type nul > newtest.txt 创建空文件
+del file.txt 删除文件
+rd file 删除空文件夹
+```
 <hr>
 
 ### 模块化
