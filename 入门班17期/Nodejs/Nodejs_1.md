@@ -17,7 +17,7 @@
 
 <hr>
 
-#### node能做什么
+#### Node.js能做什么
 `提供基础框架，更多第三方框架都基于node`
 
 | 框架名 | 介绍 |
@@ -28,3 +28,6 @@
 
 <hr>
 
+#### Node.js怎么学
+- 浏览器中的JavaScript学习路径：
+`JavaScript基础语法 + 浏览器内置API(DOM + BOM) + 第三方库(jQuery、 art-template等)`
