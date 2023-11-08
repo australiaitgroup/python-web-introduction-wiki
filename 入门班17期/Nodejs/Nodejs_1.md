@@ -69,15 +69,21 @@ require('./test5.js')
 console.log('value', value);
 console.log('days', value2);
 console.log('myFruits',global.myFruits)
+
+
 test2.js:
 const obj = require('./test4');
 const text = 'I love coding';
 console.log('obj', obj);
 module.exports = text;
+
+
 test3.js:
 console.log(module);
 const days = ['monday','2','3'];
 module.exports = days;
+
+
 test4.js:
 const obj = {
     name:'Ben',
@@ -88,9 +94,13 @@ const obj = {
     }
 }
 module.exports = obj;
+
+
 test5.js:
 const fru = ['apple','banana']
 globalThis.myFruits = fru;
+
+
 test6.js
 const arr = ['a','b','c'];
 const str = 'hello world ';
