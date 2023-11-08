@@ -68,7 +68,7 @@
 #### 导入导出模块
 - 单个以及多个变量的导入、导出应用
 ```js
-test1.js:
+<b>test1.js:<b>
 const value = require('./test2.js');
 const value2 = require('./test3.js');
 require('./test5.js')
@@ -105,6 +105,14 @@ module.exports = obj;
 test5.js:
 const fru = ['apple','banana']
 globalThis.myFruits = fru;
+
+
+index.js:
+const {arr,str,getSum} = require('./test6');
+console.log('arr',arr);
+console.log('str',str);
+const sum = getSum(10);
+console.log('sum',sum);
 
 
 test6.js
