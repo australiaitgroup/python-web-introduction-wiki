@@ -31,3 +31,5 @@
 #### Node.js怎么学
 - 浏览器中的JavaScript学习路径：
 `JavaScript基础语法 + 浏览器内置API(DOM + BOM) + 第三方库(jQuery、 art-template等)`
+- Node.js的学习路径：
+`JavaScript基础语法 + Node.js内置API模块（fs、path、http等）+第三方API模块(express、mysql等)`
