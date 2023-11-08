@@ -113,3 +113,43 @@ const getSum = function(n) {
 }
 module.exports = {arr,str,getSum};
 ```
+- 计算器应用
+```js
+app.js:
+const {add,subtract,multiply,divide} = require('./caculator');
+
+const sum = add(10,6);
+console.log('sum',sum)
+
+const difference =subtract(8,20);
+console.log(`difference: ${difference}`)
+
+const product = multiply(2,3);
+console.log(`Product: ${product}`);
+
+const quotient = divide(10,0);
+console.log(`quotient:${quotient}`)
+
+
+caculator.js:
+const add = function(a,b){
+    return a+ b;
+    
+}
+const subtract = function(a,b){
+    return a>b ? a - b : b - a;
+
+}
+const multiply = function(a,b){
+    return a*b;
+
+}
+const divide = function(a,b) {
+    if (b === 0) {
+        return 'Please enter a valid number'
+    }else {
+        return a / b;
+    }
+}
+module.exports = {add, subtract ,multiply, divide}
+```
