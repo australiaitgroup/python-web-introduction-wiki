@@ -89,6 +89,9 @@ while
 <hr>
 
 ### dom
+
+<p align='center'><img src='../images.Dom.png' width='50%' height='50%' /></p>
+
 #### 抓取节点（5种主要方式）
 ```js
 document.getElementById('')
