@@ -1,5 +1,5 @@
 - [Note](#Note)\
-  - [JavaScript_tutorial2 (`9/11/2023`)](javascript_tutorial2-9112023)
+  - [JavaScript_tutorial2 (`9/11/2023`)](#javascript_tutorial2-9112023)
 
 # Note
 
