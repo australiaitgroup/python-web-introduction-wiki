@@ -4,6 +4,8 @@
 
 ## JavaScript_tutorial2 (`9/11/2023`)
 
+<hr>
+
 ### function
 - 形参和实参
 ```js
@@ -70,6 +72,8 @@ for (
 while
 ```
 
+<hr>
+
 ### dom
 #### 抓取节点（5种主要方式）
 ```js
@@ -84,8 +88,9 @@ const dom = document.getElementByTagName('html')
 dom.getElementById('first-div')
 document.body
 document
-
 ```
+
+<hr>
 
 #### dom常见用法
 ```js
@@ -119,6 +124,8 @@ dom.children[0]
 dom.childNodes[]
 ```
 
+<hr>
+
 ### 实战练习
 #### Counter
 - 补充counter.js: 在output div中显示当前时间
@@ -141,6 +148,8 @@ dom.childNodes[]
 }());
 ```
 
+<hr>
+
 #### Toggle
 - 修改toggle.js: 实现对output div每隔2s添加和移除hide
 ```js
@@ -161,6 +170,8 @@ dom.childNodes[]
    setInterval(hideOutput,2000)
 }());
 ```
+
+<hr>
 
 #### Collapse
 - 实现点击信息元素上面的箭头按钮对信息框折叠（隐藏）
@@ -190,6 +201,8 @@ dom.childNodes[]
 }());
 ```
 
+<hr>
+
 #### Expand
 - 扩张折叠信息块，使得div被折叠后，将箭头图标从up变为down
 - 点击按钮时，应该展开div并切换图标
@@ -214,9 +227,56 @@ dom.childNodes[]
 }());
 ```
 
+<hr>
+
 #### Login
 - 之前html tutorial做的登陆练习
 - 实现登陆验证
 <br>`如果account为“Admin” 密码为“12345”则Login成功，提示“登陆成功”`
 <br>`否则Login失败，提示“账号密码不匹配”`
 <br>`如果有input没有内容，则不允许触发submit button`
+```js
+(function() {
+    'use strict';
+    // write your js here.
+    const account = document.getElementById('account')
+    const password = document.getElementById('password')
+    const button = document.querySelector('.login-btn')
+    const form = document.querySelector('.login-box')
+    account.oninput=(e)=>{
+        account.value = e.target.value;
+        if(!e.target.value){
+            button.disabled=true
+            return;
+        }
+        if(password.value){
+            button.disabled=false
+        }
+    }
+
+    password.oninput=(e)=>{
+        password.value = e.target.value;
+        if(!e.target.value){
+            button.disabled=true
+            return;
+        }
+        if(account.value){
+            button.disabled=false
+        }
+    }
+
+    form.onsubmit=()=>{
+        const userValue = account.value;
+        const pswValue = password.value;
+
+        if(userValue==='Admin'&&pswValue==='12345'){
+            alert('登陆成功')
+        }else{
+            alert('账号密码不匹配')
+        }
+
+    }
+
+ 
+ }());
+ ```
