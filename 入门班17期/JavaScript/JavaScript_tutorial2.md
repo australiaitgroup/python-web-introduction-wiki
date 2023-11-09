@@ -1,6 +1,10 @@
 - [Note](#Note)\
   - [JavaScript_tutorial2 (`9/11/2023`)](#javascript_tutorial2-9112023)
-
+    - [function](#function)
+    - [dom](#dom)
+      - [抓取节点（5种主要方式）](#抓取节点-5种主要方式)
+   
+      
 # Note
 
 ## JavaScript_tutorial2 (`9/11/2023`)
