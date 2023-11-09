@@ -1,4 +1,5 @@
-
+- [Note](#Note)\
+  - [JavaScript_tutorial2 (`9/11/2023`)](javascript_tutorial2-9112023)
 
 # Note
 
@@ -9,11 +10,11 @@
 ### function
 - 形参和实参
 ```js
-function functionName(name, age) {    //此时是形参，没有真实的值parameters
+function functionName(name, age) {        //此时是形参，没有真实的值parameters
 
 }
 
-functionNmae('john', 12)                 //此时是实参arguments
+functionNmae('john', 12)                  //此时是实参arguments
 ```
 - return
 ```js
@@ -78,10 +79,10 @@ while
 #### 抓取节点（5种主要方式）
 ```js
 document.getElementById('')
-document.querySelector('.content-div')//className只会抓取第一个 '.className',id '#id'
-document.querySelectorAll('.content-div')//抓取所有
+document.querySelector('.content-div')              //className只会抓取第一个 '.className',id '#id'
+document.querySelectorAll('.content-div')           //抓取所有
 document.getElementByClassName('')
-document.getElementByTagName('') //div
+document.getElementByTagName('')                    //div
 //以上为5种主要方式
 
 const dom = document.getElementByTagName('html')
@@ -139,7 +140,7 @@ dom.childNodes[]
       const d = new Date();
       // d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
      
-      const time = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`//模板字符串
+      const time = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`     //模板字符串
       dom.innerText = time
       // dom.textContent = time
    }
@@ -165,7 +166,7 @@ dom.childNodes[]
       // }
       // dom.className = 'hide'
       // dom.classList.add('hide')
-      dom.classList.toggle('hide')             //这一句可以直接替代以上多行代码
+      dom.classList.toggle('hide')     //这一句可以直接替代以上多行代码
    }
    setInterval(hideOutput,2000)
 }());
