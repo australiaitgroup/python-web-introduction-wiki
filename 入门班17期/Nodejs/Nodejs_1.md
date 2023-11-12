@@ -15,7 +15,7 @@
 
 <hr>
 
-<p align='center'><img src='../images/nodejs.png' width='30%' height='30%' /></p>
+<p align='center'><img src='../images/Nodejs.png' width='30%' height='30%' /></p>
 
 <hr>
 
