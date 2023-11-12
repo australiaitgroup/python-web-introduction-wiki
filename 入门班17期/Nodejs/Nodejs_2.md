@@ -170,10 +170,28 @@ fs.readFile('./score.txt', 'utf8', function(err, data){
 
 #### 创建最基本的web服务器
 1. 导入http模块
+```js
+const http = require('http')
+```
 2. 创建web server instance
+```js
+const server = http.createServer()
+```
 3. 绑定request
-4. 启动server
-5. 解决中文乱码问题
+```js
+//使用服务器实例的.on()方法，为服务器绑定一个request事件
+server.on('request', (req, res) =>{
+  //只要有客户端来请求我们自己的服务器，就会出发request事件，从而调用这个事件处理函数
+  console.log('Someone visit our web server.')
+})
+```
+5. 启动server
+```js
+//调用server.listen(端口号， cb回调)方法，即可启动web服务器
+server.listen(80, () =>{
+  console.log('http server running at http://127.0.0.1')
+})
+```
 
 #### 根据不同的url响应不同的html内容
 ```js
