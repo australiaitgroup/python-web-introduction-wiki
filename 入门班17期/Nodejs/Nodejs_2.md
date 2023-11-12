@@ -151,6 +151,35 @@ fs.readFile('./score.txt', 'utf8', function(err, data){
 - 端口号
 <p align='center'><img src='../images/duankouhao.png' width='100%' height='100%' /></p>
 
+#### 创建最基本的web服务器
+1. 导入http模块
+2. 创建web server instance
+3. 绑定request
+4. 启动server
+5. 解决中文乱码问题
+
+#### 根据不同的url响应不同的html内容
+```js
+const http = require('http');
+//create a web server
+const server = http.createServer();
+//根据不同的req url 返回不同的html内容
+server.on('request',function(req, res){
+    const url = req.url;
+    let content = "<h1>404 not found</h1>";
+    if(url === '/'|| url === '/home'){
+        content = "<h1>Welcome to home page</h1>";
+    }else if(url === '/about'){
+        content = "<h1>Welcome to about page</h1>";
+    }
+    res.setHeader('Content-Type','text/html;charset=utf-8');
+    res.end(content);
+})
+// run server http://localhost:8080
+server.listen(8080, function(){
+    console.log('server is running on http://127.0.0.1:8080')
+})
+```
 
 
 ### npm包管理和使用
