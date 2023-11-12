@@ -149,7 +149,7 @@ fs.readFile('./score.txt', 'utf8', function(err, data){
   <br>IP地址和域名是一一对应，域名服务器就是提供IP地址和域名之间的转化服务的服务器
   <br>开发测试期间，127.0.0.1对应的域名是localhost，使用效果没有区别
 - 端口号
-<p align='center'><img src='../images/duankouhao.png' width='90%' height='90%' /></p>
+<p align='center'><img src='../images/duankouhao.png' width='100%' height='100%' /></p>
 
 
 
