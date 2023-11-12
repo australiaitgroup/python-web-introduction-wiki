@@ -39,7 +39,7 @@
     
 <hr>     
 
-<p align='center'><img src='../images/' width='30%' height='30%' /></p>
+<p align='center'><img src='../images/JavaScript.png' width='30%' height='30%' /></p>
 
 <hr>
 
