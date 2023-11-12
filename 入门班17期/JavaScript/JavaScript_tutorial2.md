@@ -11,6 +11,10 @@
       - [Expand](#Expand)
       - [Login](#Login)
      
+<hr>     
+
+<p align='center'><img src='../images/JavaScript.png' width='15%' height='15%' /></p>
+
 <hr>
    
       
