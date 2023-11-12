@@ -35,6 +35,9 @@
 // 使用fs方法前, 先要导入fs
 const fs = require('fs');
 ```
+
+<hr>
+
 #### 读取指定文件中的内容
 - fs.readFile() 的语法格式
 ```js
@@ -76,6 +79,10 @@ fs.readFile('./files/1.txt', 'utf8', function(err, data){
     //console.log('data', data)
 })
 ```
+
+<hr>
+
+
 #### 向指定的文件中写入内容
 - fs.writeFile() 的语法格式
 ```js
@@ -110,6 +117,9 @@ fs.writeFile('./files/3.txt', 'I like node', function(err){
     console.log('write file succeed')
 })
 ```
+
+<hr>
+
 #### read和writer_file小练习
 - 将一行的内容转化为分行显示，并修改分隔符
 ```js
@@ -159,9 +169,15 @@ fs.readFile('./score.txt', 'utf8', function(err, data){
 #### 什么是http模块
 - 客户端：网络节点中负责消费的电脑叫客户端；负责对外提供网络资源的叫服务器
 - http模块是Node.js官方提供的，用来创建web服务器的模块
+
+<hr>
+
 #### http模块的作用
 - 服务器和普通电脑不同，安装了web服务器软件，例如IIS、Apache等
 - 在Node.js中不需要三方web服务器软件，可以直接运用自带的http模块提供web服务
+
+<hr>
+
 #### 服务器相关概念
 - Ip地址：每台计算机唯一地址，通常用“点分十进制”，例：（192.168.1.1）
   <br>注意：每台web服务器都有自己的IP地址，测试时可输入(127.0.0.1)来访问
@@ -171,6 +187,8 @@ fs.readFile('./score.txt', 'utf8', function(err, data){
   <br>开发测试期间，127.0.0.1对应的域名是localhost，使用效果没有区别
 - 端口号
 <p align='center'><img src='../images/duankouhao.png' width='100%' height='100%' /></p>
+
+<hr>
 
 #### 创建最基本的web服务器
 1. 导入http模块
@@ -196,6 +214,8 @@ server.listen(80, () =>{
   console.log('http server running at http://127.0.0.1')
 })
 ```
+
+<hr>
 
 #### 根据不同的url响应不同的html内容
 ```js
@@ -238,6 +258,8 @@ server.listen(8080, function(){
 <br>http://registry.npmjs.org/服务器上下载自己需要的包
 - 如何下载
 <br>Node Package Manager
+
+<hr>
 
 #### npm初体验
 - 格式化时间的传统做法
