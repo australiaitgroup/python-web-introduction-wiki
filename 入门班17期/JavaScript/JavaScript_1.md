@@ -37,6 +37,11 @@
       - [小练习2](#小练习2)
       - [一些运算符](#一些运算符)
     
+<hr>     
+
+<p align='center'><img src='../images/' width='30%' height='30%' /></p>
+
+<hr>
 
 # Note
 
