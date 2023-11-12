@@ -15,7 +15,11 @@
       - [包](#包)
       - [npm初体验](#npm初体验)
 
+<hr>
 
+<p align='center'><img src='../images/Nodejs.png' width='30%' height='30%' /></p>
+
+<hr>
 
 # Note
 
@@ -149,7 +153,7 @@ fs.readFile('./score.txt', 'utf8', function(err, data){
 })
 ```
 
-
+<hr>
 
 ### http模块及创建web服务器
 #### 什么是http模块
@@ -216,6 +220,7 @@ server.listen(8080, function(){
 })
 ```
 
+<hr>
 
 ### npm包管理和使用
 - 为了更方便更快的开发,包是用原生方法写的, 安装包后能节省很多代码
