@@ -16,5 +16,6 @@
 - [Lecture06: JavaScript Part2](./JavaScript/JavaScript_2.md)
 - [Lecture07: JavaScript Part3](./JavaScript/JavaScript_3.md)
 - [Lecture08: Nodejs Introduction](./Nodejs/Nodejs_1.md)
+- [Lecture09: Nodejs 2](./Nodejs/Nodejs_2.md)
 - [Tutorial03: JavaScrip_Tutorial1](./JavaScript/JavaScript_tutorial1.md)
 - [Tutorial04: JavaScrip_Tutorial2](./JavaScript/JavaScript_tutorial2.md)
