@@ -32,7 +32,11 @@
         - [string方法2](#string方法2)
         - [日期显示小练习](#日期显示小练习)
 
+<hr>     
 
+<p align='center'><img src='../images/JavaScript.png' width='15%' height='15%' /></p>
+
+<hr>
        
 # Note
 
