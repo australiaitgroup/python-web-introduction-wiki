@@ -90,6 +90,7 @@ fs.writeFile('./files/3.txt', 'I like node', function(err){
 })
 ```
 #### read和writer_file小练习
+- 将一行的内容转化为分行显示，并修改分隔符
 ```js
 // Ben:99 
 // Jane:100 
