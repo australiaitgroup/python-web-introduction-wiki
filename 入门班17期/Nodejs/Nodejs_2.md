@@ -1,9 +1,12 @@
+- [Note](#Note)
+  - [Node_2 (`12/11/2023`)](#node_2-12112023) 
+
 
 
 # Note
 
 
-## Node_2(`12/11/2023`)
+## Node_2 (`12/11/2023`)
 
 ### fs模块
 #### 什么是fs文件系统模块
@@ -183,4 +186,63 @@ server.listen(8080, function(){
 
 
 ### npm包管理和使用
-- 为了更方便更快的开发
+- 为了更方便更快的开发,包是用原生方法写的, 安装包后能节省很多代码
+#### 包
+- 什么是包
+<br>Node.js中的第三方模块又叫做包
+- 包的来源
+<br>包由第三方个人或者团队开发出来的，Node,js中免费且开源
+- 为什么需要包
+<br>Node.js仅提供一些底层API，效率低
+<br>包时基于内置模块封装出来提供更高级的API，提高开发效率
+<br>包和内置模块之间的关系，类似与jQuery和浏览器内置API之间关系
+- 下载地址
+<br>http://www.npmjs.com/网站上搜索自己所需要的包
+<br>http://registry.npmjs.org/服务器上下载自己需要的包
+- 如何下载
+<br>Node Package Manager
+
+#### npm初体验
+- 格式化时间的传统做法
+```js
+//index.js:
+const {convertDate} = require('./date');
+const date = new Date();
+const newDT = convertDate(date)
+console.log('newDT',newDT)
+
+//date.js:
+//YYYY-MM-DD HH:MM:SS
+function convertDate(date){
+    console.log('date',date)
+    const y = date.getFullYear();//2023
+    const m = addZero(date.getMonth()+1);
+    const d = addZero(date.getDate());
+    const hh = addZero(date.getHours());
+    const mm = addZero(date.getMinutes());
+    const ss = addZero(date.getSeconds());
+    const newDate = `${y}-${m}-${d} ${hh}:${mm}:${ss}`
+    // console.log('newDate',newDate)//2023-11-12 16:0:46
+    return newDate
+}
+function addZero(num){
+    return num < 10 ? `0${num}` : num;
+}
+
+module.exports = {convertDate}
+```
+- 格式化时间的高级做法
+```js
+const {convertDate} = require('./date');
+const moment = require('moment');
+const date = new Date();
+const newDT = convertDate(date)
+console.log('newDT',newDT)
+//newDT 2023-11-12 16:03:15
+
+//npm init
+//npm install moment   npm i moment
+const momentDate = moment().format('YYYY-MM-DD hh:mm:ss')
+console.log('momentDate',momentDate)
+//momentDate 2023-11-12 04:16:00
+```
