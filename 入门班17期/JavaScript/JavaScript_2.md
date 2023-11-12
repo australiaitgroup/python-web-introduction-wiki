@@ -21,7 +21,12 @@
       - [break关键字](#break关键字)
       - [array数组](#array数组)
       - [object对象](#object对象)
-      
+
+<hr>     
+
+<p align='center'><img src='../images/JavaScript.png' width='15%' height='15%' /></p>
+
+<hr>
       
 
 # Note
