@@ -13,6 +13,12 @@
       - [加载模块](#加载模块)
       - [导入导出模块](#导入导出模块)
 
+<hr>
+
+<p align='center'><img src='../images/nodejs.png' width='30%' height='30%' /></p>
+
+<hr>
+
 # Note
 
 ## Node_1 (`8/11/2023`)
