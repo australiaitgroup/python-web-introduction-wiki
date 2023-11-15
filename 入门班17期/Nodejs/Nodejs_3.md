@@ -63,6 +63,7 @@ const moment = reqiure('moment')
 - API：连接前后端的桥梁
 
 <p align='center'><img src='../images/how do api works.png' width='80%' height='80%' /></p>
+
 ```js
 //npm init
 //npm install express, npm i express
