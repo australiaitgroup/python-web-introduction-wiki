@@ -1,4 +1,3 @@
-![image](https://github.com/australiaitgroup/python-web-introduction-wiki/assets/147613036/62b53ca8-09ee-4441-8f35-4d4ac5ea086c)
 
 # Note
 
