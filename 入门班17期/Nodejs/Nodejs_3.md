@@ -112,9 +112,6 @@ const express = require('express');
 const app = express();
 const PORT = 8000;
 
-app.listen(PORT, function(){
-    console.log('Sever is running on http://localhost:8000')
-})
 ```
 
 
@@ -191,10 +188,56 @@ app.listen(PORT, function(){
 ```
 
 #### 获取URL中的动态参数
+```js
+//npm init
+//npm install express, npm i express
+//npm i nodemon -D
+const express = require('express');
+//create web server
+const app = express();
+const PORT = 8000;
+app.get('/user', function(req,res){
+    res.send({name:'Chris',age:20})
+})
+
+app.post('/user', function(req,res){
+    res.send('request succeed')
+})
+
+app.get('/', function(req,res){
+    console.log('query',req.query);
+    res.send(`${req.query.name} is ${req.query.age}`)
+})
+
+app.get('/profiles/:name', function(req,res){
+    //:name 是个动态参数
+    console.log('name',req.params.name)
+    res.send(req.params)
+})
+
+app.get('/users/:id/:room',function(req,res){
+    console.log(req.params)
+    console.log('id',req.params.id)
+    console.log('room',req.params.room)
+    res.send(req.params)
+})
+
+app.listen(PORT, function(){
+    console.log('Sever is running on http://localhost:8000')
+})
+```
 
 
 ### Express中的路由
 #### 路由的概念
+- 在Express中，路由是指客户端的请求与服务器处理函数之间的映射关系
+- Express中的路由分3个部分：请求的类型、请求的URL地址、处理函数，格式如下
+```js
+app.METHOD(PATH, HANDLER)
+```
+- 路由的匹配过程
+
+<p align='center'><img src='../images/路由的匹配过程.png' width='80%' height='80%' /></p>
 
 #### 路由的使用
 
