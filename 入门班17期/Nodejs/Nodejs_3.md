@@ -61,4 +61,4 @@ const moment = reqiure('moment')
 - 版本号：三部分，从右到左由小变大（major）
 - devDependencies:开发阶段的包一般安装在这里
 - API：连接前后端的桥梁
-<p align='center'><img src='../images/how do apis works.png' width='80%' height='80%' /></p>
+<p align='center'><img src='../images/how do api works.png' width='80%' height='80%' /></p>
