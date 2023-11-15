@@ -5,7 +5,7 @@
 
 ## Nodejs_3(`15/11/2023`)
 
-### 模块化的概念
+### 模块化
 #### 什么是模块化
 - 编程领域的模块化，就是遵守固定的规则，把大文件拆成独立并互相依赖的小模块
 - 代码拆分的好处
@@ -17,14 +17,48 @@ graph TB;
 ```
 
 
+#### 模块的分类和require的使用
+#### 模块的分类
+- 内置模块（由Node.js官方提供，如fs\path\http等）
+- 自定义模块
+- 第三方模块
+#### 加载模块
+```js
+// 1.加载内置的fs模块
+const fs = require('fs')
 
+// 2.加载用户自定义模块
+const custom = require('./custom.js')
 
-### 模块的分类和require的使用
+// 3.加载第三方模块
+const moment = reqiure('moment')
+```
 
-### 模块作用域和module对象
+#### 模块作用域和module对象
+##### 什么是模块作用域
+##### 模块作用域的好处
+##### module对象
+
 
 ### module.exports的使用
+#### module.exports对象
+#### 共享成员时的注意点
+#### 使用误区
+
+
 
 ### CommonJS模块化规范
 
-### 认识express
+
+
+
+### express
+#### Express简介
+#### 进一步理解Express
+#### 创建基本的web服务器
+- json：数据传送格式（key-value格式），优点：兼容性好，解析速度快，语法简单
+- package-lock作用：记录，描述文件包数据来源、地址、版本号等等，保证依赖统一兼容
+- 版本号：三部分，从右到左由小变大（major）
+- devDependencies:开发阶段的包一般安装在这里
+- API：连接前后端的桥梁
+<p align='center'><img src='../images/how do apis works.png' width='80%' height='80%' /></p>
