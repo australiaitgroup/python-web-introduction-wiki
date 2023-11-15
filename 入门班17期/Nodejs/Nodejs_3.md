@@ -149,3 +149,12 @@ app.listen(PORT, function(){
     console.log('Sever is running on http://localhost:8000')
 })
 ```
+
+#### 获取URL中的动态参数
+
+
+### Express中的路由
+#### 路由的概念
+
+#### 路由的使用
+
