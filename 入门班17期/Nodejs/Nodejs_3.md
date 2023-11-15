@@ -61,4 +61,25 @@ const moment = reqiure('moment')
 - 版本号：三部分，从右到左由小变大（major）
 - devDependencies:开发阶段的包一般安装在这里
 - API：连接前后端的桥梁
+
 <p align='center'><img src='../images/how do api works.png' width='80%' height='80%' /></p>
+```js
+//npm init
+//npm install express, npm i express
+//npm i nodemon -D
+const express = require('express');
+//create web server
+const app = express();
+const PORT = 8000;
+
+app.listen(PORT, function(){
+    console.log('Sever is running on http://localhost:8000')
+})
+```
+
+
+#### 监听GET请求
+
+
+#### 监听POST请求
+
