@@ -16,7 +16,6 @@ graph TB;
 ```
 
 
-#### 模块的分类和require的使用
 #### 模块的分类
 - 内置模块（由Node.js官方提供，如fs\path\http等）
 - 自定义模块
@@ -33,9 +32,16 @@ const custom = require('./custom.js')
 const moment = reqiure('moment')
 ```
 
-#### 模块作用域和module对象
-##### 什么是模块作用域
-##### 模块作用域的好处
+#### 什么是模块作用域
+> 自定义模块中定义的变量,方法只能在模块内被访问
+
+Node.js -> CommonJS的规范
+- 默认用module.exports/require()
+
+#### 模块作用域的好处
+> 防止全局变量污染的问题
+<p align='center'><img src='../images/模块化的好处.png' width='80%' height='80%' /></p>
+
 ##### module对象
 
 
