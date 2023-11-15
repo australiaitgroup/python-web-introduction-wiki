@@ -73,15 +73,29 @@ CommonJS规定：
 
 ### express
 #### Express简介
+- WEB服务器: http -> createServer
+- API服务器: Express (简化了http内置模块, 使用express更方便)
+
+API: Application Programming Interface
+> 连接前后端的桥梁
+<p align='center'><img src='../images/how do api works.png' width='80%' height='80%' /></p>
+
 #### 进一步理解Express
+问：不使用Express能否创建Web服务器？
+- 答：能，使用Node.js提供的原生http模块即可
+
+问：有了http内置模块，为什么还要用Express？
+- 答：http内置模块用起来复杂，开发效率低；Express基于http进一步封装出现，能提高开发效率
+
+问：http内置模块与Express的关系？
+- 答：类似Web.API和jQuery的关系。后者是基于前者进一步封装出来的
+
 #### 创建基本的web服务器
 - json：数据传送格式（key-value格式），优点：兼容性好，解析速度快，语法简单
 - package-lock作用：记录，描述文件包数据来源、地址、版本号等等，保证依赖统一兼容
 - 版本号：三部分，从右到左由小变大（major）
 - devDependencies:开发阶段的包一般安装在这里
-- API：连接前后端的桥梁
 
-<p align='center'><img src='../images/how do api works.png' width='80%' height='80%' /></p>
 
 ```js
 //npm init
