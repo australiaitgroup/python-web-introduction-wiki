@@ -83,10 +83,14 @@ API: Application Programming Interface
 #### 进一步理解Express
 - 问：不使用Express能否创建Web服务器？
 - 答：能，使用Node.js提供的原生http模块即可
+
 <hr>
+
 - 问：有了http内置模块，为什么还要用Express？
 - 答：http内置模块用起来复杂，开发效率低；Express基于http进一步封装出现，能提高开发效率
+
 <hr>
+
 - 问：http内置模块与Express的关系？
 - 答：类似Web.API和jQuery的关系。后者是基于前者进一步封装出来的
 
