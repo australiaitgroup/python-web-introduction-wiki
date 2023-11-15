@@ -120,3 +120,29 @@ app.listen(PORT, function(){
 #### 获取URL中携带的查询参数
 
 <p align='center'><img src='../images/get URL.png' width='80%' height='80%' /></p>
+
+```js
+//npm init
+//npm install express, npm i express
+//npm i nodemon -D
+const express = require('express');
+//create web server
+const app = express();
+const PORT = 8000;
+app.get('/user', function(req,res){
+    res.send({name:'Chris',age:20})
+})
+
+app.post('/user', function(req,res){
+    res.send('request succeed')
+})
+
+app.get('/', function(req,res){
+    console.log('query',req.query);
+    res.send(`${req.query.name} is ${req.query.age}`)
+})
+
+app.listen(PORT, function(){
+    console.log('Sever is running on http://localhost:8000')
+})
+```
