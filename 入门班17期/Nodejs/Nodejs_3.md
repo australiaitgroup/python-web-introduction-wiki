@@ -141,6 +141,9 @@ app.get('/', function(req,res){
     console.log('query',req.query);
     res.send(`${req.query.name} is ${req.query.age}`)
 })
+//注意这里的request的指令记得两边的value都要fetch，不然就会出现undefined的情况
+//like:http://localhost:8000/?name=Chris  ==>  Chris is undefined
+//正确方法是：http://localhost:8000/?name=Chris&age=20
 
 app.listen(PORT, function(){
     console.log('Sever is running on http://localhost:8000')
