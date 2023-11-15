@@ -119,4 +119,4 @@ app.listen(PORT, function(){
 
 #### 获取URL中携带的查询参数
 
-<p align='center'><img src='../images/how do api works.png' width='80%' height='80%' /></p>
+<p align='center'><img src='../images/get URL.png' width='80%' height='80%' /></p>
