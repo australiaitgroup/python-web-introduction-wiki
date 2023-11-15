@@ -45,13 +45,18 @@ Node.js -> CommonJS的规范
 <p align='center'><img src='../images/模块化的好处.png' width='80%' height='80%' /></p>
 
 
-##### module对象
+#### module对象
+- 每个.js自定义模块中都有一个module对象，它里面存储了和当前模块有关的信息
 
-
-### module.exports的使用
 #### module.exports对象
-#### 共享成员时的注意点
-#### 使用误区
+- 自定义模块中，可以使用module.exports对象，将模块内的成员共享出去，供外界使用
+- 用require()方法导入自定义模块是，得到的就是module.exports所指向的对象
+
+
+#### 共享成员时的注意点及使用误区
+- 使用require()方法导入模块时，导入的结果，永远以module.exports指向的对象为准
+- exports和module.exports的使用误区
+<p align='center'><img src='../images/exports和module.exports的使用误区.png' width='80%' height='80%' /></p>
 
 
 
