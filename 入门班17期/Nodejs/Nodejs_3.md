@@ -83,7 +83,6 @@ CommonJS规定：
 
 
 <hr>
-<hr>
 
 ### Express
 #### Express简介
@@ -251,6 +250,7 @@ app.listen(PORT, function(){
 })
 ```
 
+<hr>
 
 ### Express中的路由
 #### 路由的概念
