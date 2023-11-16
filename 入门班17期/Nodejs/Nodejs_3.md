@@ -15,11 +15,15 @@ graph TB;
     a-->d["实现按需加载"];
 ```
 
+<hr>
 
 #### 模块的分类
 - 内置模块（由Node.js官方提供，如fs\path\http等）
 - 自定义模块
 - 第三方模块
+
+<hr>
+
 #### 加载模块
 ```js
 // 1.加载内置的fs模块
@@ -32,11 +36,15 @@ const custom = require('./custom.js')
 const moment = reqiure('moment')
 ```
 
+<hr>
+
 #### 什么是模块作用域
 > 自定义模块中定义的变量,方法只能在模块内被访问
 
 Node.js -> CommonJS的规范
 - 默认用module.exports/require()
+
+<hr>
 
 #### 模块作用域的好处
 > 防止全局变量污染的问题
@@ -44,21 +52,25 @@ Node.js -> CommonJS的规范
 - 这两个文件各自封装了其变量和函数,即使两个模块内部有相同的变量名，它们也不会互相影响
 <p align='center'><img src='../images/模块化的好处.png' width='80%' height='80%' /></p>
 
+<hr>
 
 #### module对象
 - 每个.js自定义模块中都有一个module对象，它里面存储了和当前模块有关的信息
+
+<hr>
 
 #### module.exports对象
 - 自定义模块中，可以使用module.exports对象，将模块内的成员共享出去，供外界使用
 - 用require()方法导入自定义模块是，得到的就是module.exports所指向的对象
 
+<hr>
 
 #### 共享成员时的注意点及使用误区
 - 使用require()方法导入模块时，导入的结果，永远以module.exports指向的对象为准
 - exports和module.exports的使用误区
 <p align='center'><img src='../images/exports和module.exports的使用误区.png' width='80%' height='80%' /></p>
 
-
+<hr>
 
 #### Node.js模块化规范
 > Node.js遵循了CommonJS模块化规范，CommonJS规定了模块的特性和各模块之间如何相互依赖<br>
@@ -80,6 +92,8 @@ API: Application Programming Interface
 > 连接前后端的桥梁
 <p align='center'><img src='../images/how do api works.png' width='80%' height='80%' /></p>
 
+<hr>
+
 #### 进一步理解Express
 - 问：不使用Express能否创建Web服务器？
 - 答：能，使用Node.js提供的原生http模块即可
@@ -95,6 +109,7 @@ API: Application Programming Interface
 - 答：类似Web.API和jQuery的关系。后者是基于前者进一步封装出来的
 
 <hr>
+
 
 #### 创建基本的web服务器
 - json：数据传送格式（key-value格式），优点：兼容性好，解析速度快，语法简单
@@ -114,6 +129,7 @@ const PORT = 8000;
 
 ```
 
+<hr>
 
 #### 监听GET请求
 ```js
@@ -134,6 +150,8 @@ app.listen(PORT, function(){
 })
 ```
 
+<hr>
+
 #### 监听POST请求
 ```js
 //npm init
@@ -153,6 +171,8 @@ app.listen(PORT, function(){
     console.log('Sever is running on http://localhost:8000')
 })
 ```
+
+<hr>
 
 #### 获取URL中携带的查询参数
 
@@ -186,6 +206,8 @@ app.listen(PORT, function(){
     console.log('Sever is running on http://localhost:8000')
 })
 ```
+
+<hr>
 
 #### 获取URL中的动态参数
 ```js
@@ -239,5 +261,43 @@ app.METHOD(PATH, HANDLER)
 
 <p align='center'><img src='../images/路由的匹配过程.png' width='80%' height='80%' /></p>
 
-#### 路由的使用
+<hr>
 
+#### 路由的使用
+- 创建API路由模块
+```js
+const express = require('express');
+const router = require('./router');
+const userRouter = require('./userRouter');
+//create a web server
+const app = express();
+//配置解析body数据的中间件
+app.use(express.json())
+//加载路由模块
+app.use('/api', router);
+app.use('/api', userRouter);
+
+const PORT = 8000;
+app.listen(PORT, function(){
+    console.log('Server is running on http://localhost:8000')
+})
+```
+- 编写GET/POST接口
+```js
+const express = require('express');
+//create user router
+const userRouter = express.Router();
+
+userRouter.post('/user', function(req,res){
+    //req.body
+    const body = req.body;
+    console.log('body', body);
+    res.send({
+        status:0,
+        msg:'Add user successfully',
+        data:body
+    })
+})
+
+module.exports = userRouter;
+```
