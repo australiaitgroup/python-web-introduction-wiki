@@ -72,4 +72,13 @@ const userRouter = ('/router/user.route.js')
 app.use(userRouter)
 
 user.route.js
-route.get()  
+route.get('/',(req,res)=>{
+
+})
+
+module.exports = router  
+```
+- 注意：前端后端的引用方式要分开
+`前端一般用require，后端一般用import，混用容易报错`
+
+### 练习
