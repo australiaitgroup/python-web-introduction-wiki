@@ -41,7 +41,7 @@ sever.on(request, (req,res)=>{
 - 三方，自定义的，内置
   
 ##### express
-- express koa nest （is）
+###### express koa nest （is）
 ```js
 // 1.导入express
 const express = require('express')
@@ -55,6 +55,21 @@ app.get('/',(req,res)=>{
 
 // 3.启动服务器
 app.listen(8080, ()=>{
-
+  console.log('Server is running on 8080')
 })
-  
+```
+###### CRUD request method
+- C:create
+- R:read
+- U:update
+- D:delete
+###### Route
+- `const router = express.Router()`
+- `app.use(route)`
+```js
+app.js
+const userRouter = ('/router/user.route.js')
+app.use(userRouter)
+
+user.route.js
+route.get()  
