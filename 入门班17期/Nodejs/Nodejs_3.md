@@ -83,7 +83,7 @@ CommonJS规定：
 
 
 
-### express
+### Express
 #### Express简介
 - WEB服务器: http -> createServer
 - API服务器: Express (简化了http内置模块, 使用express更方便)
