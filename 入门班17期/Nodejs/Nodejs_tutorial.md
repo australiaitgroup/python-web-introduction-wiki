@@ -133,8 +133,8 @@ module.exports = router
 ### 练习
 - 注意时常在postman测试get和post能否拿到对应的信息
 - 个人测试时出现过一直拿不到messages.json里的内容，但是调换一下app.use的前后顺序可以解决（仅供参考）
+- 老师课堂代码：messages.js:
 ```js
-//messages.js:
 var express = require('express');
 var router = express.Router();
 const fs = require('fs')
@@ -205,6 +205,7 @@ router.delete('/:id', function(req, res) {
 
 module.exports = router;
 ```
+- app.js
 ```js
 //app.js
 var express = require('express');
@@ -216,7 +217,6 @@ var app = express();
 app.use(express.json());
 //设置cors请求头：允许跨域请求
 app.use(cors())
-
 
 // app.use('/', (req,res)=>{
 //   res.send('Hello world');
