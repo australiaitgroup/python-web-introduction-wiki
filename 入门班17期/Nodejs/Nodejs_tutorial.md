@@ -13,11 +13,21 @@
           - [CRUD request method](#CRUD-request-method)
           - [Route](#Route)
     - [练习](#练习)
+
+<hr>
+
+<p align='center'><img src='../images/Nodejs.png' width='30%' height='30%' /></p>
+
+<hr>
   
 
 # Note
 
+<hr>
+
 ## Nodejs_tutorial (`16/11/2023`)
+
+<hr>
 
 ### 复习
 #### npm yarn pnpm
@@ -28,10 +38,17 @@
 - node app.js
   <br>{"start":"node app.js"}
 
+<hr>
+
 ##### 包版本2.3.4
+
+<hr>
+
 ##### http fs
 - `fs.readfile(path, data)`
 - `fs.writefile(path, data)`
+
+<hr>
 
 ##### 创建服务器
 ```js
@@ -44,17 +61,22 @@ sever.on(request, (req,res)=>{
 })
 ```
 
+<hr>
+
 ##### status code
 - 2**:成功
 - 4**：客户端错误
 - 5**：服务器错误
 
+<hr>
 
 ##### 模块化
 - 复用性  灵活性
 - 可读性：大问题拆成小问题
 - 三方，自定义的，内置
-  
+
+<hr>
+
 ##### express
 ###### express koa nest （is）
 ```js
@@ -73,11 +95,17 @@ app.listen(8080, ()=>{
   console.log('Server is running on 8080')
 })
 ```
+
+<hr>
+
 ###### CRUD request method
 - C:create
 - R:read
 - U:update
 - D:delete
+
+<hr>
+
 ###### Route
 - `const router = express.Router()`
 - `app.use(route)`
@@ -95,6 +123,8 @@ module.exports = router
 ```
 - 注意：前端后端的引用方式要分开
 `前端一般用require，后端一般用import，混用容易报错`
+
+<hr>
 
 ### 练习
 - 注意时常在postman测试get和post能否拿到对应的信息
