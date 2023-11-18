@@ -41,6 +41,9 @@
 <hr>
 
 ##### 包版本2.3.4
+> 2: major changes<br>
+> 3. minor changes<br>
+> 4. patch changes<br>
 
 <hr>
 
