@@ -23,11 +23,11 @@
 
 # Note
 
-<hr>
+
 
 ## Nodejs_tutorial (`16/11/2023`)
 
-<hr>
+
 
 ### 复习
 #### npm yarn pnpm
@@ -125,6 +125,7 @@ module.exports = router
 `前端一般用require，后端一般用import，混用容易报错`
 
 <hr>
+<br>
 
 ### 练习
 - 注意时常在postman测试get和post能否拿到对应的信息
