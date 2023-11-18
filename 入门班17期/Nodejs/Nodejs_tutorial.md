@@ -1,9 +1,9 @@
 - [Note](#Note)
-  - [Node.js_tutorial (`16/11/2023`)](nodejs_tutorial-16112023)
+  - [Nodejs_tutorial (`16/11/2023`)](Nodejs_tutorial-16112023)
 
 # Note
 
-## Node.js_tutorial (`16/11/2023`)
+## Nodejs_tutorial (`16/11/2023`)
 
 ### 复习
 #### npm yarn pnpm
