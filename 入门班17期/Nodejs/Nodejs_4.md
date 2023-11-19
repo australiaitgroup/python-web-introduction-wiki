@@ -19,7 +19,13 @@
         - [简单请求和预检请求的区别](#简单请求和预检请求的区别)
     - [前后端组合练习](#前后端组合练习)
       - [cors练习](#cors练习)
-      - [创建一个带有input内容的box，能添加、删除字段或列表](#创建一个带有input内容的box能添加删除字段或列表)       
+      - [创建一个带有input内容的box，能添加、删除字段或列表](#创建一个带有input内容的box能添加删除字段或列表)
+<hr>
+
+<p align='center'><img src='../images/Nodejs.png' width='30%' height='30%' /></p>
+
+<hr>
+   
 
 # Note
 
@@ -32,6 +38,8 @@
 - 一般常见代码状态
 <p align='center'><img src='../images/常见代码状态.png' width='50%' height='50%' /></p>
 
+<hr>
+
 ### 托管静态资源
 
 #### express-static
@@ -42,11 +50,15 @@ app.use(express.static('public'))
 - 注意：express在指定静态目录中查找文件，存放静态文件的目录名不会出现在URL中
 > `http://localhost:3000/images/bg.jpg
 
+<hr>
+
 #### 托管多个静态资源目录
 ```js
 app.use(express.static('public'))
 app.use(express.static('files'))
 ```
+
+<hr>
 
 #### 挂载路径前缀
 - 可在静态资源访问路径之前，挂载路径前缀
@@ -54,6 +66,8 @@ app.use(express.static('files'))
 app.use('/public', express.static('public'))
 ```
 
+<hr>
+<br>
 
 ### CORS跨域资源共享
 #### 接口的跨域问题
@@ -61,18 +75,28 @@ app.use('/public', express.static('public'))
 - 解决方案
 > 1. CORS（主流解决方案）
 > 2. JSONP（有缺陷的解决方案：只支持GET请求）
+
+<hr>
+
 #### 使用cors中间件解决跨域问题
 - cors是Express的一个三方中间件
 - 步骤：
 > 1. 运行npm install cors 安装中间件
 > 2. 使用const cors = require（'cors'）导入中间件
 > 3. 在路由之前调用app.use(cors())配置中间件
+
+<hr>
+
 #### 什么是cors
 <p align='center'><img src='../images/什么是cors.png' width='70%' height='70%' /></p>
+
+<hr>
 
 #### cors注意事项
 - cors主要在服务器端进行配置，客户端浏览器无须做任何额外的配置，即可请求开启了cors的接口
 - cors在浏览器中有兼容性，但对浏览器有一定要求，需要支持XMLHttpRequest Level2
+
+<hr>
 
 #### cors响应头部
 ##### Acess-Control-Allow-Origin
@@ -85,14 +109,23 @@ Acess-Control-Allow-Origin: <origin> | *
 ```js
 res.setHeader('Acess-Control-Allow-Origin', '*')
 ```
+
+<hr>
+
 ##### Acess-Control-Allow-Origin-Headers
 <p align='center'><img src='../images/Acess-Control-Allow-Origin-Headers.png' width='80%' height='80%' /></p>
+
+<hr>
 
 ##### Acess-Control-Allow-Origin-Methods
 <p align='center'><img src='../images/Acess-Control-Allow-Origin-Methods.png' width='80%' height='80%' /></p>
 
+<hr>
+
 ##### 简单请求
 <p align='center'><img src='../images/简单请求.png' width='80%' height='80%' /></p>
+
+<hr>
 
 ##### 预检请求
 - 只要符合以下任何一个条件的请求，都需要进行预检请求：
@@ -100,9 +133,13 @@ res.setHeader('Acess-Control-Allow-Origin', '*')
 > 2. 请求头中包含自定义头部字段
 > 3. 向服务器发送了application/json格式的数据
 
+<hr>
+
 ##### 简单请求和预检请求的区别
 - 简单请求：客户端与服务器之间只会发生一次请求
 - 预检请求：客户端与服务器之间会发生两次请求，OPTION预检请求成功之后，才会发起真正的请求
+
+<hr>
 
 ### 前后端组合练习
 #### cors练习
@@ -143,6 +180,7 @@ router.get('/users',function(req,res){
 module.exports = router;
 ```
 
+<hr>
 
 #### 创建一个带有input内容的box，能添加、删除字段或列表
 - server.js
