@@ -48,7 +48,7 @@
 app.use(express.static('public'))
 ```
 - 注意：express在指定静态目录中查找文件，存放静态文件的目录名不会出现在URL中
-> `http://localhost:3000/images/bg.jpg
+> `http://localhost:3000/images/bg.jpg`
 
 <hr>
 
