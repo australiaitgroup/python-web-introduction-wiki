@@ -140,6 +140,7 @@ res.setHeader('Acess-Control-Allow-Origin', '*')
 - 预检请求：客户端与服务器之间会发生两次请求，OPTION预检请求成功之后，才会发起真正的请求
 
 <hr>
+<br>
 
 ### 前后端组合练习
 #### cors练习
