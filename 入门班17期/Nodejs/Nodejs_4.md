@@ -2,7 +2,7 @@
   - [Nodejs_4 (`19/11/2023`)](#nodejs_4-19112023)
     - [状态码](#状态码)
     - [托管静态资源](#托管静态资源)
-      - [express-static()](#express-static())
+      - [express-static](#express-static)
       - [托管多个静态资源目录](#托管多个静态资源目录)
       - [挂载路径前缀](#挂载路径前缀)
     - [CORS跨域资源共享](#CORS跨域资源共享)
@@ -34,7 +34,7 @@
 
 ### 托管静态资源
 
-#### express-static()
+#### express-static
 - express提供的一个函数，可以方便的创建一个静态资源服务器
 ```js
 app.use(express.static('public'))
