@@ -64,4 +64,4 @@ Acess-Control-Allow-Origin: <origin> | *
 res.setHeader('Acess-Control-Allow-Origin', '*')
 ```
 ##### Acess-Control-Allow-Origin-Headers
-<p align='center'><img src='../images/Acess-Control-Allow-Origin-Headers.png' width='70%' height='70%' /></p>
+<p align='center'><img src='../images/Acess-Control-Allow-Origin-Headers.png' width='80%' height='80%' /></p>
