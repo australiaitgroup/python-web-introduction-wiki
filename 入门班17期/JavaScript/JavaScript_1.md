@@ -146,14 +146,9 @@ JavaScript语法           页面文档对象模型        浏览器对象模型
 | `加号拼接字符串` | `和字符串拼接的结果都是字符串` | `var num= 1; alert(String(num+"我是字符串")` |
 | `String()强制转换` | `转成字符串` | `var num= 1; alert(String(num))` |
 
-```html
-方式                  说明                         案例
-toString()            转成字符串                   var num= 1; alert(num.toString());
-加号拼接字符串         和字符串拼接的结果都是字符串   var num= 1; alert(String(num+"我是字符串");
-String()强制转换       转成字符串                   var num= 1; alert(String(num));
-//toString() 和String()使用方式不一样
-//三种转换方式，更常用的是第三种加号拼接字符串转换方式，也称之为饮食转换
-```
+> toString() 和String()使用方式不一样
+> 三种转换方式，更常用的是第三种加号拼接字符串转换方式，也称之为饮食转换
+
 - 转换成数字型
 ```html
 方式                      说明                            案例
