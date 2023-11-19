@@ -65,3 +65,6 @@ res.setHeader('Acess-Control-Allow-Origin', '*')
 ```
 ##### Acess-Control-Allow-Origin-Headers
 <p align='center'><img src='../images/Acess-Control-Allow-Origin-Headers.png' width='80%' height='80%' /></p>
+
+##### Acess-Control-Allow-Origin-Methods
+<p align='center'><img src='../images/Acess-Control-Allow-Origin-Methods.png' width='80%' height='80%' /></p>
