@@ -68,7 +68,7 @@ const moment = reqiure('moment')
 <hr>
 
 #### 什么是模块作用域
-> 自定义模块中定义的变量,方法只能在模块内被访问
+- 自定义模块中定义的变量,方法只能在模块内被访问
 
 Node.js -> CommonJS的规范
 - 默认用module.exports/require()
