@@ -47,3 +47,21 @@ app.use('/public', express.static('public'))
 > 3. 在路由之前调用app.use(cors())配置中间件
 #### 什么是cors
 <p align='center'><img src='../images/什么是cors.png' width='70%' height='70%' /></p>
+
+#### cors注意事项
+- cors主要在服务器端进行配置，客户端浏览器无须做任何额外的配置，即可请求开启了cors的接口
+- cors在浏览器中有兼容性，但对浏览器有一定要求，需要支持XMLHttpRequest Level2
+
+#### cors响应头部
+##### Acess-Control-Allow-Origin
+- 响应头部可以携带 Acess-Control-Allow-Origin 字段
+- 其中，origin参数的值指定了允许访问该资源的外域URL
+```js
+Acess-Control-Allow-Origin: <origin> | *
+```
+- 如果指定了Acess-Control-Allow-Origin字段的值为通配符'*'，表示允许来自任何域的请求
+```js
+res.setHeader('Acess-Control-Allow-Origin', '*')
+```
+##### Acess-Control-Allow-Origin-Headers
+<p align='center'><img src='../images/Acess-Control-Allow-Origin-Headers.png' width='70%' height='70%' /></p>
