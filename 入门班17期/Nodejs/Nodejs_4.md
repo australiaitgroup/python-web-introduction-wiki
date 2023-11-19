@@ -46,4 +46,4 @@ app.use('/public', express.static('public'))
 > 2. 使用const cors = require（'cors'）导入中间件
 > 3. 在路由之前调用app.use(cors())配置中间件
 #### 什么是cors
-<p align='center'><img src='../images/什么是cors.png' width='60%' height='60%' /></p>
+<p align='center'><img src='../images/什么是cors.png' width='70%' height='70%' /></p>
