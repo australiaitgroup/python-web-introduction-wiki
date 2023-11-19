@@ -1,4 +1,25 @@
-
+- [Note](#Note)
+  - [Nodejs_4 (`19/11/2023`)](#nodejs_4-19112023)
+    - [状态码]
+    - [托管静态资源]
+      - [express.tatic()](#express.tatic)
+      - [托管多个静态资源目录](#托管多个静态资源目录)
+      - [挂载路径前缀](#挂载路径前缀)
+    - [CORS跨域资源共享](#CORS跨域资源共享)
+      - [接口的跨域问题](#接口的跨域问题)
+      - [使用cors中间件解决跨域问题](#使用cors中间件解决跨域问题)
+      - [什么是cors](#什么是cors)
+      - [cors注意事项](#cors注意事项)
+      - [cors响应头部](#cors响应头部)
+        - [Acess-Control-Allow-Origin](#Acess-Control-Allow-Origin)
+        - [Acess-Control-Allow-Origin-Headers](#Acess-Control-Allow-Origin-Headers)
+        - [Acess-Control-Allow-Origin-Methods](#Acess-Control-Allow-Origin-Methods)
+        - [简单请求](#简单请求)
+        - [预检请求](#预检请求)
+        - [简单请求和预检请求的区别](#简单请求和预检请求的区别)
+    - [前后端组合练习](#前后端组合练习)
+      - [cors练习](#cors练习)
+      - [创建一个带有input内容的box，能添加、删除字段或列表](#创建一个带有input内容的box能添加删除字段或列表)       
 
 # Note
 
@@ -83,7 +104,7 @@ res.setHeader('Acess-Control-Allow-Origin', '*')
 - 预检请求：客户端与服务器之间会发生两次请求，OPTION预检请求成功之后，才会发起真正的请求
 
 ### 前后端组合练习
-- cors练习
+#### cors练习
 - index.js
 ```js
 //npm init
@@ -122,7 +143,7 @@ module.exports = router;
 ```
 
 
-- 创建一个带有input内容的box，能添加、删除字段或列表
+#### 创建一个带有input内容的box，能添加、删除字段或列表
 - server.js
 ```js
 //npm init
