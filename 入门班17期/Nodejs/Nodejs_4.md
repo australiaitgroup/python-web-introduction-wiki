@@ -43,5 +43,6 @@ app.use('/public', express.static('public'))
 - 步骤：
 > 1. 运行npm install cors 安装中间件
 > 2. 使用const cors = require（'cors'）导入中间件
-> 3. 
+> 3. 在路由之前调用app.use(cors())配置中间件
 #### 什么是cors
+<p align='center'><img src='../images/什么是cors.png' width='50%' height='50%' /></p>
