@@ -68,3 +68,6 @@ res.setHeader('Acess-Control-Allow-Origin', '*')
 
 ##### Acess-Control-Allow-Origin-Methods
 <p align='center'><img src='../images/Acess-Control-Allow-Origin-Methods.png' width='80%' height='80%' /></p>
+
+##### 简单请求
+<p align='center'><img src='../images/简单请求.png' width='80%' height='80%' /></p>
