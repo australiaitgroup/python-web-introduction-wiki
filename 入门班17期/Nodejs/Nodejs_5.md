@@ -28,15 +28,21 @@
   >GET：从服务器获取资源<br>
   >POST：在服务器新建一个资源<br>
   >PUT：在服务器更新资源（客户端提供改变后的完整资源）<br>
-  >PATCH：在服务器更新资源（客户端提供改变的属性）
+  >PATCH：在服务器更新资源（客户端提供改变的属性）<br>
   >DELETE：从服务器中删除资源
 
   <p align='center'><img src='../images/正确使用http动词.png' width='60%' height='60%' /></p>
 - 合理使用查询参数
   <p align='center'><img src='../images/合理使用查询参数.png' width='60%' height='60%' /></p>
-  >HTTP请求方式
-  >get和post请求区别
-
+- HTTP请求方式
+  >GET：获取指定资源信息，请求参数附加在URL后，一般不超过2048字符<br>
+  >POST：提交数据，一般用于表单提交，可以传输大量数据<br>
+  >PUT：更新服务器上指定资源，需指定更新后的URL和资源，URL不存在会创建新资源<br>
+  >DELETE：删除资源，需指定需要删除的资源的URL
+- get和post请求区别
+  >功能不同：get是获取数据，post是传送数据<br>
+  >数据量不同：get传送数据量较小，不能超过2KB。post传送量大，一般不受限制<br>
+  >安全行不同：get安全性低。post安全性高
 
 ### 中间件
 #### 中间件的概念
