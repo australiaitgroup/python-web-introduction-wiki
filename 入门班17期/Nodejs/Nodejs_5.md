@@ -47,6 +47,7 @@
 ### 中间件
 #### 中间件的概念
 - 现实生活中的例子
+  <p align='center'><img src='../images/现实生活中的例子.png' width='60%' height='60%' /></p>
 - Express中间件的调用流程
 - Express中间件的格式
 - next函数的作用
