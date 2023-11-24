@@ -31,9 +31,9 @@
   >PATCH：在服务器更新资源（客户端提供改变的属性）<br>
   >DELETE：从服务器中删除资源
 
-  <p align='center'><img src='../images/正确使用http动词.png' width='60%' height='60%' /></p>
+  <p align='center'><img src='../images/正确使用http动词.png' width='80%' height='80%' /></p>
 - 合理使用查询参数
-  <p align='center'><img src='../images/合理使用查询参数.png' width='60%' height='60%' /></p>
+  <p align='center'><img src='../images/合理使用查询参数.png' width='80%' height='80%' /></p>
 - HTTP请求方式
   >GET：获取指定资源信息，请求参数附加在URL后，一般不超过2048字符<br>
   >POST：提交数据，一般用于表单提交，可以传输大量数据<br>
@@ -47,13 +47,13 @@
 ### 中间件
 #### 中间件的概念
 - 现实生活中的例子
-  <p align='center'><img src='../images/现实生活中的例子.png' width='60%' height='60%' /></p>
+  <p align='center'><img src='../images/现实生活中的例子.png' width='80%' height='80%' /></p>
 - Express中间件的调用流程
-  <p align='center'><img src='../images/express中间件的调用流程.png' width='60%' height='60%' /></p>
+  <p align='center'><img src='../images/express中间件的调用流程.png' width='80%' height='80%' /></p>
 - Express中间件的格式
-  <p align='center'><img src='../images/express中间件的格式.png' width='60%' height='60%' /></p>
+  <p align='center'><img src='../images/express中间件的格式.png' width='80%' height='80%' /></p>
 - next函数的作用
-  <p align='center'><img src='../images/next函数的作用.png' width='60%' height='60%' /></p>
+  <p align='center'><img src='../images/next函数的作用.png' width='80%' height='80%' /></p>
 #### Express中间件初体验
 - 定义中间件函数
 - 全局生效的中间件
