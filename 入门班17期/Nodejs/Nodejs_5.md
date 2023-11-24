@@ -9,7 +9,7 @@
 - 大多数互联网公司并没有完全按照其规则设计，但以之为参考
 #### 基本原则
 
-<p align='center'><img src='../images/REST基本原则.png' width='30%' height='30%' /></p>
+<p align='center'><img src='../images/REST基本原则.png' width='60%' height='60%' /></p>
 
 #### 如何进行RESTful API设计
 - 格式规范
