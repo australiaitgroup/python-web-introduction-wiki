@@ -51,8 +51,9 @@
 - Express中间件的调用流程
   <p align='center'><img src='../images/express中间件的调用流程.png' width='60%' height='60%' /></p>
 - Express中间件的格式
+  <p align='center'><img src='../images/express中间件的格式.png' width='60%' height='60%' /></p>
 - next函数的作用
-
+  <p align='center'><img src='../images/next函数的作用.png' width='60%' height='60%' /></p>
 #### Express中间件初体验
 - 定义中间件函数
 - 全局生效的中间件
