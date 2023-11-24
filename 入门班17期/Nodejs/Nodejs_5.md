@@ -33,6 +33,7 @@
 
   <p align='center'><img src='../images/正确使用http动词.png' width='60%' height='60%' /></p>
 - 合理使用查询参数
+  <p align='center'><img src='../images/合理使用查询参数.png' width='60%' height='60%' /></p>
   >HTTP请求方式
   >get和post请求区别
 
