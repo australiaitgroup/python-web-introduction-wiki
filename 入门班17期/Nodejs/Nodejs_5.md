@@ -4,7 +4,13 @@
 
 ### RESTful API
 #### 概念
+- RESTful是一种API设计风格，特点是请求、响应清晰简洁，可读性强
+- RESTful的好处：别人使用你的API接口时，即使不查看文档，也知道下一步应该做什么
+- 大多数互联网公司并没有完全按照其规则设计，但以之为参考
 #### 基本原则
+
+<p align='center'><img src='../images/REST基本原则.png' width='30%' height='30%' /></p>
+
 #### 如何进行RESTful API设计
 - 格式规范
 - 协议
