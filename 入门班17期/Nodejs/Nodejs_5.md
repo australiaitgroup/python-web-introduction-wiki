@@ -13,9 +13,25 @@
 
 #### 如何进行RESTful API设计
 - 格式规范
+  >根据RFC3986定义，URL是大小写敏感的，为避免歧义，尽量使用小写字母
+```js
+/api/featured-post/                //#GOOD
+/api/featured_post/                //#WRONG
+```
 - 协议
+  >提供给用户的API，尽量使用HTTPs协议。使用HTTPs协议和RESTfulAPI并无关系，但是对于提高网站的安全性很重要。
+
 - URL中名词应该使用复数
+  >所用名词往往和数据库的表名对应，数据库的表是一组记录的集合，因此URL中的名词表示一组资源的集合，故要使用复数<br>
+  >在RESTful架构中，每个url代表一种资源，所以url中不能有动词，只能有名词
 - 正确使用HTTP动词
+  >GET：从服务器获取资源<br>
+  >POST：在服务器新建一个资源<br>
+  >PUT：在服务器更新资源（客户端提供改变后的完整资源）<br>
+  >PATCH：在服务器更新资源（客户端提供改变的属性）
+  >DELETE：从服务器中删除资源
+
+  <p align='center'><img src='../images/正确使用http动词.png' width='60%' height='60%' /></p>
 - 合理使用查询参数
   >HTTP请求方式
   >get和post请求区别
