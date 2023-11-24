@@ -56,9 +56,38 @@
   <p align='center'><img src='../images/next函数的作用.png' width='80%' height='80%' /></p>
 #### Express中间件初体验
 - 定义中间件函数
+  >可通过如下方式定义一个最简单的中间件函数：
+```js
+//常量mw所指向的，就是一个中间件函数
+const mw = function (req, res, next) {
+  console.log('这是一个最简单的中间件函数')
+  // 注意：在当前中间件的业务处理完毕以后，必须调用next()函数
+  // 表示把流转关系转交给下一个中间件或路由
+  next()
+}
+```
 - 全局生效的中间件
+  >客户端发起的任何请求达到服务器之后都会触发的中间件，叫全局生效中间件
+  >通过调用app.use(中间件函数)，即可定义一个全局生效的中间件，代码如下：
+```js
+// 常量mw所指向的，就是一个中间件函数
+const mw = function(req, res, next)
+  console.log('这是一个最简单的中间件函数')
+  next()
+}
+
+// 全局生效的中间件
+app.use(mw)
+```
 - 定义全局中间件的简化形式
+```js
+// 全局生效的中间件
+app.use(function(req, res, next){
+  console.log('这是一个最简单的中间件函数')
+  next()
+}) 
 - 中间件的作用
+<p align='center'><img src='../images/中间件的作用.png' width='80%' height='80%' /></p>
 - 定义多个全局中间件
 - 局部生效的中间件
 - 定义多个局部中间件
