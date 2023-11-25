@@ -7,9 +7,14 @@
 - RESTful 是一种 API 设计风格，特点是请求、响应清晰简洁，可读性强
 - RESTful 的好处：别人使用你的 API 接口时，即使不查看文档，也知道下一步应该做什么
 - 大多数互联网公司并没有完全按照其规则设计，但以之为参考
+
+<hr>
+
 #### 基本原则
 
 <p align='center'><img src='../images/REST基本原则.png' width='60%' height='60%' /></p>
+
+<hr>
 
 #### 如何进行RESTful API设计
 - 格式规范
@@ -44,20 +49,30 @@
   >数据量不同：get传送数据量较小，不能超过2KB。post传送量大，一般不受限制<br>
   >安全行不同：get安全性低。post安全性高
 
+<hr>
+<br>
+
 ### 中间件
 #### 中间件的概念
 ##### 现实生活中的例子
   <p align='center'><img src='../images/现实生活中的例子.png' width='80%' height='80%' /></p>
+
+<hr>
   
 ##### Express中间件的调用流程
   <p align='center'><img src='../images/express中间件的调用流程.png' width='80%' height='80%' /></p>
-  
+
+<hr>
+
 ##### Express中间件的格式
   <p align='center'><img src='../images/express中间件的格式.png' width='80%' height='80%' /></p>
-  
+
+<hr>
+
 ##### next函数的作用
   <p align='center'><img src='../images/next函数的作用.png' width='80%' height='80%' /></p>
 
+<hr>
 
 #### Express中间件初体验
 ##### 定义中间件函数
@@ -72,6 +87,8 @@ const mw = function (req, res, next) {
 }
 ```
 
+<hr>
+
 ##### 全局生效的中间件
   >客户端发起的任何请求达到服务器之后都会触发的中间件，叫全局生效中间件
   >通过调用app.use(中间件函数)，即可定义一个全局生效的中间件，代码如下：
@@ -85,6 +102,9 @@ const mw = function(req, res, next)
 // 全局生效的中间件
 app.use(mw)
 ```
+
+<hr>
+
 ##### 定义全局中间件的简化形式
 ```js
 // 全局生效的中间件
@@ -93,9 +113,14 @@ app.use(function(req, res, next){
   next()
 })
 ```
+
+<hr>
+
 ##### 中间件的作用
   
 <p align='center'><img src='../images/中间件的作用.png' width='80%' height='80%' /></p>
+
+<hr>
 
 ##### 定义多个全局中间件
 
@@ -114,6 +139,8 @@ app.get('/user', (req, res)=> { //请求这个路由，会依次触发上述两�
 })
 ```
 
+<hr>
+
 ##### 局部生效的中间件
   
   >不使用app.use()定义的中间件，叫做局部生效的中间件，代码如下：
@@ -131,6 +158,8 @@ app.get('/', mw1, function(req, res){
 app.get('/user', function(req, res){ res.send('User page') })
 ```
 
+<hr>
+
 ##### 定义多个局部中间件
 
   >可以在路由中，通过等价的方式，使用多个局部中间件：
@@ -140,6 +169,8 @@ app.get('/', mw1, mw2, (req, res)=> {res.send('Home page.') })
 app.get('/', [mw1, mw2], (req, res)=> {res.send('Home page.') })
 ```
 
+<hr>
+
 ##### 了解中间件的5个使用注意事项
   
   >1.一定要在`路由之前`注册中间件<br>
@@ -148,6 +179,8 @@ app.get('/', [mw1, mw2], (req, res)=> {res.send('Home page.') })
   >4.为了`防止代码逻辑混乱`，调用next()函数之后不要再写额外的代码<br>
   >5.连续调用多个中间件时，多个中间件之间，`共享`req和res对象
 
+
+<hr>
 
 #### 中间件的分类
 ##### 应用级别的中间件
@@ -163,6 +196,9 @@ app.get('/', mw1, (req, res)=> {
   res.send('Home page.')
 })
 ```
+
+<hr>
+
 ##### 路由级别的中间件
 - 是指绑定到express.Router()实例上的中间件，用法和应用级别中间件没有任何区别
 - 但是应用级别中间件时绑定到app实例上，路由级别中间件时绑定到router实例上
@@ -178,6 +214,9 @@ router.use(function(req, res next){
 
 app.use('/', router)
 ```
+
+<hr>
+
 ##### 错误级别的中间件
 - 作用：专门用来捕获项目中发生的异常错误，防止项目异常和崩溃
 - 格式：`必须有4个形参`，形参顺序从前到后，分别是（err, req, res, next）
@@ -191,6 +230,9 @@ app.use(function(err, req, res, next){      // 2. 错误级别的中间件
   res.send('Error! ' + err.message)         // 2.2 向客户端响应错误相关的内容
 })
 ```
+
+<hr>
+
 ##### Express内置的中间件
 - 自Express 4.16.0版本开始，Express内置了3个常用的中间件，提高开发效率：
   >`express.static`：快速托管静态资源的内置中间件（HTML文件\图片\CSS样式等）<br>
@@ -202,6 +244,9 @@ app.use(express.json())
 // 配置解析application/x-www-form-urlencoded格式数据的内置中间件
 app.use(express.urlencoded({ extended: false }))
 ```
+
+<hr>
+
 ##### 第三方的中间件
 - 非官方内置的第三方开发的中间件
 - 运行步骤：
@@ -209,6 +254,9 @@ app.use(express.urlencoded({ extended: false }))
   >2.使用 require 导入中间件<br>
   >3.调用 app.use() 注册并使用中间件
 - 注意：Express 内置的 express.urlencoded 中间件，就是基于 body-parser 这个第三方中间件进一步封装出来的
+
+<hr>
+<br>
 
 ### 课堂练习
 #### Node4中前端响应js设计
@@ -308,6 +356,9 @@ function deleteUserById(userId){
 
 }
 ```
+
+<hr>
+
 #### 中间件练习
 ##### 全局中间件
 ```js
@@ -343,6 +394,9 @@ app.listen(PORT, function(){
     console.log('Server is running on http://localhost:8000')
 })
 ```
+
+<hr>
+
 ##### 获取request到达server的时间
 ```js
 const express = require('express');
@@ -368,6 +422,9 @@ app.listen(PORT, function(){
     console.log('Server is running on http://localhost:8000')
 })
 ```
+
+<hr>
+
 ##### 多个中间件的应用以及调用顺序
 ```js
 const express = require('express');
