@@ -85,12 +85,52 @@ app.use(mw)
 app.use(function(req, res, next){
   console.log('这是一个最简单的中间件函数')
   next()
-}) 
+})
+```
 - 中间件的作用
 <p align='center'><img src='../images/中间件的作用.png' width='80%' height='80%' /></p>
 - 定义多个全局中间件
+  >可使用app.use()连续定义多个全局中间件，客户端会按照中间件定义的先后顺序一次进行调用
+```js
+app.use(function(req, res, next) { //第一个全局中间件
+  console.log('调用了第1个全局中间件')
+  next()
+})
+app.use(function(req, res, next) { //第二个全局中间件
+  console.log('调用了第2个全局中间件')
+  next()
+})
+app.get('/user', (req, res)=> { //请求这个路由，会依次触发上述两个全局中间件
+  res.send('Home page.')
+})
+```
 - 局部生效的中间件
+  >不使用app.use()定义的中间件，叫做局部生效的中间件，代码如下：
+```js
+// 定义中间件函数mw1
+const mw1 = function(req, res, next) {
+  console.log('这是中间件函数')
+  next()
+}
+// mw1这个中间件只在"当前路由中生效"，这种用法属于"局部生效的中间件"
+app.get('/', mw1, function(req, res){
+  res.send('Home page.')
+})
+// mw1这个中间件不会影响下面这个路由↓↓↓
+app.get('/user', function(req, res){ res.send('User page') })
+```
 - 定义多个局部中间件
+  >可以在路由中，通过等价的方式，使用多个局部中间件：
+```js
+// 以下两种写法是"完全等价"的，可以根据自己的喜好，任意选择一种方式进行使用
+app.get('/', mw1, mw2, (req, res)=> {res.send('Home page.') })
+app.get('/', [mw1, mw2], (req, res)=> {res.send('Home page.') })
+```
 - 了解中间件的5个使用注意事项
+`1.一定要在路由之前注册中间件`
+`2.客户端发送过来的请求，可以连续调用多个中间件进行处理`
+`3.执行完中间件的业务代码之后，不要忘记调用next()函数`
+`4.为了防止代码逻辑混乱，调用next()函数之后不要再写额外的代码`
+`5.连续调用多个中间件时，多个中间件之间，共享req和res对象`
 
 #### 中间件的分类
