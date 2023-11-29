@@ -5,6 +5,9 @@
 ## Nodejs_tutorial2 (`23/11/2023`)
 
 ### 答疑
+- why undefined?
+<p align='center'><img src='../images/whyUndefined.png' width='30%' height='30%' /></p>
+
 
 ### 复习
 #### RESTFul
