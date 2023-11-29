@@ -12,6 +12,8 @@
 
 ### 复习
 #### RESTFul
+<p align='center'><img src='../images/6PopularAPIStyles.png' width='30%' height='30%' /></p>
+
 ##### url
 ##### request body
 ##### status code
