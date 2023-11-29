@@ -21,6 +21,7 @@
 <p align='center'><img src='../images/requestBody.png' width='30%' height='30%' /></p>
 
 ##### status code
+<p align='center'><img src='../images/statusCode.png' width='30%' height='30%' /></p>
 
 #### 前端请求数据
 ##### axios
