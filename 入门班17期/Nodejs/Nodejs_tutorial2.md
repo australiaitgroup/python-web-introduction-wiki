@@ -98,9 +98,11 @@ class MyExpress {
 ```
 - 使用同步函数处理异步请求
 <p align='center'><img src='../images/使用同步函数处理异步请求1.png' width='30%' height='30%' /></p>
+
 `每个中间件内部都调用了next()函数，即在当前中间件完成执行之前就将控制权传递给了下一个中间件`
 
 <p align='center'><img src='../images/使用同步函数处理异步请求2.png' width='30%' height='30%' /></p>
+
 `在这个处理程序内部，有一个setTimeout函数，它通过延迟1000毫秒来推迟其回调函数的执行`<br>
 `Middleware1 end出现在index router日志之前。表明事件循环在处理路由处理程序的延迟执行之前执行`
 
