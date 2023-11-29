@@ -121,4 +121,155 @@ app.use(middleware)
 ```
 ##### cors
 - `Access-Control-Allow-Origin:*`
+
+### 练习
+#### 上节课的bug
+```js
+/*
+  课堂上的bug:这里应该是
+  {
+    messages
+  } 而不是 messages
+  格式一样才可以逻辑走通覆盖再正确读取我们的messages array
+  */
+  const data = JSON.stringify({
+    messages
+  });
+  
+  await fs.writeFileSync('../messages.json',data)
+  res.send({
+    status:201,
+    data:messages
+  })
+});
+
+/* DELETE:  删除留言*/
+router.delete('/:id', function(req, res) {
+  const {id} = req.params;
+
+  /*
+  课堂上的bug:这里应该用findIndex 返回目标item的index
+  find返回的是目标的值，所以我们课堂上一直删除错误的item
+  */
+  const index = messages.findIndex((message)=>{
+    return message.id === parseInt(id)
+  })
+
+  if(index === -1){
+    res.sendStatus(404)
+  }
+  messages.splice(index,1);
+  const data = JSON.stringify({messages});
+  fs.writeFileSync('../messages.json',data)
+  res.send({
+    status:200,
+    data:messages,
+    message:'delete success'
+  })
+});
+```
+#### 更新留言功能
+```js
+//Put: 更新留言
+router.put('/:id',async function(req, res) {
+  const {id} = req.params; 
+  const index = messages.findIndex((message)=>{
+    return message.id === parseInt(id)
+  });
+  if(index === -1){
+    res.sendStatus(404)
+  }
+  messages.splice(index,1);
+  const {name, message} = req.body;
+  const newMessage = {
+    id: parseInt(id),
+    name,
+    message
+  }
+  messages.push(newMessage)
+  const data = JSON.stringify({
+    messages
+  });
+
+  await fs.writeFileSync('../messages.json', data)
+  res.status(201).send({
+    message:'update success',
+    data: newMessage
+  })
+});
+```
+#### 留言板前端界面
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>留言板</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    </head>
+    <body>
+        <h1>留言板</h1>
+        <form id="message-form">
+            <input type="text" id="name" placeholder="姓名"/>
+            <textarea id="message-input" placeholder="留言"/></textarea>
+            <button type="submit">提交</button>
+        </form>
+        <ul id="message-list">
+
+        </ul>
+        <script src="script.js"></script>
+    </body>
+</html>
+```
+#### 获取和增加留言功能
+```js
+const api = 'http://localhost:8080';
+
+//获取留言
+const getMessages = ()=>{
+    const promise = fetch(`${api}/messages`,{
+        method: "GET"
+    })
+
+    promise.then(response=>response.json()).then(messages=>{
+        const messageList = document.getElementById('message-list');
+        messages.data.forEach(message=>{
+            const messageLi = document.createElement('li');
+            messageLi.innerHTML = `
+            <strong>${message.name}:</strong> ${message.message}
+            <button class='update-button' data-id=${message.id}>更新</button>
+            <button class='delete-button' data-id=${message.id}>删除</button>
+            `
+            messageList.appendChild(messageLi);
+        })
+    })
+}
+
+//增加留言
+const handleCreateMessage = async (event)=>{
+    event.preventDefault();
+    const nameInput = document.getElementById("name-input")
+    const messageInput = document.getElementById("message-input")
+
+    if(!nameInput.value||!messageInput.value) return;
+    const newMessage = {
+        name: nameInput.value,
+        message: messageInput.value
+    }
+
+    const response = await axios.post(`${api}/messages`,newMessage)
+
+    if(response.status === 201){   
+        nameInput.value = '';
+        messageInput.value = '';
+        alert('Create message success');
+        getMessages();
+    }
+
+}
+//getMessages();
+const form = document.getElementById("message-form");
+//form.onsubmit
+form.addEventListener("submit", handleCreateMessage)
+getMessages();
+```
     
