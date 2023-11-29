@@ -108,5 +108,17 @@ class MyExpress {
 
 
 ##### 两种中间件
+- 用在单独的request中
+```js
+.get(url,cors(),(req,res))
+.get(url,[middleware1, middleware2],(req,res))
+.get(url, middleware1, middleware2,(req,res))
+```
+- 全局使用apply到所有的request中
+```js
+app.use(cors())
+app.use(middleware)
+```
 ##### cors
+- `Access-Control-Allow-Origin:*`
     
