@@ -8,6 +8,7 @@
 - why undefined?
 <p align='center'><img src='../images/whyUndefined.png' width='30%' height='30%' /></p>
 
+`原因：console.log return的值为undefined，所以return totalCost这个方法时会输出 undefined的结果`
 
 ### 复习
 #### RESTFul
