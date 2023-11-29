@@ -40,9 +40,9 @@ git clone (remote respository only)
 
 ### 注意事项
 `commit要有意义, 不要用以下的语句来命名`
-- *code additions/edits*
-- *here have code*
-- *more code*
-- *misc bugfixes*
+- *Add 1.txt 2.txt*
+- *Update 1.txt 2.txt*
+
+
 
 
