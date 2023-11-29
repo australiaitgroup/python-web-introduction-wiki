@@ -32,7 +32,7 @@ git clone (remote respository only)
 ```
 
 ### Git的三个分区
-<p align='center'><img src='../images/三个分区.png' width='30%' height='30%' /></p>
+<p align='center'><img src='../images/三个分区.png' width='80%' height='80%' /></p>
 
 1. 工作区 (working directory)
 2. 暂存区 (staging area)
