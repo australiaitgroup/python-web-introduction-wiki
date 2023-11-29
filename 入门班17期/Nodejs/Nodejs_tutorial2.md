@@ -15,6 +15,7 @@
 <p align='center'><img src='../images/6PopularAPIStyles.png' width='30%' height='30%' /></p>
 
 ##### url
+<p align='center'><img src='../images/WhyIsRestfulApiPop.png' width='30%' height='30%' /></p>
 ##### request body
 ##### status code
 
