@@ -16,7 +16,10 @@
 
 ##### url
 <p align='center'><img src='../images/WhyIsRestfulApiPop.png' width='30%' height='30%' /></p>
+
 ##### request body
+<p align='center'><img src='../images/requestBody.png' width='30%' height='30%' /></p>
+
 ##### status code
 
 #### 前端请求数据
