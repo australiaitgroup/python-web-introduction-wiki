@@ -23,3 +23,4 @@
 - [Tutorial03: JavaScrip_Tutorial1](./JavaScript/JavaScript_tutorial1.md)
 - [Tutorial04: JavaScrip_Tutorial2](./JavaScript/JavaScript_tutorial2.md)
 - [Tutorial05: Nodejs_tutorial](./Nodejs/Nodejs_tutorial.md)
+- [Tutorial06: Nodejs_tutorial2](./Nodejs/Nodejs_tutorial2.md)
