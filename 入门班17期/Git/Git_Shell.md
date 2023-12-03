@@ -23,13 +23,13 @@
 - 小组合作(via branching strategies)
 - 备份
 
-<br>
+<hr>
 
 ### Git和GitHub
 - Git是一个备份工具，通过git传送到gitup上备份
 - GitHub是一个平台，用来接收Git传送的备份文件
 
-<br>
+<hr>
 
 ### 设置Git
 ```bash
@@ -48,7 +48,7 @@ git init
 git clone (remote respository only)
 ```
 
-<br>
+<hr>
 
 ### Git的三个分区
 <p align='center'><img src='../images/三个分区.png' width='80%' height='80%' /></p>
@@ -66,14 +66,14 @@ git clone (remote respository only)
 5. Git仓库 (git repository)<br>
 `由Git object记录着每一次提交的快照，以及链式结构记录的提交变更历史`
 
-<br>
+<hr>
 
 ### 注意事项
 `commit要有意义, 不要用以下的语句来命名`
 - *Add 1.txt 2.txt*
 - *Update 1.txt 2.txt*
 
-<br>
+<hr>
 
 ### 一些常用的指令
 `git init`: 在当前目录新建一个Git代码库<br>
@@ -94,7 +94,7 @@ git clone (remote respository only)
 `git checkout [branch-name]`: 切换到指定分支，并更新工作区<br>
 `git branch -D [branch-name]`: 删除分⽀<br>
 
-<br>
+<hr>
 
 ### 链接到远程repo
 1. Login Github到个人主页
