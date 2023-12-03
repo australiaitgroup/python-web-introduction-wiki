@@ -20,6 +20,7 @@
 - [Lecture10: Nodejs 3](./Nodejs/Nodejs_3.md)
 - [Lecture11: Nodejs 4](./Nodejs/Nodejs_4.md)
 - [Lecture12: Nodejs 5](./Nodejs/Nodejs_5.md)
+- [Lecture13: Git_Shell](./Git/Git_Shell.md)
 - [Tutorial03: JavaScrip_Tutorial1](./JavaScript/JavaScript_tutorial1.md)
 - [Tutorial04: JavaScrip_Tutorial2](./JavaScript/JavaScript_tutorial2.md)
 - [Tutorial05: Nodejs_tutorial](./Nodejs/Nodejs_tutorial.md)
