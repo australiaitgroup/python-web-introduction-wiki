@@ -38,12 +38,12 @@ git clone (remote respository only)
 1. 工作区 (working directory)<br>
 `操作系统上的文件，所有代码开发编辑都在这个上面完成`
 
-<p align='center'><img src='../images/working directory.jpg' width='30%' height='30%' /></p>
+<p align='center'><img src='../images/working directory.png' width='80%' height='80%' /></p>
 
 3. 暂存区 (index or staging area)<br>
 `一个暂存区域，会在下一次commit被提交到Git仓库`
 
-<p align='center'><img src='../images/staging.jpg' width='30%' height='30%' /></p>
+<p align='center'><img src='../images/staging.png' width='80%' height='80%' /></p>
 
 5. Git仓库 (git repository)<br>
 `由Git object记录着每一次提交的快照，以及链式结构记录的提交变更历史`
