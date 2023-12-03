@@ -35,8 +35,11 @@ git clone (remote respository only)
 <p align='center'><img src='../images/三个分区.png' width='80%' height='80%' /></p>
 
 1. 工作区 (working directory)
-2. 暂存区 (staging area)
+`操作系统上的文件，所有代码开发编辑都在这个上面完成` 
+2. 暂存区 (index or staging area)
+`一个暂存区域，会在下一次commit被提交到Git仓库` 
 3. Git仓库 (git repository)
+`由Git object记录着每一次提交的快照，以及链式结构记录的提交变更历史`
 
 ### 注意事项
 `commit要有意义, 不要用以下的语句来命名`
