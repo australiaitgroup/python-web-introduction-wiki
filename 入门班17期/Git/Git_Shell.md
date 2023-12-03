@@ -1,4 +1,14 @@
-
+- [Note](#Note)
+  - [Git_Shell (29/11/2023)](#Git_Shell-29112023)
+    - [为什么要使用Git](#为什么要使用Git)
+    - [Git和GitHub](#Git和GitHub)
+    - [设置Git](#设置Git)
+    - [创建版本库](#创建版本库)
+    - [Git的三个分区](#Git的三个分区)
+    - [注意事项](#注意事项)
+    - [一些常用的指令](#一些常用的指令)
+    - [链接到远程repo](#链接到远程repo)
+   
 
 <p align='center'><img src='../images/git.jpg' width='30%' height='30%' /></p>
 
@@ -13,9 +23,13 @@
 - 小组合作(via branching strategies)
 - 备份
 
+<br>
+
 ### Git和GitHub
 - Git是一个备份工具，通过git传送到gitup上备份
 - GitHub是一个平台，用来接收Git传送的备份文件
+
+<br>
 
 ### 设置Git
 ```bash
@@ -26,11 +40,15 @@ git config --global merge.conflictstyle diff3
 git config --global core.editor "code --wait"
 ```
 
+<br>
+
 ### 创建版本库
 ```bash
 git init
 git clone (remote respository only)
 ```
+
+<br>
 
 ### Git的三个分区
 <p align='center'><img src='../images/三个分区.png' width='80%' height='80%' /></p>
@@ -48,10 +66,14 @@ git clone (remote respository only)
 5. Git仓库 (git repository)<br>
 `由Git object记录着每一次提交的快照，以及链式结构记录的提交变更历史`
 
+<br>
+
 ### 注意事项
 `commit要有意义, 不要用以下的语句来命名`
 - *Add 1.txt 2.txt*
 - *Update 1.txt 2.txt*
+
+<br>
 
 ### 一些常用的指令
 `git init`: 在当前目录新建一个Git代码库<br>
@@ -72,8 +94,9 @@ git clone (remote respository only)
 `git checkout [branch-name]`: 切换到指定分支，并更新工作区<br>
 `git branch -D [branch-name]`: 删除分⽀<br>
 
+<br>
+
 ### 链接到远程repo
-#### 添加远程仓库Create repo
 1. Login Github到个人主页
 2. Repositories -> New -> 填信息 -> Create repository
 3. 将网页提供的command复制粘贴到本地的控制台
