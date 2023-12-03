@@ -4,7 +4,7 @@
 
 ## Git_Shell (29/11/2023)
 
-<p align='center'><img src='../images/git.png' width='30%' height='30%' /></p>
+<p align='center'><img src='../images/git.jpg' width='30%' height='30%' /></p>
 
 ### 为什么要使用Git
 > Git是一种分布式版本控制工具. 它具备以下几种功能
