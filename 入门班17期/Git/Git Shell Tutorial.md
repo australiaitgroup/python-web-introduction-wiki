@@ -90,11 +90,11 @@ const getMessages = ()=>{
 ### Git Shell内容复习
 #### shell command
 ##### cd
-- `.` 当前目录
-- `..` 前一级目录
-- `../..` 前两级目录
+- `.` ：当前目录
+- `..` ：前一级目录
+- `../..` ：前两级目录
 - `cd ..` `cd ../..`
-- `cd ~` 回根目录
+- `cd ~` ：回根目录
 - /dirName
 
 ##### Is：用来展示当前目录下有哪些文件
@@ -124,11 +124,11 @@ const getMessages = ()=>{
 <hr>
 
 #### git command
-##### `git init `本地初始化，创建隐藏文件夹`.git`
+##### `git init `：本地初始化，创建隐藏文件夹`.git`
 
-##### `git clone repoURL`从远程把代码get到本地
+##### `git clone repoURL`：从远程把代码get到本地
 
-##### `git remote origin(repoName) repo_link`注意此时的origin是变量名
+##### `git remote origin(repoName) repo_link`：注意此时的origin是变量名
 
 <hr>
 
@@ -137,30 +137,30 @@ const getMessages = ()=>{
 - branch master/main(这里放100%正确的代码)  <- feature branch(在这个上面做开发)
 - branch master/main <- feature branch <- dev branch <- feature branch(稍微复杂一点项目，有conflict时使用)
 
-##### `git checkout -b branchName`创建新分支并切换
+##### `git checkout -b branchName`：创建新分支并切换
 
-##### `git checkout branchName`切换分支
+##### `git checkout branchName`：切换分支
 
-##### `git branch -m branchName`修改当前分支名
+##### `git branch -m branchName`：修改当前分支名
 
 ##### git switch
 
-##### `git branch`打印本地所有branch
+##### `git branch`：打印本地所有branch
 
-##### `git branch -d branchName`删除分支
+##### `git branch -d branchName`：删除分支
 
-##### `git branch -m branchName`修改当前分支名
+##### `git branch -m branchName`：修改当前分支名
 
 <hr>
 
 ##### 代码更新提交
-##### `git add fileName` `git add .`添加特定文件/添加所有文件到缓存区
+##### `git add fileName` `git add .`：添加特定文件/添加所有文件到缓存区
 
-##### `git commit -m 'commit message'`提交所有的改变到本地仓库
+##### `git commit -m 'commit message'`：提交所有的改变到本地仓库
 
-##### `git push repoName branchName`将把本地仓库中指定分支的更改推送到远程仓库
+##### `git push repoName branchName`：将把本地仓库中指定分支的更改推送到远程仓库
 
-##### `git pull origin master`获取远程master分支并更新合并到本地仓库（避免conflict）
+##### `git pull origin master`：获取远程master分支并更新合并到本地仓库（避免conflict）
 
 ##### `git fetch`
 - 从远程仓库获取最新的历史记录
@@ -180,7 +180,7 @@ const getMessages = ()=>{
 <hr>
 
 ##### 代码回退
-##### `git log`显示提交历史记录
+##### `git log`：显示提交历史记录
 
 ##### `git reset —hard commitId`
 - 意为将当前分支的 HEAD（即当前分支的最新提交）重置到指定的提交（commitId）
