@@ -25,3 +25,4 @@
 - [Tutorial04: JavaScrip_Tutorial2](./JavaScript/JavaScript_tutorial2.md)
 - [Tutorial05: Nodejs_tutorial](./Nodejs/Nodejs_tutorial.md)
 - [Tutorial06: Nodejs_tutorial2](./Nodejs/Nodejs_tutorial2.md)
+- [Tutorial07: Git Shell Tutorial](./Git/Git Shell Tutorial.md)
