@@ -1,4 +1,7 @@
 
+
+<p align='center'><img src='../images/git.jpg' width='30%' height='30%' /></p>
+
 # Note
 
 ## Git Shell Tutorial (`30/11/2023`)
@@ -17,6 +20,8 @@ const handleDelete= async(event)=>{
     }
 }
 ```
+
+<hr>
 
 #### 更新留言
 ```js
@@ -40,6 +45,8 @@ const handleUpdate = async(event)=>{
 
 }
 ```
+
+<hr>
 
 #### 删除和更新相关的GET功能改动
 ```js
@@ -77,6 +84,9 @@ const getMessages = ()=>{
 }
 ```
 
+<hr>
+<br>
+
 ### Git Shell内容复习
 #### shell command
 ##### cd
@@ -89,7 +99,6 @@ const getMessages = ()=>{
 
 ##### Is：用来展示当前目录下有哪些文件
   
-
 ##### clear：清屏
 
 ##### `rm -f fileName`按名字删除选中文件
@@ -112,12 +121,16 @@ const getMessages = ()=>{
 
 ##### `open`打开文件
 
+<hr>
+
 #### git command
 ##### `git init `本地初始化，创建隐藏文件夹`.git`
 
 ##### `git clone repoURL`从远程把代码get到本地
 
 ##### `git remote origin(repoName) repo_link`注意此时的origin是变量名
+
+<hr>
 
 ##### branch
 - 分支，多人协作时常用，分主分支(main)，和其他分支(featured...)
@@ -138,6 +151,8 @@ const getMessages = ()=>{
 
 ##### `git branch -m branchName`修改当前分支名
 
+<hr>
+
 ##### 代码更新提交
 ##### `git add fileName` `git add .`添加特定文件/添加所有文件到缓存区
 
@@ -151,6 +166,8 @@ const getMessages = ()=>{
 - 从远程仓库获取最新的历史记录
 - git fetch branchName
 
+<hr>
+
 ##### 合并代码
 ##### `git merge repoName branchName`
 - 将指定的远程分支合并到你当前的本地分支
@@ -159,6 +176,8 @@ const getMessages = ()=>{
 ##### `git merge repoName branchName  —squash` -> `git commit -m 'commitMessage'`
 - 两命令搭配使用
 - branchName 所有的commits合并到我们当前的branch, 并合并commits记录为新的commitMessage
+
+<hr>
 
 ##### 代码回退
 ##### `git log`显示提交历史记录
