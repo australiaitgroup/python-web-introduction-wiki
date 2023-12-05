@@ -87,30 +87,22 @@ const getMessages = ()=>{
 - `cd ~` 回根目录
 - /dirName
 
-##### Is
-- 用来展示当前目录下有哪些文件
+##### Is：用来展示当前目录下有哪些文件
   
 
-##### clear
-- 清屏
+##### clear：清屏
 
-##### `rm -f fileName`
-- 按名字删除选中文件
+##### `rm -f fileName`按名字删除选中文件
 
-##### `rm -f dirName`
-- 删除目录以及目录内所有文件
+##### `rm -f dirName`删除目录以及目录内所有文件
 
-##### `rmdir dirName`
-- 删除目录
+##### `rmdir dirName`删除目录
 
-##### `mkdir dirName`
-- 创建目录
+##### `mkdir dirName`创建目录
 
-##### `touch fileName`
-- 创建文件
+##### `touch fileName`创建文件
 
-##### `cat fileName`
-- 打印文件内所有内容
+##### `cat fileName`打印文件内所有内容
 
 ##### `echo 'string'`
 - 打印//string
@@ -118,56 +110,42 @@ const getMessages = ()=>{
 - `echo 'string'> fileName` 如果文件不存在，创建并写入；如果文件存在，覆盖已有内容
 - `echo 'string'>> fileName` 如果文件不存在，创建并写入；如果文件已存在，已有内容之后写入
 
-##### `open`
-- 打开文件
+##### `open`打开文件
 
 #### git command
-##### `git init `
-- 本地初始化，创建隐藏文件夹`.git`
+##### `git init `本地初始化，创建隐藏文件夹`.git`
 
-##### `git clone repoURL`
-- 从远程把代码get到本地
+##### `git clone repoURL`从远程把代码get到本地
 
-##### `git remote origin(repoName) repo_link`
-- 注意此时的origin是变量名
+##### `git remote origin(repoName) repo_link`注意此时的origin是变量名
 
 ##### branch
 - 分支，多人协作时常用，分主分支(main)，和其他分支(featured...)
 - branch master/main(这里放100%正确的代码)  <- feature branch(在这个上面做开发)
 - branch master/main <- feature branch <- dev branch <- feature branch(稍微复杂一点项目，有conflict时使用)
 
-##### `git checkout -b branchName`
-- 创建新分支并切换
+##### `git checkout -b branchName`创建新分支并切换
 
-##### `git checkout branchName`
-- 切换分支
+##### `git checkout branchName`切换分支
 
-##### `git branch -m branchName`
-- 修改当前分支名
+##### `git branch -m branchName`修改当前分支名
 
 ##### git switch
 
-##### `git branch`
-- 打印本地所有branch
+##### `git branch`打印本地所有branch
 
-##### `git branch -d branchName`
-- 删除分支
+##### `git branch -d branchName`删除分支
 
-##### `git branch -m branchName`
-- 修改当前分支名
+##### `git branch -m branchName`修改当前分支名
 
 ##### 代码更新提交
-##### `git add fileName` `git add .`
-- 添加特定文件/添加所有文件到缓存区
+##### `git add fileName` `git add .`添加特定文件/添加所有文件到缓存区
 
-##### `git commit -m 'commit message'`
-- 提交所有的改变到本地仓库
+##### `git commit -m 'commit message'`提交所有的改变到本地仓库
 
-##### `git push repoName branchName`
-- 将把本地仓库中指定分支的更改推送到远程仓库
+##### `git push repoName branchName`将把本地仓库中指定分支的更改推送到远程仓库
 
-##### `git pull origin master`
-- 获取远程master分支并更新合并到本地仓库（避免conflict）
+##### `git pull origin master`获取远程master分支并更新合并到本地仓库（避免conflict）
 
 ##### `git fetch`
 - 从远程仓库获取最新的历史记录
@@ -183,8 +161,7 @@ const getMessages = ()=>{
 - branchName 所有的commits合并到我们当前的branch, 并合并commits记录为新的commitMessage
 
 ##### 代码回退
-##### `git log`
-- 显示提交历史记录
+##### `git log`显示提交历史记录
 
 ##### `git reset —hard commitId`
 - 意为将当前分支的 HEAD（即当前分支的最新提交）重置到指定的提交（commitId）
