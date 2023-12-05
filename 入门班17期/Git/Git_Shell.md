@@ -8,9 +8,12 @@
     - [注意事项](#注意事项)
     - [一些常用的指令](#一些常用的指令)
     - [链接到远程repo](#链接到远程repo)
-   
+
+<hr>  
 
 <p align='center'><img src='../images/git.jpg' width='30%' height='30%' /></p>
+
+<hr>  
 
 # Note
 
