@@ -101,7 +101,7 @@ const getMessages = ()=>{
   
 ##### clear：清屏
 
-##### `rm -f fileName`按名字删除选中文件
+##### `rm -f fileName`--按名字删除选中文件
 
 ##### `rm -f dirName`删除目录以及目录内所有文件
 
