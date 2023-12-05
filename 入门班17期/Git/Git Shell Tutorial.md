@@ -101,17 +101,17 @@ const getMessages = ()=>{
   
 ##### clear：清屏
 
-##### `rm -f fileName` ```按名字删除选中文件
+##### `rm -f fileName`：按名字删除选中文件
 
-##### `rm -f dirName`删除目录以及目录内所有文件
+##### `rm -f dirName`：删除目录以及目录内所有文件
 
-##### `rmdir dirName`删除目录
+##### `rmdir dirName`：删除目录
 
-##### `mkdir dirName`创建目录
+##### `mkdir dirName`：创建目录
 
-##### `touch fileName`创建文件
+##### `touch fileName`：创建文件
 
-##### `cat fileName`打印文件内所有内容
+##### `cat fileName`：打印文件内所有内容
 
 ##### `echo 'string'`
 - 打印//string
@@ -119,7 +119,7 @@ const getMessages = ()=>{
 - `echo 'string'> fileName` 如果文件不存在，创建并写入；如果文件存在，覆盖已有内容
 - `echo 'string'>> fileName` 如果文件不存在，创建并写入；如果文件已存在，已有内容之后写入
 
-##### `open`打开文件
+##### `open`：打开文件
 
 <hr>
 
