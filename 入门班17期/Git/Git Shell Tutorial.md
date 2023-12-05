@@ -11,9 +11,12 @@
         - [代码更新提交](#代码更新提交)
         - [合并代码](#合并代码)
         - [代码回退](#代码回退)
-        
+
+<hr>  
 
 <p align='center'><img src='../images/git.jpg' width='30%' height='30%' /></p>
+
+<hr>  
 
 # Note
 
