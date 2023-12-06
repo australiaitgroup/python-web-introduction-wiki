@@ -105,3 +105,11 @@
 - 因此NoSQL也可以用于分布式系统上
 
 <p align='center'><img src='../images/NoSQL.png' width='50%' height='50%' /></p>
+
+
+| 优点 | 缺点 |
+| :---: | :---: |
+| `Schema flexibility` | `不能联表查询` |
+| `Locality` | `不能保证数据事务的ACID原则` |
+| `更加接近于应用端组织数据的方式` | `数据缺乏一致性` |
+
