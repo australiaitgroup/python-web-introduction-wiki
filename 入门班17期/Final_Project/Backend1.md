@@ -31,7 +31,10 @@
 ## Backend1 (`03/12/2023`)
 
 ### 设置Github Desktop
-
+- 下载桌面客户端
+- 网页登录
+- 连接本地和远程repository
+  
 <hr> 
 <br>
 
