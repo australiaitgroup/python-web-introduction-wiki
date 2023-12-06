@@ -104,4 +104,4 @@
 - NoSQL没有固定的表结构，且数据之前不存在表与表之间的关系，数据之间是可以独立的
 - 因此NoSQL也可以用于分布式系统上
 
-<p align='center'><img src='../images/NoSQL.png' width='80%' height='80%' /></p>
+<p align='center'><img src='../images/NoSQL.png' width='50%' height='50%' /></p>
