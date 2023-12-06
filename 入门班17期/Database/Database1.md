@@ -38,4 +38,6 @@
 #### 数据库组成
 <p align='center'><img src='../images/数据库组成.png' width='80%' height='80%' /></p>
 
+#### 前后端拿取数据的结构
+<p align='center'><img src='../images/前后端拿取数据的结构.png' width='75%' height='75%' /></p>
 
