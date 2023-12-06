@@ -113,3 +113,37 @@
 | `Locality` | `不能保证数据事务的ACID原则` |
 | `更加接近于应用端组织数据的方式` | `数据缺乏一致性` |
 
+
+#### 完整性约束
+- 数据库中每一个instance都要满足的所有条件
+- IC是在定义Schema（创建table）的时候就已经被specified table中
+- 内容被修改的时候IC也是强制实施的
+
+##### 基本类型
+- Domian Integrity Constraint
+- Primary Key Integrity Constraint
+- Unique Value Integrity Constraint
+- NotNull Integrity Constraint
+- Foreign Key Integrity Constraint
+
+#### ACID性质
+- Atomicity: 要么执行成功要么恢复原状
+- Consisency: 数据库完整性不被破坏 (符合预设规则)integrity constriant
+- Isolaion: 一件一件做和一起做是一样的
+- Durability: 失败的改动不影响原数据 (可以rollback)
+
+#### 数据库语言
+##### Data Definition Language(DDL)
+- Define schemas
+- Define Itegrity Constraints
+
+##### Data Manipulation Language(DML)
+- Query(ask question)
+- 增删改查
+
+### 安装mysql和DBeaver
+| Mac用户 | Windows用户 |
+| :---: | :---: |
+| `brew install mysql` | `参考MySQL环境搭建PDF` |
+| `brew services list` | `` |
+| `brew services start mysql` | `` |
