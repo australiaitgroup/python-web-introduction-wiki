@@ -1,4 +1,34 @@
-
+- [Note](#Note)
+  - [Database1 (`06/12/2023`)](#Database1-06122023)
+    - [什么是数据](#什么是数据)
+      - [举例：如何描述一辆车](#举例：如何描述一辆车)
+      - [数据有哪些类型](#数据有哪些类型)
+      - [大量数据的处理办法](#大量数据的处理办法)
+      - [Database vs File system](#Database-vs-File-system)
+    - [数据库](#数据库)
+      - [什么是数据库](#什么是数据库)
+      - [数据库组成](#数据库组成)
+      - [前后端拿取数据的结构](#前后端拿取数据的结构)
+      - [什么是数据模型](#什么是数据模型)
+      - [数据结构](#数据结构)
+        - [Structured data（结构化数据）](#Structured-data结构化数据)
+        - [Semi structured data（半结构化数据）](#Semi-structured-data半结构化数据)
+        - [Unstructured data（非结构化数据）](#Unstructured-data非结构化数据)
+      - [Primary Key 主键](#Primary-Key-主键)
+      - [Foreign Key 外键](#Foreign-Key-外键)
+      - [关系模型](#关系模型)
+      - [数据库类型](#数据库类型)
+        - [关系型数据库](#关系型数据库)
+        - [非关系型数据库](#非关系型数据库)
+      - [完整性约束](#完整性约束)
+        - [基本类型](#基本类型)
+      - [ACID性质](#ACID性质)
+    - [安装mysql和DBeaver](#安装mysql和DBeaver)
+    - [数据库语言](#数据库语言)
+      - [Data Definition Language(DDL)](#Data-Definition-Language-DDL)
+      - [Data Manipulation Language(DML)](#Data-Manipulation-Language-DML)
+      - [SQLite支持的数据类型](#SQLite支持的数据类型)
+      - [数据库语言练习](#数据库语言练习)
 
 
 <hr>  
@@ -15,8 +45,12 @@
 - 最通俗的解释：储存数据的仓库
 - 对客观事物、事件进行记录并且可以被鉴别符号
 
+<hr> 
+
 #### 举例：如何描述一辆车
 `类型、价格、几门、手动还是自动挡、品牌、年份、款式、颜色、引擎？`
+
+<hr> 
 
 #### 数据有哪些类型
 - 文字
@@ -26,14 +60,21 @@
 - 视频
 - ...
 
+<hr> 
+
 #### 大量数据的处理办法
 - 文件夹储存 -> 问题：数据不准、噪点
 - 表格储存
+
+<hr> 
 
 #### Database vs File system
 | Database | File system |
 | :---: | :---: |
 | ***存储同一类数据*** | ***存储不同类型的数据*** |
+
+<hr> 
+<br> 
 
 ### 数据库
 #### 什么是数据库
@@ -43,13 +84,17 @@
 
 <p align='center'><img src='../images/数据库结构.png' width='80%' height='80%' /></p>
 
+<hr> 
+
 #### 数据库组成
 <p align='center'><img src='../images/数据库组成.png' width='80%' height='80%' /></p>
+
+<hr> 
 
 #### 前后端拿取数据的结构
 <p align='center'><img src='../images/前后端拿取数据的结构.png' width='75%' height='75%' /></p>
 
-
+<hr> 
 
 #### 什么是数据模型
 - Schema：表示这张表里有哪些attribute
@@ -63,12 +108,13 @@
 
 <p align='center'><img src='../images/什么是数据模型2.png' width='75%' height='75%' /></p>
 
+<hr> 
 
 #### 数据结构
 ##### Structured data（结构化数据）
 - Predefined schema
 - 易于存储和搜索
-- 可以建立关系模型
+- 可以建立关系模型 
 
 ##### Semi structured data（半结构化数据）
 - 同样提供可分类信息，但格式灵活多变
@@ -84,9 +130,13 @@
 | ***key*** | ***QR code*** |
 | ***以表格形式存储*** | ***文件、图像、音频、视频等*** |
 
+<hr> 
+
 #### Primary Key 主键
 - Unique（独一无二的值）
 - Not Null（每个Record必须有）
+
+<hr> 
 
 #### Foreign Key 外键
 - 用来和其他表建立联系的键
@@ -94,10 +144,14 @@
 - 可以重复
 - 可以为空值
 
+<hr> 
+
 #### 关系模型
 - 一对一：身份证号、学生证号
 - 一对多：班级-学生、部门-职员
 - 多对多：课程-学生、书籍-作者
+
+<hr> 
 
 #### 数据库类型
 ##### 关系型数据库
@@ -121,6 +175,7 @@
 | `Locality` | `不能保证数据事务的ACID原则` |
 | `更加接近于应用端组织数据的方式` | `数据缺乏一致性` |
 
+<hr> 
 
 #### 完整性约束
 - 数据库中每一个instance都要满足的所有条件
@@ -134,12 +189,16 @@
 - NotNull Integrity Constraint
 - Foreign Key Integrity Constraint
 
+<hr> 
+
 #### ACID性质
 - Atomicity: 要么执行成功要么恢复原状
 - Consisency: 数据库完整性不被破坏 (符合预设规则)integrity constriant
 - Isolaion: 一件一件做和一起做是一样的
 - Durability: 失败的改动不影响原数据 (可以rollback)
 
+<hr> 
+<br> 
 
 ### 安装mysql和DBeaver
 | Mac用户 | Windows用户 |
@@ -148,16 +207,21 @@
 | `brew services list` | `` |
 | `brew services start mysql` | `` |
 
-
+<hr> 
+<br> 
 
 ### 数据库语言
 #### Data Definition Language(DDL)
 - Define schemas
 - Define Itegrity Constraints
 
+<hr> 
+
 #### Data Manipulation Language(DML)
 - Query(ask question)
 - 增删改查
+
+<hr> 
 
 #### SQLite支持的数据类型
 - INTEGER(INT)：一个正常大小的整数
@@ -169,6 +233,8 @@
 - DECIMAL：小数
 - NULL：NULL值
 - NUMERIC：也是一种数字类型
+
+<hr> 
 
 #### 数据库语言练习
 - 创建一个table
