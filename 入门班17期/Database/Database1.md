@@ -41,3 +41,18 @@
 #### 前后端拿取数据的结构
 <p align='center'><img src='../images/前后端拿取数据的结构.png' width='75%' height='75%' /></p>
 
+
+
+### 什么是数据模型
+- Schema：表示这张表里有哪些attribute
+- Instance：具体生成的所有数据的统称
+- Record：单行数据的统称
+
+<p align='center'><img src='../images/什么是数据模型1.png' width='80%' height='80%' /></p>
+
+- Attribute：单列数据的统称
+- Value：单个cell的值
+
+<p align='center'><img src='../images/什么是数据模型2.png' width='75%' height='75%' /></p>
+
+
