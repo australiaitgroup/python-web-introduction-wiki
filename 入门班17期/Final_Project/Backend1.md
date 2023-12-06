@@ -19,7 +19,7 @@
        
 <hr>  
 
-<p align='center'><img src='../images/TopSocial.png' width='30%' height='30%' /></p>
+<p align='center'><img src='../images/TopSocial.png' width='80%' height='80%' /></p>
 
 <hr>  
 
@@ -31,6 +31,9 @@
 ## Backend1 (`03/12/2023`)
 
 ### 设置Github Desktop
+
+<hr> 
+<br>
 
 ### TopSocial
 `创建backend文件夹和index.js`
@@ -47,6 +50,8 @@ npm i express cors json-server axios
 ```shell
 node_modules/
 ```
+
+<hr> 
 
 #### Github创建repository
 - 名字、描述
@@ -72,9 +77,13 @@ git push
 git push --set-upstream origin master
 ```
 
+<hr> 
+
 #### 实用小插件
 - Git History
 - Git History Diff(能查看具体代码是由谁在什么时候修改的)
+
+<hr> 
 
 #### 修改index.js并初始化服务器
 - index.js(在backend文件夹下)
@@ -99,6 +108,8 @@ app.listen(PORT, function(){
 npx nodemon index.js
 ```
 
+<hr> 
+
 #### 修改package.json
 - 使用npm run dev能同时启动两个server
 ```json
@@ -109,6 +120,8 @@ npx nodemon index.js
     "dev":"concurrently \"npm run server\" \"npm run json:server\""
 },
 ```
+
+<hr> 
 
 #### 创建routes文件夹及各个路由模块
 ##### cards.js
@@ -140,6 +153,8 @@ module.exports = profileRouter;
 ```
 ##### request.js
 
+<hr> 
+
 #### 创建controllers文件夹
 ##### messageController.js
 ```js
@@ -162,6 +177,9 @@ const getMessage = async function(req,res){
 
 module.exports = {getMessage}
 ```
+
+<hr> 
+
 ##### profileController.js
 ```js
 const axios = require('axios');
