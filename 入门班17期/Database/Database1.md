@@ -132,14 +132,6 @@
 - Isolaion: 一件一件做和一起做是一样的
 - Durability: 失败的改动不影响原数据 (可以rollback)
 
-#### 数据库语言
-##### Data Definition Language(DDL)
-- Define schemas
-- Define Itegrity Constraints
-
-##### Data Manipulation Language(DML)
-- Query(ask question)
-- 增删改查
 
 ### 安装mysql和DBeaver
 | Mac用户 | Windows用户 |
@@ -147,3 +139,71 @@
 | `brew install mysql` | `参考MySQL环境搭建PDF` |
 | `brew services list` | `` |
 | `brew services start mysql` | `` |
+
+
+
+### 数据库语言
+#### Data Definition Language(DDL)
+- Define schemas
+- Define Itegrity Constraints
+
+#### Data Manipulation Language(DML)
+- Query(ask question)
+- 增删改查
+
+#### SQLite支持的数据类型
+- INTEGER(INT)：一个正常大小的整数
+- CHAR：定长字符串
+- VARCHAR：长度可变字符串
+- TEXT：文本字符串，使用数据库编码存储（UTF-8[最常用]，UTF-16BE或UTF-16LE）
+- BLOB：二进制大对象，怎么输入就怎么存储
+- FLOAT：浮点数
+- DECIMAL：小数
+- NULL：NULL值
+- NUMERIC：也是一种数字类型
+
+#### 数据库语言练习
+- 创建一个table
+```sql
+CREATE TABLE `Cars` (
+`cid` INT AUTO_INCREMENT, `款式` TEXT,
+`品牌` TEXT,
+`颜色` TEXT,
+`类型` TEXT,
+`价格` INT,
+`生产年份` INT,
+`是否卖出` TEXT,
+PRIMARY KEY(`cid`)
+);
+```
+- 插入一条数据
+```sql
+INSERT INTO Cars(`款式`, `品牌`, `颜色`, `类型`, `价格`, `生产年份`, `是否卖出`)
+VALUES ("Camaro", "雪佛兰", "红色", "肌肉⻋", 60000, 2016, "是");
+```
+- 插入多条数据
+```sql
+INSERT INTO Cars(`款式`, `品牌`, `颜色`, `类型`, `价格`, `生产年份`, `是否卖出`)
+VALUES ("Camaro", "雪佛兰", "黄色", "肌肉⻋", "65000", "2018", "是"),
+("911", "保驰捷", "红色", "跑⻋", "200000", "2017", "否"),
+("Escape", "福特", "蓝色", "SUV", "60000", "2020", "否");
+```
+- 删除一行数据
+```sql
+DELETE FROM Cars WHERE cid = 1;
+```
+- 删除所有数据
+```sql
+DELETE FROM Cars;
+```
+- 删除整个table
+```sql
+DROP TABLE Cars;
+```
+- 修改表格名字
+```sql
+ALTER TABLE Cars RENAME TO Cars_1;
+```
+
+
+
