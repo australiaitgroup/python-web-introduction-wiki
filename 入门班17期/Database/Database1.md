@@ -33,5 +33,9 @@
 - 可以/便于 检索数据
 - 不同权限的用户可以看不同的数据
 
+<p align='center'><img src='../images/数据库结构.png' width='80%' height='80%' /></p>
+
 #### 数据库组成
-<p align='center'><img src='../images/数据库组成.png' width='50%' height='50%' /></p>
+<p align='center'><img src='../images/数据库组成.png' width='80%' height='80%' /></p>
+
+
