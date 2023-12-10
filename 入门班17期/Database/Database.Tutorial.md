@@ -192,4 +192,17 @@ SELECT * FROM Table1 CROSS JOIN Table2
 - 执行指令会变成如下结果
 <p align='center'><img src='../images/CROSSJOIN2.png' width='80%' height='80%' /></p>
 
+#### Inner Join
+- 它用于将两个或多个数据库表中满足特定条件的记录组合在一起
+- 注意是依据这些表之间的共同属性或条件来匹配记录
+- 即对比的两表中都有内容才会放到输出的新表中来
+
+```sql
+SELECT Table1.*, Table2.*
+FROM Table
+INNER JOIN Table2 ON Table1.cid = Table2.fid;
+```
+<p align='center'><img src='../images/INNERJOIN.png' width='80%' height='80%' /></p>
+
+
 
