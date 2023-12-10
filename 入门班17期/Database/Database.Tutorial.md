@@ -15,6 +15,11 @@
   - [Union](#Union)
   - [Alias](#Alias)
 
+<hr>  
+
+<p align='center'><img src='../images/database.jpg' width='30%' height='30%' /></p>
+
+<hr>  
 
 # Note
 
@@ -61,6 +66,9 @@ FOREIGN KEY(`cid`) REFERENCES Cars(`cid`),
 FOREIGN KEY(`fid`) REFERENCES Factories(`fid`)
 );
 ```
+
+<hr>
+
 #### 插入数据
 - 插入车辆数据
 ```sql
@@ -113,11 +121,15 @@ INSERT INTO Production(`cid`, `fid`, `生产日期`, `负责员工`)
 VALUES (1, 1, "20150908", "Zavier");
 ```
 
+<hr>
+
 #### 删除数据
 - 
 ```sql
 DELETE FROM Cars WHERE cid=1;
 ```
+
+<hr>
 
 #### 联表查询
 - 此时的指令会将整个表都选择出来
@@ -125,6 +137,8 @@ DELETE FROM Cars WHERE cid=1;
 SELECT * FROM Cars, Production, Factories WHERE Production.`生产日期`="20150908" AND Production.cid=Cars.cid
 AND Factories.fid=Production.fid;
 ```
+
+<hr>
 
 #### Aggregation
 - 计算之前记得从文件导入数据，此时注意导入的数据文件完整性，然后此时的空白表格中有没有与之冲突的数据
@@ -165,6 +179,8 @@ SELECT LOWER() (`款式`) FROM Cars;
 SELECT `款式`, LENGTH(`款式`) FROM Cars;
 ```
 
+<hr>
+
 #### HAVING
 - HAVING子句允许指定条件来过滤出现在最终结果中的分组结果
 - 与WHERE区别：前者在所选列上设置条件，后者在GROUP BY句子上创建的分组上设置条件
@@ -174,6 +190,9 @@ SELECT `款式`,LENGTH(`款式`) from Cars
 GROUP BY `款式`,LENGTH(`款式`)
 HAVING LENGTH(`款式`)>3
 ```
+
+<hr>
+<br>
 
 ### Create Integrity Constraint
 
@@ -192,10 +211,15 @@ CREATE TABLE EMPLOYEE(
 - PRIMARY Key约束：位置标识数据库表中的各行/记录
 - CHECK约束：CHECK约束确保某列中的所有值满足一定条件
 
+<hr>
+<br>
+
 ### Join
 - 当表格之前有关联性的key相互引用时，通过JOIN语句将其以不同形式汇总起来
 
 <p align='center'><img src='../images/JOIN.png' width='80%' height='80%' /></p>
+
+<hr>
 
 #### CROSS JOIN
 - 它用于组合两个表中的记录
@@ -209,6 +233,8 @@ SELECT * FROM Table1 CROSS JOIN Table2
 - 执行指令会变成如下结果
 <p align='center'><img src='../images/CROSSJOIN2.png' width='80%' height='80%' /></p>
 
+<hr>
+
 #### Inner Join
 - 它用于将两个或多个数据库表中满足特定条件的记录组合在一起
 - 注意是依据这些表之间的共同属性或条件来匹配记录
@@ -221,11 +247,15 @@ INNER JOIN Table2 ON Table1.cid = Table2.fid;
 ```
 <p align='center'><img src='../images/INNERJOIN.png' width='80%' height='80%' /></p>
 
+<hr>
+
 #### LEFT/RIGHT JOIN
 - Left/Right Join:左边/右边的表格value全部会输出，但右边/左边没有对应的filed values会使用Null替代
 
 <p align='center'><img src='../images/LEFTJOIN.png' width='80%' height='80%' /></p>
 
+<hr>
+<br>
 
 ### Union
 - Union 和 Union all的区别
@@ -272,6 +302,9 @@ WHERE
 ```
 
 <p align='center'><img src='../images/union all.png' width='80%' height='80%' /></p>
+
+<hr>
+<br>
 
 ### Alias
 - 暂时把表或列重命名为另一个名字
