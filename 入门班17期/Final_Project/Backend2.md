@@ -18,6 +18,11 @@
       - [middleware写完以后记得去index.js挂载](#middleware写完以后记得去indexjs挂载)
       - [作用和使用方法](#作用和使用方法)
 
+<hr>  
+
+<p align='center'><img src='../images/TopSocial.png' width='80%' height='80%' /></p>
+
+<hr>  
 
 # Note 
 
@@ -25,6 +30,9 @@
 
 ### 功能模块化
 - 所有需要调用的call back function统一放在controller文件夹内
+
+<hr> 
+<br>
 
 ### highline
 #### highline.js
@@ -38,6 +46,9 @@ highlineRouter.get('/', getHighline)
 
 module.exports = highlineRouter;
 ```
+
+<hr> 
+
 #### highlineController.js
 ```js
 const axios = require('axios');
@@ -59,11 +70,17 @@ const getHighline = async function(req, res, next){
 
 module.exports = {getHighline}
 ```
+
+<hr> 
+
 #### highline写完以后记得去index.js挂载
 ```js
 const highlineRouter = require('./highline');
 router.use('/highline', highlineRouter);
 ```
+
+<hr> 
+<br>
 
 ### request
 #### request.js
@@ -75,6 +92,8 @@ const {getRequest} = require('../controllers/requestController');
 requestRouter.get('/', getRequest);
 module.exports = requestRouter;
 ```
+
+<hr> 
 
 #### requestController.js
 ```js
@@ -96,11 +115,16 @@ const getRequest = async function(req, res, next){
 module.exports = {getRequest}
 ```
 
+<hr> 
+
 #### request写完以后记得去index.js挂载
 ```js
 const requestRouter = require('./request');
 router.use('/request', requestRouter);
 ```
+
+<hr> 
+<br>
 
 ### cards
 #### cards.js
@@ -118,6 +142,8 @@ cardsRouter.post('/', postCard);
 cardsRouter.delete('/:card_id', deleteCardById);
 module.exports = cardsRouter;
 ```
+
+<hr> 
 
 #### cardsController.js
 ```js
@@ -184,11 +210,16 @@ const deleteCardById = async function(req, res, next){
 module.exports = {getCardById , postCard, deleteCardById}
 ```
 
+<hr> 
+
 #### cards写完以后记得去index.js挂载(重要的事说三遍)
 ```js
 const cardsRouter = require('./cards');
 router.use('/cards', cardsRouter);
 ```
+
+<hr> 
+<br>
 
 ### 创建一个错误中间件
 #### 创建errorMiddleware.js
@@ -201,6 +232,9 @@ const handleError = function(err,req,res,next){
 
 module.exports = {handleError}
 ```
+
+<hr> 
+
 #### middleware写完以后记得去index.js挂载
 ```js
 //注意此时的index.js是全局的，即存在于backend文件夹中的
@@ -209,6 +243,8 @@ const {handleError} = require('./middleware/errorMiddleware')
 //use error middleware at the end
 app.use(handleError);
 ```
+
+<hr> 
 
 #### 作用和使用方法
 - 减少代码量
