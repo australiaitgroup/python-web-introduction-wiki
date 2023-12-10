@@ -178,7 +178,7 @@ CREATE TABLE EMPLOYEE(
 ### Join
 - 当表格之前有关联性的key相互引用时，通过JOIN语句将其以不同形式汇总起来
 
-<p align='center'><img src='../images/JOIN.png' width='30%' height='30%' /></p>
+<p align='center'><img src='../images/JOIN.png' width='80%' height='80%' /></p>
 
 #### CROSS JOIN
 
