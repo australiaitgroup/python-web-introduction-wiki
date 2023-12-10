@@ -181,5 +181,13 @@ CREATE TABLE EMPLOYEE(
 <p align='center'><img src='../images/JOIN.png' width='80%' height='80%' /></p>
 
 #### CROSS JOIN
+- 它用于组合两个表中的记录
+- 此命令容易产生超大数据的结果，谨慎使用
+<p align='center'><img src='../images/CROSSJOIN1.png' width='80%' height='80%' /></p>
+```sql
+SELECT * FROM Table1 CROSS JOIN Table2
+```
+- 执行指令会变成如下结果
+<p align='center'><img src='../images/CROSSJOIN2.png' width='80%' height='80%' /></p>
 
 
