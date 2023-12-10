@@ -211,6 +211,12 @@ INNER JOIN Table2 ON Table1.cid = Table2.fid;
 
 
 ### Union
+- Union 和 Union all的区别
+
+| union | union all |
+| :---: | :---: |
+| ***不包含重复行*** | ***包含重复行*** |
+
 - 使用Union
 ```sql
 SELECT
