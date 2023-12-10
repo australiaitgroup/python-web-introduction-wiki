@@ -1,3 +1,20 @@
+- [Note](#Note)
+	- [Database_Tutorial (`10/12/2023`)](#Database_Tutorial-10122023)
+		- [数据库实操练习](#数据库实操练习)
+  	- [创建表格](#创建表格)
+  	- [插入数据](#插入数据)
+  	- [删除数据](#删除数据)
+  	- [联表查询](#联表查询)
+  	- [HAVING](#HAVING)
+  	- [Aggregation](#Aggregation)
+  - [Create Integrity Constraint](#Create-Integrity-Constraint)
+  - [Join](#Join)
+ 	 	- [CROSS JOIN](#CROSS-JOIN)
+    - [Inner Join](#Inner-Join)
+    - [LEFT/RIGHT JOIN](#LEFTRIGHT-JOIN)
+  - [Union](#Union)
+  - [Alias](#Alias)
+
 
 # Note
 
@@ -169,11 +186,11 @@ CREATE TABLE EMPLOYEE(
 );
 ```
 
-#### NOT NULL约束：确保其某列不能有NULL值
-#### DEFAULT约束：当某列没有指定值时，为该列提供默认值
-#### UNIQUE约束：确保某列中的所有值是不同的
-#### PRIMARY Key约束：位置标识数据库表中的各行/记录
-#### CHECK约束：CHECK约束确保某列中的所有值满足一定条件
+- NOT NULL约束：确保其某列不能有NULL值
+- DEFAULT约束：当某列没有指定值时，为该列提供默认值
+- UNIQUE约束：确保某列中的所有值是不同的
+- PRIMARY Key约束：位置标识数据库表中的各行/记录
+- CHECK约束：CHECK约束确保某列中的所有值满足一定条件
 
 ### Join
 - 当表格之前有关联性的key相互引用时，通过JOIN语句将其以不同形式汇总起来
@@ -256,4 +273,13 @@ WHERE
 
 <p align='center'><img src='../images/union all.png' width='80%' height='80%' /></p>
 
+### Alias
+- 暂时把表或列重命名为另一个名字
+- 作用：更容易理解；减少打字
+
+```sql
+SELECT column1, column2...
+FROM table_name AS alias_name
+WHERE [cindition];
+```
 
