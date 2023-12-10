@@ -204,5 +204,12 @@ INNER JOIN Table2 ON Table1.cid = Table2.fid;
 ```
 <p align='center'><img src='../images/INNERJOIN.png' width='80%' height='80%' /></p>
 
+#### LEFT/RIGHT JOIN
+- Left Join:左边的表格value全部会输出，但右边没有对应的filed values会使用Null替代
+
+<p align='center'><img src='../images/LEFTJOIN.png' width='80%' height='80%' /></p>
+
+
+
 
 
