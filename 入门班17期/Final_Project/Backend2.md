@@ -12,7 +12,7 @@
     - [cards](#cards)
       - [cards.js](#cardsjs)
       - [cardsController.js](#cardsControllerjs)
-      - [cards写完以后记得去index.js挂载(重要的事说三遍)](cards写完以后记得去indexjs挂载重要的事说三遍)
+      - [cards写完以后记得去index.js挂载(重要的事说三遍)](cards写完以后记得去indexjs挂载-重要的事说三遍)
     - [创建一个错误中间件](#创建一个错误中间件)
       - [创建errorMiddleware.js](#创建errorMiddlewarejs)
       - [middleware写完以后记得去index.js挂载](#middleware写完以后记得去indexjs挂载)
