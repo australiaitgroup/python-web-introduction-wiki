@@ -205,11 +205,49 @@ INNER JOIN Table2 ON Table1.cid = Table2.fid;
 <p align='center'><img src='../images/INNERJOIN.png' width='80%' height='80%' /></p>
 
 #### LEFT/RIGHT JOIN
-- Left Join:左边的表格value全部会输出，但右边没有对应的filed values会使用Null替代
+- Left/Right Join:左边/右边的表格value全部会输出，但右边/左边没有对应的filed values会使用Null替代
 
 <p align='center'><img src='../images/LEFTJOIN.png' width='80%' height='80%' /></p>
 
 
+### Union
+- 使用Union
+```sql
+SELECT
+    *
+FROM
+    Cars
+WHERE
+    颜色 = '红色'
+UNION
+SELECT
+    *
+FROM
+    Cars
+WHERE
+    类型 = '跑车';
+```
 
+<p align='center'><img src='../images/union.png' width='80%' height='80%' /></p>
+
+
+- 使用Union All
+```sql
+SELECT
+    *
+FROM
+    Cars
+WHERE
+    颜色 = '红色'
+UNION ALL
+SELECT
+    *
+FROM
+    Cars
+WHERE
+    类型 = '跑车';
+```
+
+<p align='center'><img src='../images/union all.png' width='80%' height='80%' /></p>
 
 
