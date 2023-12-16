@@ -5,10 +5,10 @@
       - [Vite初始化](#Vite初始化)
     - [Top Social前端](#Top-Social前端)
       - [本节课主要目的](#本节课主要目的)
-      - [index.html](#index.html)
-      - [index.css](#index.css)
-      - [common.css](#common.css)
-      - [nav.css](#nav.css)
+      - [index.html](#indexhtml)
+      - [index.css](#indexcss)
+      - [common.css](#commoncss)
+      - [nav.css](#navcss)
       - [最后出来的基本效果](#最后出来的基本效果)
 
 <hr>
