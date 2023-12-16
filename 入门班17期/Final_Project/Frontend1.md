@@ -10,9 +10,11 @@
       - [common.css](#common.css)
       - [nav.css](#nav.css)
 
+<hr>
 
 <p align='center'><img src='../images/TopSocial.png' width='100%' height='100%' /></p>
 
+<hr>
 
 # Note
 
@@ -24,9 +26,13 @@
 [classCode](https://github.com/HAIXIN-ZHANG/WEB-17)<br>
 [Basics of Package.json](https://nodesource.com/blog/the-basics-of-package-json/)<br>
 
+<hr>
+<br>
 
 ### Vite
 [vite](https://vitejs.dev/guide/)
+
+<hr>
 
 #### Vite初始化
 - 先输入以下指令创建初始文件夹
@@ -43,10 +49,14 @@ npm run dev
 - 在frames文件夹下创建`nav`文件夹，在nav文件夹里创建`nav.css`文件
 - 在fundation文件夹下创建`common.css`文件
 
+<hr>
+<br>
 
 ### Top Social前端
 #### 本节课主要目的
 - 创建完成基础的标题框架（nav bar左、中、右sections）
+
+<hr>
 
 #### index.html
 ```html
@@ -95,6 +105,8 @@ npm run dev
 </html>
 ```
 
+<hr>
+
 #### index.css
 ```css
 @import "normalize.css";
@@ -105,6 +117,8 @@ npm run dev
 /* Frames */
 @import "./src/css/frames/nav/nav.css";
 ```
+
+<hr>
 
 #### common.css
 ```css
@@ -121,6 +135,8 @@ npm run dev
     --mainright-margin: 0.5rem;
 }
 ```
+
+<hr>
 
 #### nav.css
 ```css
@@ -193,7 +209,7 @@ nav .create {
 }
 ```
 
-
+<hr>
 
 #### 最后出来的基本效果
 
