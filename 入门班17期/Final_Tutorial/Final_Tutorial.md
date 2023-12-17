@@ -49,7 +49,7 @@
 ## Final_Tutorial (`14/12/2023`)
 
 ### git command练习
-[git command练习](https://github.com/eficode-academy/git-katas/blob/master/basic-staging/README.md)<br>
+[git command练习](https://github.com/eficode-academy/git-katas)<br>
 
 <hr>
 <br>
