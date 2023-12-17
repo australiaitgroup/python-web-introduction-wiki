@@ -6,6 +6,8 @@
 
 <p align='center'><img src='../images/JavaScript.png' width='10%' height='10%' /></p>
 
+<p align='center'><img src='../images/Nodejs.png' width='30%' height='30%' /></p>
+
 <p align='center'><img src='../images/git.jpg' width='30%' height='30%' /></p>
 
 
