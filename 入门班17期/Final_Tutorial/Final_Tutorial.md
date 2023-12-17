@@ -4,6 +4,8 @@
 
 <p align='center'><img src='../images/html css.png' width='30%' height='30%' /></p>
 
+<p align='center'><img src='../images/JavaScript.png' width='15%' height='15%' /></p>
+
 
 # Note
 
