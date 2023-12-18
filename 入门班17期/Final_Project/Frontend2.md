@@ -10,6 +10,10 @@
       - [创建main-right.css文件](#创建mainrightcss文件)
     - [index.html文件](#indexhtml文件)
     - [最后出来基本效果](#最后出来基本效果)
+    - [一些js功能的初步设置](#一些js功能的初步设置)
+      - [index.js](#indexjs)
+      - [database.js](#databasejs)
+      - [utils.js](#utilsjs)
 
 <hr>
 
@@ -249,3 +253,57 @@
 <p align='center'><img src='../images/最后出来基本效果2.png' width='100%' height='100%' /></p>
 
 
+### 一些js功能的初步设置
+#### index.js
+```js
+import "./index.css";
+
+import { getDatabase } from "@/js/database/database.js";
+import { getPath } from "@/js/database/utils.js";
+
+// const endpoint = getPath('api', 'cards', 'id',);
+// console.log('endpoint', endpoint);
+
+const { cards, profile, highline, message, request } = await getDatabase();
+console.log('data', cards, profile, highline, message, request);
+```
+
+#### database.js
+```js
+import axios from "axios";
+import { getPath } from "@/js/database/utils.js";
+
+const fetchData = async (endpoint) => {
+  try {
+    const data = await axios.get(endpoint)
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export const getDatabase = async () => {  
+    const [cards, profile, highline, message, request] = await Promise.all([
+        (async () => (await fetchData(getPath('cards'))).data)(),
+        (async () => (await fetchData(getPath('profile'))).data)(),
+        (async () => (await fetchData(getPath('highline'))).data)(),
+        (async () => (await fetchData(getPath('message'))).data)(),
+        (async () => (await fetchData(getPath('request'))).data)(),
+    ]);
+
+    return { cards, profile, highline, message, request };
+}
+```
+
+#### utils.js
+```js
+import path from "path-browserify";
+
+export function getPath( ...info ) {
+    const protocol = import.meta.env.VITE_DB_PATH?.includes('localhost') ? 'http://' : 'https://' ;
+    // http:// + localhost:8000 + cards
+    const endpoint = protocol + path.join(import.meta.env.VITE_DB_PATH, ...info);
+
+    return endpoint
+}
+```
