@@ -1,4 +1,21 @@
+- [Note](#Note)
+  - [Frontend2 (`17/12/2023`)](#Frontend2-17122023)
+    - [创建image文件夹](#创建image文件夹)
+    - [创建profile.css文件](#创建profile.css文件)
+    - [创建media文件夹/media.css文件](#创建media文件夹mediacss文件)
+    - [index.css文件](#indexcss文件)
+    - [创建main文件夹](#创建main文件夹)
+      - [创建main-left.css文件](#创建mainleftcss文件)
+      - [创建main-middle.css文件](#创建mainmiddlecss文件)
+      - [创建main-right.css文件](#创建mainrightcss文件)
+    - [index.html文件](#indexhtml文件)
+    - [最后出来基本效果](#最后出来基本效果)
 
+<hr>
+
+<p align='center'><img src='../images/TopSocial.png' width='100%' height='100%' /></p>
+
+<hr>
 
 # Note
 
@@ -8,6 +25,8 @@
 - 创建在public文件夹下
 - 放置所有的图片
 
+<hr>
+<br>
 
 ### 创建profile.css文件
 - 在component文件夹下
@@ -28,8 +47,13 @@
 }
 ```
 
+<hr>
+<br>
+
 ### 创建media文件夹/media.css文件
 
+<hr>
+<br>
 
 ### index.css文件
 - 此时记得将创建好的所有css文件在总的index.css文件中挂载
@@ -50,9 +74,15 @@
 @import "./src/css/components/profile.css"
 ```
 
+<hr>
+<br>
+
 ### 创建main文件夹
 - 在frame文件夹中创建
 - 模块化思维，将main左中右三个部分分开创建css文件
+
+<hr>
+<br>
 
 #### 创建main-left.css文件
 ```css
@@ -120,6 +150,9 @@
     margin: 0.6rem;
 }
 ```
+
+<hr>
+
 #### 创建main-middle.css文件
 ```css
 .container .main-middle {
@@ -128,6 +161,9 @@
     width: 60%;
 }
 ```
+
+<hr>
+
 #### 创建main-right.css文件
 ```css
 .container .main-right {
@@ -136,6 +172,9 @@
     width: 20%;
 }
 ```
+
+<hr>
+<br>
 
 ### index.html文件
 - 修改和增加响应的板块内容
@@ -201,3 +240,10 @@
               <button class="">Create Post</button>
             </div>
 ```
+
+<hr>
+<br>
+
+### 最后出来基本效果
+
+<p align='center'><img src='../images/最后出来基本效果2.png' width='100%' height='100%' /></p>
