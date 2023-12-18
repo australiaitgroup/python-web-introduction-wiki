@@ -20,12 +20,19 @@
 - [Lecture10: Nodejs 3](./Nodejs/Nodejs_3.md)
 - [Lecture11: Nodejs 4](./Nodejs/Nodejs_4.md)
 - [Lecture12: Nodejs 5](./Nodejs/Nodejs_5.md)
-- [Lecture13: Git_Shell](./Git/Git_Shell.md)
-- [Lecture14: Final Project1](./Final_Project/Backend1.md)
-- [Lecture15: Database1](./Database/Database1.md)
-- [Lecture16: Final Project2](./Final_Project/Backend2.md)
+- [Lecture14: Final Project(Backend1)](./Final_Project/Backend1.md)
+- [Lecture16: Final Project(Backend2)](./Final_Project/Backend2.md)
+- [Lecture17: Final Project(Frontend1)](./Final_Project/Frontend1.md)
+- [Lecture18: Final Project(Frontend2)](./Final_Project/Frontend2.md)
 - [Tutorial03: JavaScrip_Tutorial1](./JavaScript/JavaScript_tutorial1.md)
 - [Tutorial04: JavaScrip_Tutorial2](./JavaScript/JavaScript_tutorial2.md)
 - [Tutorial05: Nodejs_tutorial](./Nodejs/Nodejs_tutorial.md)
 - [Tutorial06: Nodejs_tutorial2](./Nodejs/Nodejs_tutorial2.md)
 - [Tutorial07: Git Shell Tutorial](./Git/Git_Shell_Tutorial.md)
+
+
+## Module 3: 数据库入门
+- [Lecture15: Database1](./Database/Database1.md)
+
+## Module 8: 版本控制和团队协作
+- [Lecture13: Git_Shell](./Git/Git_Shell.md)
