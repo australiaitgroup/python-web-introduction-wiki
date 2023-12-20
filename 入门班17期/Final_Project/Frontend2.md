@@ -28,7 +28,7 @@
 
 ### Resources
 [HTML DOM Elements](https://www.w3schools.com/jsref/dom_obj_all.asp)<br>
-[Promise Method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+[Promise Method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)<br>
 [Google Fonts](https://fonts.google.com)
 
 <hr>
