@@ -25,6 +25,9 @@
 
 ## Frontend2 (`17/12/2023`)
 
+### Resources
+
+
 ### 创建image文件夹
 - 创建在public文件夹下
 - 放置所有的图片
