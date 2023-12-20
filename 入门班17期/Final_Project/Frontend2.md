@@ -1,5 +1,6 @@
 - [Note](#Note)
   - [Frontend2 (`17/12/2023`)](#Frontend2-17122023)
+    - [Resources](#Resources)
     - [创建image文件夹](#创建image文件夹)
     - [创建profile.css文件](#创建profile.css文件)
     - [创建media文件夹/media.css文件](#创建media文件夹mediacss文件)
@@ -26,7 +27,12 @@
 ## Frontend2 (`17/12/2023`)
 
 ### Resources
+[HTML DOM Elements](https://www.w3schools.com/jsref/dom_obj_all.asp)<br>
+[Promise Method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+[Google Fonts](https://fonts.google.com)
 
+<hr>
+<br>
 
 ### 创建image文件夹
 - 创建在public文件夹下
