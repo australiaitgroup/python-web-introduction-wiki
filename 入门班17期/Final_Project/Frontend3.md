@@ -1,3 +1,19 @@
+- [Note](#Note)
+  - [Frontend3 (`20/12/2023`)](#Frontend3-20122023)
+    - [Resource](#Resource)
+    - [media.css](#mediacss)
+    - [Main-middle](#Main-middle)
+    - [middle.css](#middlecss)
+    - [在js文件夹内建立main文件夹以设置dom操作](#在js文件夹内建立main文件夹以设置dom操作)
+      - [main-left.js](#main-leftjs)
+      - [main-middle.js](#main-middlejs)
+
+<hr>
+
+<p align='center'><img src='../images/TopSocial.png' width='100%' height='100%' /></p>
+
+<hr>
+
 
 
 # Note
@@ -9,7 +25,11 @@
 ### Resource
 [Class Code](https://github.com/HAIXIN-ZHANG/WEB-17)
 
-### 调整media.css以适应不同屏幕尺寸
+<hr>
+<br>
+
+### media.css
+- 调整media.css以适应不同屏幕尺寸
 ```css
 /* --- Media --- */
 @media screen and (width < 1420px) {
@@ -25,7 +45,11 @@
 }
 ```
 
-### 修改html中的Main-middle部分
+<hr>
+<br>
+
+### Main-middle
+- 修改html中的Main-middle部分
 ```html
 <!-- Main middle -->
       <div class="main-middle">
@@ -154,7 +178,11 @@
         </div>
 ```
 
-### 修改middle的css
+<hr>
+<br>
+
+### middle.css
+- 修改middle的css
 ```css
 .main-middle > .main-middle-card-wrapper {
     display: flex;
@@ -330,6 +358,9 @@
 }
 ```
 
+<hr>
+<br>
+
 ### 在js文件夹内建立main文件夹以设置dom操作
 - 记得在index.js中载入各个js文件以拿到数据
 #### main-left.js
@@ -353,6 +384,8 @@ export function applyStyles(element) {
     for (const childElement of element.children) applyStyles(childElement);
 }
 ```
+
+<hr>
 
 #### main-middle.js
 ```js
