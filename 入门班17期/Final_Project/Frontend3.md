@@ -1,9 +1,13 @@
-# Note
 
+
+# Note
+- 注意：老师提醒本期三节课程并不足以完全让我们完成整个项目的所有前端code
+- 希望同学们能课后自己根据老师提供的example继续完成
+  
 ## Frontend3 (`20/12/2023`)
 
 ### Resource
-
+[Class Code](https://github.com/HAIXIN-ZHANG/WEB-17)
 
 ### 调整media.css以适应不同屏幕尺寸
 ```css
