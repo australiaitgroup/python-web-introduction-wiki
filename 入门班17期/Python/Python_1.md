@@ -1,11 +1,14 @@
 
 # Note
 
+
 ## Python Workshop1 (`06/01/2024`)
+
 
 ### 一些学习资源
 [Why Observable](https://observablehq.com)<br>
 [Examtopics](https://examtopics.com/exams/)<br>
+[Udemy](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
 
 ### Azure云服务及相关概念
 
@@ -41,3 +44,13 @@
 <p align='center'><img src='../images/相关认证考取分类说明图.png' width='80%' height='80%' /></p>
 
 
+### Cloud migration
+- 云迁移（Cloud migration）是指将数据、应用程序、服务或其他业务元素从一个公司的本地计算机或数据中心迁移到云计算环境的过程。
+- 这个过程涉及到将业务的IT资源转移到云服务提供商（如AWS、Microsoft Azure或Google Cloud Platform）提供的远程服务器上。
+
+### 什么是Python
+*高级语言 - 高低级体现在和人类语言接近的程度*
+
+<p align='center'><img src='../images/一些流行的Python框架.png' width='80%' height='80%' /></p>
+
+<p align='center'><img src='../images/Python编程语言的生态系统.png' width='80%' height='80%' /></p>
