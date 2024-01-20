@@ -4,8 +4,8 @@
 ## Python Workshop1 (`06/01/2024`)
 
 ### 一些学习资源
-[Why Observable](www.observablehq.com)<br>
-[Examtopics](examtopics.com/exams/)<br>
+[Why Observable](https://observablehq.com)<br>
+[Examtopics](https://examtopics.com/exams/)<br>
 
 ### Azure云服务及相关概念
 
