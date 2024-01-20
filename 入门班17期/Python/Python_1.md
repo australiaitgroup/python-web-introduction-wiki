@@ -1,13 +1,18 @@
 - [Note](#Note)
   - [Python Workshop1 (`06/01/2024`)](#Python-Workshop1-06012024)
-
+    - [一些学习资源](#一些学习资源)
+    - [Azure云服务及相关概念](#Azure云服务及相关概念)
+    - [AWS certification](#AWS-certification)
+    - [Cloud migration](#Cloud-migration)
+  - [什么是Python](#什么是Python)
+    - [不同语言翻译方式的区别](#不同语言翻译方式的区别)
+    - [结构化编程和面向对象编程的区别](#结构化编程和面向对象编程的区别)
+  - [为什么学Python](#为什么学Python) 
 
 
 # Note
 
-
 ## Python Workshop1 (`06/01/2024`)
-
 
 ### 一些学习资源
 [Why Observable](https://observablehq.com)<br>
