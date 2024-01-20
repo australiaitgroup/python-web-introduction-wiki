@@ -1,3 +1,7 @@
+- [Note](#Note)
+  - [Python Workshop1 (`06/01/2024`)](#Python_Workshop1_06012024)
+
+
 
 # Note
 
