@@ -13,6 +13,7 @@
 | 需要申请机器 | 无需申请机器，只用设定需求
 
 - serverless的function在不同云服务器名字不一样
+
 | AWS | Azure
 | :---: | :---:
 | lamda | azure functions
