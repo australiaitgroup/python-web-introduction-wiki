@@ -37,6 +37,6 @@
 
 - 相关认证考取分类说明图
 
-<p align='center'><img src='../images/相关认证考取分类说明图.jpg' width='50%' height='50%' /></p>
+<p align='center'><img src='../images/相关认证考取分类说明图.png' width='50%' height='50%' /></p>
 
 
