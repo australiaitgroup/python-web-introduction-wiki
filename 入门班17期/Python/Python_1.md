@@ -8,7 +8,9 @@
 ### 一些学习资源
 [Why Observable](https://observablehq.com)<br>
 [Examtopics](https://examtopics.com/exams/)<br>
-[Udemy](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)
+[Udemy](https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/)<br>
+[Hackerrank](https://www.hackerrank.com/domains/sql)<br>
+[Sre-work-book](https://sre.google/sre-book/table-of-contents/)
 
 ### Azure云服务及相关概念
 
