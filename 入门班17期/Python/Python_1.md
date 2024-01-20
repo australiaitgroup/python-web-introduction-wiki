@@ -59,3 +59,20 @@
 <p align='center'><img src='../images/Python编程语言的生态系统.png' width='80%' height='80%' /></p>
 
 <p align='center'><img src='../images/high to low level.png' width='80%' height='80%' /></p>
+
+1. CPU二极管 - 发送信号(1 0)
+2. 汇编语言: 最快速度转化成机器语言的语言 - 直接与计算机硬件相关
+3. C语言比较低级 (面向过程), 性能优化好
+4. C++: 在c语言的基础上加入OOP, 加入C++的生态
+5. Java/C#: 高级语言, 企业级平台会用这些
+6. golang(Google开发的语言)/kotlin(语法接近Java)
+7. Python/JS (TypeScript)
+
+- 不同语言翻译方式的区别
+
+| Interpreted language | Compiled language
+| :---: | :---:
+| 边解释边执行 (如Python) | 先编译成机器语言再输出
+
+<p align='center'><img src='../images/语言输出方式的区别.png' width='80%' height='80%' /></p>
+
