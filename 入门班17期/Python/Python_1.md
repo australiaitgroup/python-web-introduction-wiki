@@ -6,7 +6,7 @@
 ### 一些学习资源
 [Why Observable](www.observablehq.com)<br>
 
-### Azure
+### Azure云服务及相关概念
 
 | on premise | serverless
 | :---: | :---:
@@ -17,3 +17,13 @@
 | AWS | Azure
 | :---: | :---:
 | lamda | azure functions
+
+- stateless和stateful的区别
+
+| stateless | stateful
+| :---: | :---:
+| 1+2永远=3 | 买东西放进了购物车，此时需更新购物车状态
+
+- decouple
+
+  `将一个复杂的stateful的结构拆分成很多个serverless的小结构，即microservices`
