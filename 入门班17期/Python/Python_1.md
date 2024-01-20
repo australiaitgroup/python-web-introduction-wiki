@@ -50,7 +50,12 @@
 
 ### 什么是Python
 *高级语言 - 高低级体现在和人类语言接近的程度*
+- 高级语言的意义：
+- readable：服务于让人更好的理解
+- reusable：可以重复使用
 
 <p align='center'><img src='../images/一些流行的Python框架.png' width='80%' height='80%' /></p>
 
 <p align='center'><img src='../images/Python编程语言的生态系统.png' width='80%' height='80%' /></p>
+
+<p align='center'><img src='../images/high to low level.png' width='80%' height='80%' /></p>
