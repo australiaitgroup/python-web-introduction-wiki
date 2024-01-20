@@ -80,7 +80,7 @@
 
 | 结构化编程(Structured) | 面向对象编程(Object-Oriented Programming)
 | :---: | :---:
-| C  Pascal | Java  C++  Python  Ruby
+| C / Pascal | Java / C++ / Python / Ruby
 | 程序被表示为逻辑结构 | 程序被写作一系列相互通信的对象集合
 | 执行流程依赖于程序的结构 | 基本实体是对象,每个计算都是使用对象完成的
 | 更重视代码 | 更重视数据
