@@ -1,5 +1,5 @@
 - [Note](#Note)
-  - [Python Workshop1 (`06/01/2024`)](#Python_Workshop1-06012024)
+  - [Python Workshop1 (`06/01/2024`)](#Python-Workshop1-06012024)
 
 
 
