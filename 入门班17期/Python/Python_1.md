@@ -92,3 +92,15 @@
 | 这是自顶向下的方法 | 这是自底向上的方法
 
 <p align='center'><img src='../images/StructuredVsOOP.png' width='80%' height='80%' /></p>
+
+### 为什么学Python
+| 职位 | 职责 |
+| :---: | :---: |
+| Tech consultant | Automation (可能被code interpreter取代) |
+| Business Analyst | dashboarding (tableau powerbi) |
+| Data Analyst | python scripting, sql, bigquery (data warehouse) |
+| Data Scientist | DA + modeling |
+| SDE, software Developer(frontend/backend) | google, Django golang |
+| Quantitative | c++, python |
+| Data Engineer | java,python,scala,spark,hadoop,MapReduce |
+| Site Reliability Engineer | 运维 (python + kotlin) |
