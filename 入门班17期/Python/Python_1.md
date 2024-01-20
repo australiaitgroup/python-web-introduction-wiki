@@ -27,3 +27,16 @@
 - decouple
 
   `将一个复杂的stateful的结构拆分成很多个serverless的小结构，即microservices`
+
+
+### AWS certification
+- Solutions Architect Associate
+
+`这项认证主要针对那些有能力设计分布式系统的人员，能在AWS平台上构建和部署可扩展、高可用性、容错性强的系统。`
+`取得这项认证的个人可以证明他们具备在AWS上设计和部署有效、高效系统的技能，这对于希望建立或提升在云计算领域的职业生涯的人来说非常有价值。`
+
+- 相关认证考取分类说明图
+
+<p align='center'><img src='../images/相关认证考取分类说明图.jpg' width='50%' height='50%' /></p>
+
+
