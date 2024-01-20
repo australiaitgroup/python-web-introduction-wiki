@@ -68,7 +68,7 @@
 6. golang(Google开发的语言)/kotlin(语法接近Java)
 7. Python/JS (TypeScript)
 
-- 不同语言翻译方式的区别
+#### 不同语言翻译方式的区别
 
 | Interpreted language | Compiled language
 | :---: | :---:
@@ -76,3 +76,19 @@
 
 <p align='center'><img src='../images/语言输出方式的区别.png' width='80%' height='80%' /></p>
 
+#### 结构化编程和面向对象编程的区别
+
+| 结构化编程(Structured) | 面向对象编程(Object-Oriented Programming)
+| :---: | :---:
+| C  Pascal | Java  C++  Python  Ruby
+| 程序被表示为逻辑结构 | 程序被写作一系列相互通信的对象集合
+| 执行流程依赖于程序的结构 | 基本实体是对象,每个计算都是使用对象完成的
+| 更重视代码 | 更重视数据
+| 能处理中等复杂度的程序 | 能处理非常复杂的程序
+| 数据安全性较低 | 数据安全性更高
+| 代码重用性较低 | 更高的代码重用性
+| 灵活性较低 | 灵活性更高
+| 抽象程度较低 | 抽象程度更高
+| 这是自顶向下的方法 | 这是自底向上的方法
+
+<p align='center'><img src='../images/StructuredVsOOP.png' width='80%' height='80%' /></p>
