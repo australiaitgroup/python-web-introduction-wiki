@@ -29,7 +29,7 @@ graph TB;
 
 #### Integer
 - Python对整数的处理方式
-> 在Python中，整数（通常在-5到256之间）是预先创建并缓存起来的,这意味着它们将会有相同的内存地址
+> 在Python中，整数（通常在-5到256之间）是预先创建并缓存起来的,这意味着它们将会有相同的内存地址<br>
 > 当你改变这些变量的值，使其超出了这个预缓存的范围，Python会创建一个新的整数对象来表示新的值
 
 #### Boolean
@@ -39,7 +39,7 @@ graph TB;
 > 无论赋值给谁，都只有一个地理位置
 
 #### String
-> 一开始通过赋值得到的内容会修改地址，而赋值过后任何的修改不会
+> 一开始通过赋值得到的内容会修改地址，而赋值过后任何的修改不会<br>
 > 在string后增加字母位数不会修改地址，而增加空格会
 
 #### Immutable Mutable Hashable
@@ -50,11 +50,11 @@ graph TB;
 | 字符串（str）和整数（int） | 列表（list）和字典（dict） | 不可变的，它们也是可哈希的
 
 - 相互间的联系：
-> 不可变的对象是可哈希的，因为它们的内容不会改变
+> 不可变的对象是可哈希的，因为它们的内容不会改变<br>
 > 可变对象通常是不可哈希的，因为它们的内容可以改变
 
-
-### Python和JavaScript的命名差异
+### Python和JavaScript的区别
+#### 命名差异
 
 <p align='center'><img src='../images/Python和JavaScript的命名差异1.png' width='80%' height='80%' /></p>
 
@@ -86,7 +86,7 @@ graph TB;
 | None | 一般用null 或 undefined
 
 
-### Python和JavaScript添加注释
+#### 添加注释
 - Python
   - \#
   - """
@@ -95,7 +95,7 @@ graph TB;
   - //
   - /* */
 
- ### and和or的区别
+ #### and和or的区别
 > 两者都是返回停止判断位置的元素<br>
 > and: 有一个false就是false<br>
 > or: 有一个true就是true
@@ -103,5 +103,10 @@ graph TB;
 `and和or本质上返回一个真正的值, 而不是boolean`
 
 <p align='left'><img src='../images/and-or-not.png' width='50%' height='50%' /></p>
+
+#### for循环
+
+<p align='center'><img src='../images/for循环.png' width='80%' height='80%' /></p>
+
 
   
