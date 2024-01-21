@@ -96,7 +96,7 @@ graph TB;
   - /* */
 
  ### and和or的区别
-> 两者都是返回停止判断位置的元素
+> 两者都是返回停止判断位置的元素<br>
 > and: 有一个false就是false<br>
 > or: 有一个true就是true
 
