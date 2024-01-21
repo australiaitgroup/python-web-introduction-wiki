@@ -96,17 +96,20 @@ graph TB;
   - /* */
 
  #### and和or的区别
+ 
+<p align='left'><img src='../images/and-or-not.png' width='50%' height='50%' /></p>
+
 > 两者都是返回停止判断位置的元素<br>
 > and: 有一个false就是false<br>
 > or: 有一个true就是true
 
 `and和or本质上返回一个真正的值, 而不是boolean`
 
-<p align='left'><img src='../images/and-or-not.png' width='50%' height='50%' /></p>
+
 
 #### for循环
 
-<p align='center'><img src='../images/for循环.png' width='80%' height='80%' /></p>
+<p align='center'><img src='../images/for循环.png' width='50%' height='50%' /></p>
 
 
   
