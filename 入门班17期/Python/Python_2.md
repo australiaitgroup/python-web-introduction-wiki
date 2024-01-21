@@ -76,7 +76,7 @@ graph TB;
 | 引入模块 | 每个引入应该独立一行，标准库模块、第三方库模块、应用程序指定模块分组导入，组之间用空行分隔
 | 表达式和语句中的空格 | 避免不必要的空格
 
-<p align='center'><img src='../images/Python和JavaScript的命名差异2.png' width='80%' height='80%' /></p>
+<p align='center'><img src='../images/Python和JavaScript的命名差异2.png' width='50%' height='50%' /></p>
 
 | Python | JavaScript
 | :---: | :---:
