@@ -84,9 +84,13 @@ graph TB;
 
 <p align='center'><img src='../images/Python和JavaScript的命名差异1.png' width='80%' height='80%' /></p>
 
+<br>
+
 - Python: 运用indentation(缩进)来显示level
 - JavaScript: 对缩进不太敏感, 更专注传输
 - PEP8规则: 它是一个编码约定文档，描述了如何编写Python代码的风格指南
+
+<br>
 
 | 规则 | 内容
 | :---: | :---:
@@ -102,7 +106,11 @@ graph TB;
 | 引入模块 | 每个引入应该独立一行，标准库模块、第三方库模块、应用程序指定模块分组导入，组之间用空行分隔
 | 表达式和语句中的空格 | 避免不必要的空格
 
+<br>
+
 <p align='center'><img src='../images/Python和JavaScript的命名差异2.png' width='50%' height='50%' /></p>
+
+<br>
 
 | Python | JavaScript
 | :---: | :---:
@@ -125,6 +133,8 @@ graph TB;
 <hr>
 
  #### and和or的区别
+
+ <br>
  
 <p align='left'><img src='../images/and-or-not.png' width='50%' height='50%' /></p>
 
@@ -137,6 +147,8 @@ graph TB;
 <hr>
 
 #### for循环
+
+<br>
 
 <p align='center'><img src='../images/for循环.png' width='50%' height='50%' /></p>
 
