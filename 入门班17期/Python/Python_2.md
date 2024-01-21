@@ -35,9 +35,9 @@ graph TB;
     b-->f["None"];
     b-->g["String"];
     a-->h{"Containers \n Immutable & Mutable"};
-    h-->i["list \n Mutable/ordered sequence of objects"];
-    h-->j["Tuple \n Immutable/ordered sequence of objects"];
-    h-->k["Dictionary \n keys are immutable/unordered Keys"]
+    h-->i["list \n Mutable/ordered"];
+    h-->j["Tuple \n Immutable/ordered"];
+    h-->k["Dictionary \n Immutable/unordered"]
 ```
 
 <hr>
