@@ -86,4 +86,24 @@ graph TB;
 | None | 一般用null 或 undefined
 
 
+### Python和JavaScript添加注释
+- Python
+  - \#
+  - """
 
+- JavaScript
+  - //
+  - /* */
+
+ ### and和or的区别
+> 两者都是返回停止判断位置的元素
+> and: 有一个false就是false<br>
+> or: 有一个true就是true
+
+`and和or本质上返回一个真正的值, 而不是boolean`
+
+| Python | JavaScript
+| :---: | :---:
+| and or not | && '||' !
+
+  
