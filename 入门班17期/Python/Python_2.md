@@ -102,8 +102,6 @@ graph TB;
 
 `and和or本质上返回一个真正的值, 而不是boolean`
 
-| Python | JavaScript
-| :---: | :---:
-| and or not | && '||' !
+<p align='left'><img src='../images/and-or-not.png' width='50%' height='50%' /></p>
 
   
