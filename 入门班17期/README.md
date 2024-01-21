@@ -35,5 +35,9 @@
 ## Module 3: 数据库入门
 - [Lecture15: Database1](./Database/Database1.md)
 
+## Module 4: 全民Python时代
+- [Lecture20: Python1](./Python/Python_1.md)
+- [Lecture21: Python2](./Python/Python_2.md)
+
 ## Module 8: 版本控制和团队协作
 - [Lecture13: Git_Shell](./Git/Git_Shell.md)
