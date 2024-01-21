@@ -76,4 +76,14 @@ graph TB;
 | 引入模块 | 每个引入应该独立一行，标准库模块、第三方库模块、应用程序指定模块分组导入，组之间用空行分隔
 | 表达式和语句中的空格 | 避免不必要的空格
 
+<p align='center'><img src='../images/Python和JavaScript的命名差异2.png' width='80%' height='80%' /></p>
+
+| Python | JavaScript
+| :---: | :---:
+| snake_pattern | camelCasePattern
+| 赋值时直接用'=' | 赋值时需要用到'var'和'let'
+| 常量名可直接使用 | 常量名之前需要加'const'
+| None | 一般用null 或 undefined
+
+
 
