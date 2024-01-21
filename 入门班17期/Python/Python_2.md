@@ -136,7 +136,7 @@ graph TB;
 
  <br>
  
-<p align='left'><img src='../images/and-or-not.png' width='50%' height='50%' /></p>
+<p align='center'><img src='../images/and-or-not.png' width='50%' height='50%' /></p>
 
 > 两者都是返回停止判断位置的元素<br>
 > and: 有一个false就是false<br>
