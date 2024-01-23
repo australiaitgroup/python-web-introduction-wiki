@@ -1,3 +1,17 @@
+- [Note](#Note)
+  - [Python_3 (`14/01/2024`)](#Python_3-14012024)
+    - [学习资料](#学习资料)
+    - [环境安装](#环境安装)
+    - [Python-Set/List/Dict的常用方法](#Python-SetListDict的常用方法)
+      - [Set：唯一、无序、hashable](#Set唯一无序hashable)
+      - [List：有序、不唯一、index](#List有序不唯一index)
+        - [List: 三种赋值方式的区别](#List:三种赋值方式的区别)
+      - [Dict](#Dict)
+        - [copy()](#copy())
+        - 
+
+
+
 
 # Note
 
@@ -128,15 +142,15 @@ print("After 'b = deepcopy(a)':", a)  # 输出: [1, [2, 3], 4]
 - Tips
 > ***哈希表(Hash Table)*** 是一种数据结构, 尽管基本原理相同，但在不同的编程语言中，这个数据结构可能会有不同的名称和实现细节<br>
 > 不同编程语言中对应哈希表的实现可能被称为：<br>
-> **Python**: dict - Python中的字典是一个内置的哈希表实现<br>
-> **Java**: HashMap - Java中的HashMap类提供了哈希表的实现<br>
-> **C#**: Dictionary - 在C#中，Dictionary<TKey,TValue>类提供了这种功能<br>
-> **JavaScript**: Object - 传统上，JavaScript使用对象来作为键值映射的集合<br>
-> **Ruby**: Hash - 在Ruby中，它简单地被称为Hash
+> ***Python***: dict - Python中的字典是一个内置的哈希表实现<br>
+> ***Java***: HashMap - Java中的HashMap类提供了哈希表的实现<br>
+> ***C#***: Dictionary - 在C#中，Dictionary<TKey,TValue>类提供了这种功能<br>
+> ***JavaScript***: Object - 传统上，JavaScript使用对象来作为键值映射的集合<br>
+> ***Ruby***: Hash - 在Ruby中，它简单地被称为Hash
 
 - 实际应用
-> 如果需要高效的索引访问，且数据量固定，***数组(Array)***是好的选择；<br>
-> 如果数据集在运行时会动态变化，且插入和删除操作频繁，***链表(Linked List)***可能更合适；<br>
-> 如果需要快速查找、插入和删除操作，且可以接受额外的空间开销，***哈希表(Hash Table)***是非常好的选择；<br>
+> 如果需要高效的索引访问，且数据量固定，***数组(Array)*** 是好的选择；<br>
+> 如果数据集在运行时会动态变化，且插入和删除操作频繁，***链表(Linked List)*** 可能更合适；<br>
+> 如果需要快速查找、插入和删除操作，且可以接受额外的空间开销，***哈希表(Hash Table)*** 是非常好的选择；<br>
 > 在实际应用中，这些数据结构可能会相互结合使用，以适应不同的需求和场景
 
