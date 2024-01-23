@@ -13,7 +13,7 @@
         - [popitem()](#popitem)
     - [底层的数据结构](#底层的数据结构)
       - [Array(数组)](#Array数组)
-
+      - [Linked List(链表)](#Linked-List链表)
 
 
 
