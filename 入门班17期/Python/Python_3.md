@@ -7,7 +7,7 @@
       - [List](#List)
         - [List: 三种赋值方式的区别](#List-三种赋值方式的区别)
       - [Dict](#Dict)
-        - [copy()](#copy())
+        - [copy()](#copy)
         - 
 
 
