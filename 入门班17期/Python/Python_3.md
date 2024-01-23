@@ -128,11 +128,11 @@ print("After 'b = deepcopy(a)':", a)  # 输出: [1, [2, 3], 4]
 - Tips
 > ***哈希表(Hash Table)*** 是一种数据结构, 尽管基本原理相同，但在不同的编程语言中，这个数据结构可能会有不同的名称和实现细节<br>
 > 不同编程语言中对应哈希表的实现可能被称为：<br>
-> Python: dict - Python中的字典是一个内置的哈希表实现<br>
-> Java: HashMap - Java中的HashMap类提供了哈希表的实现<br>
-> C#: Dictionary - 在C#中，Dictionary<TKey,TValue>类提供了这种功能<br>
-> JavaScript: Object - 传统上，JavaScript使用对象来作为键值映射的集合<br>
-> Ruby: Hash - 在Ruby中，它简单地被称为Hash
+> **Python**: dict - Python中的字典是一个内置的哈希表实现<br>
+> **Java**: HashMap - Java中的HashMap类提供了哈希表的实现<br>
+> **C#**: Dictionary - 在C#中，Dictionary<TKey,TValue>类提供了这种功能<br>
+> **JavaScript**: Object - 传统上，JavaScript使用对象来作为键值映射的集合<br>
+> **Ruby**: Hash - 在Ruby中，它简单地被称为Hash
 
 - 实际应用
 > 如果需要高效的索引访问，且数据量固定，***数组(Array)***是好的选择；<br>
