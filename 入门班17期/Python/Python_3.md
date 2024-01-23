@@ -95,6 +95,20 @@ print("After 'b = deepcopy(a)':", a)  # 输出: [1, [2, 3], 4]
 
 <p align='center'><img src='../images/底层的数据结构.png' width='50%' height='50%' /></p>
 
+#### Dynamic Array(动态数组)
+- 这是一种特殊类型的数组，可以在运行时动态调整大小
+- 在Python中，列表（list）就是动态数组的一种实现。它在内部使用数组来存储元素，并在需要时自动增加存储容量
+- 通常是通过倍增策略，如:
+> array size<br>
+> a = list()<br>
+> 能存1个element<br>
+> a.append(1)<br>
+> 能存2个，4个，8个，16个……
+
+
+<p align='center'><img src='../images/数据结构对比.png' width='50%' height='50%' /></p>
+
+
 
 
 
