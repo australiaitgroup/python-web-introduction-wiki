@@ -8,7 +8,11 @@
         - [List: 三种赋值方式的区别](#List-三种赋值方式的区别)
       - [Dict](#Dict)
         - [copy()](#copy)
-        - 
+        - [items()](#items)
+        - [pop()](#pop)
+        - [popitem()](#popitem)
+    - [底层的数据结构](#底层的数据结构)
+      - [Array(数组)](#Array数组)
 
 
 
