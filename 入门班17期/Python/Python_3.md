@@ -23,8 +23,8 @@
 <p align='center'><img src='../images/PythonSetListDict的常用方法.png' width='50%' height='50%' /></p>
 
 #### 三种赋值方式的区别
-- b = a
-`这种方式是将b直接指向a所引用的对象。这意味着a和b实际上指向的是同一个对象，因此对b的任何修改都会反映在a上，反之亦然。`
+- b = a<br>
+`这种方式是将b直接指向a所引用的对象。这意味着a和b实际上指向的是同一个对象，因此对b的任何修改都会反映在a上，反之亦然。`<br>
 `在这个例子中:使用b = a，修改b导致a也发生了变化。`
 ```python
 import copy
