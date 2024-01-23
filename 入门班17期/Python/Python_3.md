@@ -3,8 +3,8 @@
     - [学习资料](#学习资料)
     - [环境安装](#环境安装)
     - [Python-Set/List/Dict的常用方法](#Python-SetListDict的常用方法)
-      - [Set：唯一、无序、hashable](#Set-唯一无序hashable)
-      - [List：有序、不唯一、index](#List-有序-不唯一-index)
+      - [Set](#Set)
+      - [List](#List)
         - [List: 三种赋值方式的区别](#List-三种赋值方式的区别)
       - [Dict](#Dict)
         - [copy()](#copy())
@@ -27,13 +27,15 @@
 
 <p align='center'><img src='../images/PythonSetListDict的常用方法.png' width='50%' height='50%' /></p>
 
-#### Set：唯一、无序、hashable
+#### Set
+- 唯一、无序、hashable
 > 检查存在性可直接 <br>
 > a = set() <br>
 > a.add(1) <br>
 > 1 in a
 
-#### List：有序、不唯一、index
+#### List
+- 有序、不唯一、index
 > a = list() <br>
 > a.append(1) <br>
 > a[0] <br>
