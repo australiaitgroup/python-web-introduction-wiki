@@ -4,7 +4,7 @@
     - [环境安装](#环境安装)
     - [Python-Set/List/Dict的常用方法](#Python-SetListDict的常用方法)
       - [Set：唯一、无序、hashable](#Set-唯一无序hashable)
-      - [List：有序、不唯一、index](#List-有序不唯一index)
+      - [List：有序、不唯一、index](#List-有序-不唯一-index)
         - [List: 三种赋值方式的区别](#List-三种赋值方式的区别)
       - [Dict](#Dict)
         - [copy()](#copy())
