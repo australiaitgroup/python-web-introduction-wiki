@@ -4,7 +4,7 @@
 ## Python_3 (`14/01/2024`)
 
 ### 学习资料
-[labuladong的算法笔记]（https://labuladong.github.io/algo/di-ling-zh-bfe1b/xue-xi-sua-01220/#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F）
+[labuladong的算法笔记](#https://labuladong.github.io/algo/di-ling-zh-bfe1b/xue-xi-sua-01220/#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F)
 
 ### 环境安装
 - 各个PC情况不一样，建议直接回顾录播复习一下全部流程
