@@ -7,22 +7,22 @@
 - 各个PC情况不一样，建议直接回顾录播复习一下全部流程
 
 ### Python-Set/List/Dict的常用方法
-- Set：唯一、无序、hashable
+
+<p align='center'><img src='../images/PythonSetListDict的常用方法.png' width='50%' height='50%' /></p>
+
+#### Set：唯一、无序、hashable
 > 检查存在性可直接 <br>
 > a = set() <br>
 > a.add(1) <br>
 > 1 in a
-- List：有序、不唯一、index
+
+#### List：有序、不唯一、index
 > a = list() <br>
 > a.append(1) <br>
 > a[0] <br>
 > 即可以通过一个具体的位置信息快速access到value或其他信息
-- Dict：
-  
 
-<p align='center'><img src='../images/PythonSetListDict的常用方法.png' width='50%' height='50%' /></p>
-
-#### 三种赋值方式的区别
+##### List: 三种赋值方式的区别
 - b = a<br>
 > 这种方式是将b直接指向a所引用的对象。这意味着a和b实际上指向的是同一个对象，因此对b的任何修改都会反映在a上，反之亦然<br>
 > 在以下这个例子中: 使用b = a，***修改b导致a也发生了变化***
@@ -58,3 +58,22 @@ b = copy.deepcopy(a)
 b[1][0] = 30
 print("After 'b = deepcopy(a)':", a)  # 输出: [1, [2, 3], 4]
 ```
+
+#### Dict
+##### copy()
+- 仍是shallow copy，只是copy了key和value的值，对于mutable的object来说，它的值就是地址，即地址相同
+
+##### items()
+- 用于返回字典中的键值对
+
+##### pop()
+- 用于移除字典中指定的元素
+
+##### popitem()
+- 用于移除并返回字典中的一个键值对
+- 与pop()的区别：
+> popitem()不需要键作为参数，它移除并返回最后一个插入的键值对（在Python 3.7及更高版本中）<br>
+> pop()需要指定要移除的键，并且可以返回该键对应的值。如果键不存在，可以设置默认返回值，否则会引发KeyError<br>
+> popitem()通常用于实现类似堆栈或队列的数据结构，其中元素的添加和移除顺序很重要<br>
+> pop()则更适用于当你知道要移除哪个键时的情景
+
