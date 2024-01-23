@@ -8,4 +8,4 @@
 
 ### Python-Set/List/Dict的常用方法
 
-<p align='center'><img src='../images/Python-Set/List/Dict的常用方法.png' width='50%' height='50%' /></p>
+<p align='center'><img src='../images/PythonSetListDict的常用方法.png' width='50%' height='50%' /></p>
