@@ -42,4 +42,12 @@
 <p align='center'><img src='../images/树.png' width='50%' height='50%' /></p>
 
 #### 堆 - Heap
--
+- 也叫 priority Queue
+- max heap：每次pop出来的都是最大的那个值
+- min heap：每次pop出来都必须是最小值
+- 图中是max heap
+- heapify_up/down功能：即随机加入一个数后会对整个heap进行对比并将其排在正确的位置
+- 但做题时最常用heapq(单线程时优先，注重性能) or queue.PriorityQueue(多线程优先，注重安全)
+- queue.Queue(队列)  queue.LifoQueue(栈)
+
+<p align='center'><img src='../images/堆.png' width='50%' height='50%' /></p>
