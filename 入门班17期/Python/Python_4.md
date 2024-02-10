@@ -20,8 +20,6 @@
   def empty() -> boolean
 - Depth First Search(深度优先搜索)
 
-
-
 <p align='center'><img src='../images/栈.png' width='50%' height='50%' /></p>
 
 #### 队列 - Queue
@@ -30,6 +28,7 @@
 - 实际中使用针对双向列表进行优化过的deque更适合 
 - Breadth First Search(广度优先搜索)
 
+<p align='center'><img src='../images/队列.png' width='50%' height='50%' /></p>
 
 #### 树 - Tree
 - 有各种分类：
