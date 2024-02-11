@@ -1,7 +1,10 @@
+- [Note](#Note)
+  - [Python_4 (17/01/2024)](#Python_4-17012024)
+
 
 # Note
 
-## Python_4 (17/01/2024)
+## Python_4 (`17/01/2024`)
 
 ### 数据结构
 - Abstract Data Structure <br>
