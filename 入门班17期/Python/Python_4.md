@@ -101,3 +101,9 @@
 - 生成器与迭代器相比在处理大型数据集时通常更内存高效，即不占内存
 
 <p align='center'><img src='../images/generator.png' width='50%' height='50%' /></p>
+
+### List
+- 关于Python中列表（Lists）的概念图
+- 解释了列表是如何与其他数据类型相联系的，以及列表的操作和特性
+
+<p align='center'><img src='../images/list.png' width='50%' height='50%' /></p>
