@@ -64,3 +64,8 @@
 - 当不确定parameter的个数时，可以采用packing
 
 <p align='center'><img src='../images/Argument Tuple Packing.png' width='50%' height='50%' /></p>
+
+#### Argument Dictionary Packing
+- 多个value变成一个Dic
+
+<p align='center'><img src='../images/Argument Dictionary Packing.png' width='50%' height='50%' /></p>
