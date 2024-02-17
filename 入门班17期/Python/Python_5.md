@@ -30,3 +30,9 @@
 - 即Arguments是按顺序出现的
 
 <p align='center'><img src='../images/Positional Arguments.png' width='50%' height='50%' /></p>
+
+- input parameters: signature of the function(参数即签名)
+- polymorphism(多态：只要符合位置要求，任何类型的参数均可填入)
+- 但注意不能超过或少于参数数量范围
+
+<p align='center'><img src='../images/Positional Arguments1.png' width='50%' height='50%' /></p>
