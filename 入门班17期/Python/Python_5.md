@@ -36,3 +36,20 @@
 - 但注意不能超过或少于参数数量范围
 
 <p align='center'><img src='../images/Positional Arguments1.png' width='50%' height='50%' /></p>
+
+#### Keyword Arguments
+- 正常情况下，每个keyword对应的参数会按顺序输出
+
+<p align='center'><img src='../images/Keyword Arguments1.png' width='50%' height='50%' /></p>
+
+- 修改keyword关键词会导致报错
+
+<p align='center'><img src='../images/Keyword Arguments2.png' width='50%' height='50%' /></p>
+
+- 省去一两个keyword不会影响输出，系统会按照Positional Arguments的顺序继续执行
+
+<p align='center'><img src='../images/Keyword Arguments3.png' width='50%' height='50%' /></p>
+
+- 注意：当所有arguments中只有一个keyword时，只能出现在最右边，不然会报错
+
+<p align='center'><img src='../images/Keyword Arguments4.png' width='50%' height='50%' /></p>
