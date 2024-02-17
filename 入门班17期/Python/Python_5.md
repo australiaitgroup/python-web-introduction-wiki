@@ -13,3 +13,4 @@
 ##### 模块化
 - 模块化之前，每个功能都要重新写一遍内容
 
+<p align='center'><img src='../images/模块化1.png' width='50%' height='50%' /></p>
