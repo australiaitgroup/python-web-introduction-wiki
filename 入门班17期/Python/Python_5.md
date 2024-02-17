@@ -78,4 +78,4 @@
 #### Docstrings
 - 一些关于定义的字符串的例子
 
-<p align='center'><img src='../images/Docstrings.png' width='50%' height='50%' /></p>
+<p align='center'><img src='../images/Docstrings.png' width='80%' height='80%' /></p>
