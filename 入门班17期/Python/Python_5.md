@@ -83,6 +83,12 @@
 
 
 #### Lambda
-- 即匿名函数，只有一个地址但如果不赋值的话则会永远找不到
+- 定义：
 
-<p align='center'><img src='../images/Lambda.png' width='80%' height='80%' /></p>
+<p align='center'><img src='../images/Lambda.png' width='50%' height='50%' /></p>
+
+#### Map
+- 对于一个iterable里面每个值，转化为一个iterator
+
+<p align='center'><img src='../images/Map.png' width='50%' height='50%' /></p>
+
