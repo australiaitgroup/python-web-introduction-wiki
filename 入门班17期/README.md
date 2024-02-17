@@ -40,6 +40,7 @@
 - [Lecture21: Python2](./Python/Python_2.md)
 - [Lecture22: Python3](./Python/Python_3.md)
 - [Lecture23: Python4](./Python/Python_4.md)
+- [Lecture24: Python5](./Python/Python_5.md)
 
 ## Module 8: 版本控制和团队协作
 - [Lecture13: Git_Shell](./Git/Git_Shell.md)
