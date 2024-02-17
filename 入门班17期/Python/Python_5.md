@@ -25,3 +25,8 @@
 #### Function Calls and Definition
 
 <p align='center'><img src='../images/Function Calls and Definition.png' width='50%' height='50%' /></p>
+
+#### Positional Arguments
+- 即Arguments是按顺序出现的
+
+<p align='center'><img src='../images/Positional Arguments.png' width='50%' height='50%' /></p>
