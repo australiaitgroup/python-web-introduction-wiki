@@ -92,3 +92,20 @@
 
 <p align='center'><img src='../images/Map.png' width='50%' height='50%' /></p>
 
+#### Filter
+- 用于从一个序列中筛选出满足特定条件的元素
+- 它接受两个参数：
+- 一个函数（称为谓词函数），用于测试每个元素是否满足条件
+- 一个可迭代对象，filter将应用谓词函数于此可迭代对象的每个元素
+
+<p align='center'><img src='../images/Filter.png' width='50%' height='50%' /></p>
+
+
+#### Reduce
+- Reduce函数意味着它以函数作为参数
+- 它接受两个参数：
+- 一个函数
+- 一个可迭代对象
+
+<p align='center'><img src='../images/Reduce.png' width='50%' height='50%' /></p>
+
