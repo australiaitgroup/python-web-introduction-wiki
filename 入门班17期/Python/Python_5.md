@@ -75,7 +75,14 @@
 
 <p align='center'><img src='../images/Putting It All Together.png' width='50%' height='50%' /></p>
 
+
 #### Docstrings
 - 一些关于定义的字符串的例子
 
 <p align='center'><img src='../images/Docstrings.png' width='80%' height='80%' /></p>
+
+
+#### Lambda
+- 即匿名函数，只有一个地址但如果不赋值的话则会永远找不到
+
+<p align='center'><img src='../images/Lambda.png' width='80%' height='80%' /></p>
