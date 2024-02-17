@@ -69,3 +69,8 @@
 - 多个value变成一个Dic
 
 <p align='center'><img src='../images/Argument Dictionary Packing.png' width='50%' height='50%' /></p>
+
+#### Putting It All Together
+- 当所有类型的数据放在一起packing时，keyword类型也要放在最右边packing
+
+<p align='center'><img src='../images/Putting It All Together.png' width='50%' height='50%' /></p>
