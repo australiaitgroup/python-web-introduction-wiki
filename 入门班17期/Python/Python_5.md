@@ -53,3 +53,14 @@
 - 注意：当所有arguments中只有一个keyword时，只能出现在最右边，不然会报错
 
 <p align='center'><img src='../images/Keyword Arguments4.png' width='50%' height='50%' /></p>
+
+
+#### Default Parameters
+- 当定义了默认值时，少输或者不输入内容时系统会自动用默认值补齐
+
+<p align='center'><img src='../images/Default Parameters.png' width='50%' height='50%' /></p>
+
+#### Argument Tuple Packing
+- 当不确定parameter的个数时，可以采用packing
+
+<p align='center'><img src='../images/Argument Tuple Packing.png' width='50%' height='50%' /></p>
