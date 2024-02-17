@@ -74,3 +74,8 @@
 - 当所有类型的数据放在一起packing时，keyword类型也要放在最右边packing
 
 <p align='center'><img src='../images/Putting It All Together.png' width='50%' height='50%' /></p>
+
+#### Docstrings
+- 一些关于定义的字符串的例子
+
+<p align='center'><img src='../images/Docstrings.png' width='50%' height='50%' /></p>
